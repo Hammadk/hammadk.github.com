@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2013-08-25T09:48:57-04:00</lastBuildDate>
-        <pubDate>2013-08-25T09:48:57-04:00</pubDate>
+        <lastBuildDate>2013-08-25T09:58:22-04:00</lastBuildDate>
+        <pubDate>2013-08-25T09:58:22-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -81,10 +81,10 @@
 &lt;!--more--&gt;
 &lt;p&gt;Since all the files that it generates are just static HTML files, I don&amp;#8217;t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Wordpress vs Jekyll' src='/assets/images/wordpressvsJekyll.jpg' /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;small&gt;Theatrical Poster from the Library of Congress, Image Library&lt;/small&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt='Wordpress vs Jekyll' src='/assets/images/wordpressvsjekyll.jpg' /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;small&gt;Theatrical Poster from the Library of Congress, Image Library&lt;/small&gt;&lt;/blockquote&gt;
+
 &lt;p&gt;Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can&amp;#8217;t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator which Jekyll is based on.&lt;/p&gt;
 
 &lt;h2 id='setup'&gt;Setup&lt;/h2&gt;
