@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Hammad Khalid</title>
+ <link href="http://hammad.ca/" rel="self"/>
+ <link href="http://hammad.ca"/>
+ <updated>2013-08-25T09:37:44-04:00</updated>
+ <id>http://hammad.ca</id>
+ <author>
+   <name>Hammad Khalid</name>
+   <email>hi@hammad.ca</email>
+ </author>
+
+ 
+ <entry>
+   <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
+   <link href="http://hammad.ca/experiments/2013/08/25/mongodb-vs-sql"/>
+   <updated>2013-08-25T00:00:00-04:00</updated>
+   <id>http://hammad.ca/experiments/2013/08/25/mongodb-vs-sql</id>
+   <content type="html">&lt;p&gt;I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on &lt;a href='http://www.michaelhartl.com/'&gt;Michael Hartl&amp;#8217;s&lt;/a&gt; Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to &lt;a href='https://www.heroku.com/'&gt;Heroku&lt;/a&gt;. Here is what I learned:&lt;/p&gt;
+
+&lt;h3 id='tldr'&gt;TLDR&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you want to avoid hiccups with third party tools (i.e., gems), pick PostgreSQL&lt;/li&gt;
+
+&lt;li&gt;If you want to avoid hiccups deploying to most cloud providers, pick PostgreSQL&lt;/li&gt;
+
+&lt;li&gt;If you have experience with deploying and developing with NoSQL, stick with MongoDB.&lt;/li&gt;
+
+&lt;li&gt;If you need to store files or assets in the database, pick MongoDB.&lt;/li&gt;
+
+&lt;li&gt;If you don&amp;#8217;t like migrating your database after every change in your schema, pick MongoDB.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='MongoDB VS PostgerSQL' src='/assets/images/mongodbvspostgresql_large_image.png' /&gt;&lt;/p&gt;
+
+&lt;h3 id='structuring_data'&gt;Structuring Data&lt;/h3&gt;
+
+&lt;p&gt;This app, like Twitter, allows users to follow the recent tweets of other users by following them. In an SQL environment the optimal method of creating this using a relationship table which create a new entry every time a user follows another. If the user stops following the other, the entry from the relationship table is destroyed. The final implementation requires using the Join command on the User table with the relationships table.&lt;/p&gt;
+
+&lt;p&gt;One the other hand MongoDB implementation of this is relationship is much simpler. MongoDB allows developers to store un-structured data. This comparison is similar to that of a statically typed language and a dynamically typed language. The user doesn’t have to worry about specifying every little detail, and this allows for clean and precise code.&lt;/p&gt;
+
+&lt;p&gt;In the MongoDB version of twitter, we store the ‘follow’ and ‘following’ relationships in the User’s table itself. Since MongoDB can natively understand arrays, we just store the ID of the follower, or the followed user, in the array. To avoid the performance penalty MongoDB even allows us to index the values within the array, so that they can be efficiently queried.&lt;/p&gt;
+
+&lt;p&gt;Something else that I really like about MongoDB was that In typical SQL Rails app, whenever a developer updates the schema of the application, he has to run a migrate task to add or remove the changed columns. The use of MongoDB doesn’t require this so the developer doesn’t have to bring their development process to a complete stop.&lt;/p&gt;
+
+&lt;h3 id='deployment_to_heroku'&gt;Deployment to Heroku&lt;/h3&gt;
+
+&lt;p&gt;Unfortunately for MongoDB, most cloud providers only provide SQL database alternatives by default – including Heroku and Amazon Elastic Beanstalk. Deploying the PostgreSQL was fairly straight forward &amp;#8211; just a simple &lt;em&gt;git push&lt;/em&gt;. Deploying the MongoDB alternative of the twitter clone was much tougher. For almost every platform numerous workarounds were required to get this app working. It seems like while NoSQL alternatives are available for developers, it’s almost always treated with a lower priority.&lt;/p&gt;
+
+&lt;p&gt;Overall, while the MongoDB alternative of the app was better for modeling data, it required additional effort and code for deployment and additional features. Cloud providers tend to give preferences to users developing with traditional database and provide additional tools. At this point, Ruby on Rails framework itself has much more gems available for SQL databases than NoSQL databases.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in the MongoDB version of the app, you can check out that Github repository on &lt;a href='https://github.com/Hammadk/RubyonRails-mongodb-twitter-clone'&gt;Github&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>We live in public</title>
+   <link href="http://hammad.ca/blog/2012/09/06/we_live_in_public"/>
+   <updated>2012-09-06T00:00:00-04:00</updated>
+   <id>http://hammad.ca/blog/2012/09/06/we_live_in_public</id>
+   <content type="html">&lt;p&gt;In December of 1999, &lt;a href='http://en.wikipedia.org/wiki/Josh_Harris_(internet'&gt;Josh Harris&lt;/a&gt; carried out an elaborate social experiment which required 100 people to live in a human terrarium under New York city while cameras watched their every move.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;This experiment envisioned a world without privacy and controls because of advances in technology and the Internet. The NYPD forced this experiment to shut down because they were worried this group was a millennial cult. I think that like many other staggering ideas during the dot-com bubble, these concerns about privacy were a few decades ahead of their time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='We live in public' src='/assets/images/we_live_in_public.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fast-forward 10 years, &lt;a href='http://www.youtube.com/watch?v=_XSTwfdFwIY'&gt;&amp;#8216;We Live in Public&amp;#8217;&lt;/a&gt;, a documentary about this social experiment went on to win the Grand Jury Prize award at the Sundance film festival. I found this experiment jarring, but I think it raised some valid concerns.&lt;/p&gt;
+
+&lt;p&gt;All of this is going to sound like speculation, and it is. My outlook on technology and change is generally optimistic; I just think that it&amp;#8217;s important to consider potential issues. I think that the next decade is to bring with it a bigger leap in innovation than the one that just went by. On the other hand, this transition is going to be really strange for many people.&lt;/p&gt;
+
+&lt;p&gt;Its weird though, I find that lately I have become more indifferent to knowing that companies collect my information. Well, I obviously want my privacy secured but It&amp;#8217;s almost comforting to know that it&amp;#8217;s really a script/algorithm that&amp;#8217;s examining my information instead of a person. So maybe this same thing will happen with augmented reality products as well. Eventually people will adopt and move on.&lt;/p&gt;
+
+&lt;p&gt;If you are up for watching a creepily awesome video about augmented reality, check this out:&lt;/p&gt;
+&lt;iframe frameborder='0' height='360' src='//www.youtube.com/embed/lK_cdkpazjI' width='640'&gt; &lt;/iframe&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Wordpress to Jekyll</title>
+   <link href="http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll"/>
+   <updated>2012-09-02T00:00:00-04:00</updated>
+   <id>http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll</id>
+   <content type="html">&lt;p&gt;This weekend I moved this website from &lt;a href='http://wordpress.com'&gt;WordPress&lt;/a&gt; to &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a ruby static-site generator which processes your text files and generates HTML files.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;Since all the files that it generates are just static HTML files, I don&amp;#8217;t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Wordpress vs Jekyll' src='/assets/images/wordpressvsJekyll.jpg' /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;small&gt;Theatrical Poster from the Library of Congress, Image Library&lt;/small&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can&amp;#8217;t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator which Jekyll is based on.&lt;/p&gt;
+
+&lt;h2 id='setup'&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files &lt;em&gt;anywhere&lt;/em&gt; I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers &amp;#8211; this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.&lt;/p&gt;
+
+&lt;h2 id='deploying'&gt;Deploying&lt;/h2&gt;
+
+&lt;p&gt;Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to git remote server.&lt;/p&gt;
+&lt;pre class='prettyprint'&gt;
+#Edit the files and have Jekyll update the deployment folder
+jekyll build
+cd _site
+git add .
+git commit
+git push #That's it!
+&lt;/pre&gt;
+&lt;p&gt;While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Sosmos: An RSS feed aggregator</title>
+   <link href="http://hammad.ca/projects/2011/12/28/sosmos"/>
+   <updated>2011-12-28T00:00:00-05:00</updated>
+   <id>http://hammad.ca/projects/2011/12/28/sosmos</id>
+   <content type="html">&lt;p&gt;In 2009 I developed Sosmos, a web app that pulled content from different websites via RSS feeds and organized the results in different categories.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I meant for this to be a personal home page but planned on later expanding it to allow others to pick their own RSS feeds. In mid 2010 I had a few thousand regular users but eventually there was a sharp decline because of better web apps like Netvibes.com and Google Reader.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='LED' src='/assets/images/sosmos_bg.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sosmos.com, in web terms, has since been sunset. If you are interested in a great app that lets you pull content from different websites I recommend &lt;a href='http://www.netvibes.com/en' target='_blank' title='NetVibes'&gt;Netvibes&lt;/a&gt;!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Cobra : A flexible gaming interface</title>
+   <link href="http://hammad.ca/projects/2011/12/27/cobra"/>
+   <updated>2011-12-27T00:00:00-05:00</updated>
+   <id>http://hammad.ca/projects/2011/12/27/cobra</id>
+   <content type="html">&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;&lt;img alt='Flexible screen image' src='/assets/images/cobra_300x459.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;This was a super exciting project and I got to work with &lt;a href='http://toastygames.com/parallax/'&gt;Zi Ye&lt;/a&gt; on different iterations of it &amp;#8212; imagine my excitement when &lt;a href='http://news.cnet.com/8301-17938_105-20003598-1.html'&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href='/media/pdf/cobra.pdf'&gt;here&lt;/a&gt;, or on ACM &lt;a href='http://dl.acm.org/citation.cfm?id=1754154'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Abstract from the paper:&lt;/p&gt;
+&lt;blockquote&gt;
+We discuss Cobra, a handheld peripheral for computer games that applies flexible display design principles to provide a highly intuitive, mobile gaming experience. Cobra is a flexible cardboard interface that uses bends as input to the gaming device. Images are provided through projection with a shoulder-mounted pico projector. In this paper, we will present our prototype, the motives behind it, and its immediate applications.
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>CEEC: Environmental conference</title>
+   <link href="http://hammad.ca/projects/2011/12/26/ceec"/>
+   <updated>2011-12-26T00:00:00-05:00</updated>
+   <id>http://hammad.ca/projects/2011/12/26/ceec</id>
+   <content type="html">&lt;p&gt;CEEC is organized by a group that brings different perspectives together to discuss solutions to the current environmental crisis.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;I was a member of the group that organized CEEC in 2010 and I developed their web presence for this that year. CEEC 2010 was an amazing opportunity to meet entrepreneurs in the energy field an I think it may have been responsible for my save-the-world-esque ambitions.&lt;/p&gt;
+
+&lt;p&gt;I setup an app that accepted payments from Paypal for online registration and created a website that I had been obsessing over for a while.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='LED' src='/assets/images/ceecSnapshot.jpg' /&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

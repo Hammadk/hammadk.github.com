@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Click around... | Hammad.ca</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      body {
+      background-color: white;
+      margin: 0px;
+      overflow: hidden;
+      font-family: 'Raleway', cursive;
+      background: url(images/bright_squares.png);
+      width: 100%;
+      }
+
+      .awesomePossum{
+      text-rendering: optimizeLegibility;
+      font-size: 5em;
+      font-weight: normal;
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 35%;
+      }
+
+      canvas {
+      }
+
+      .socialite {
+      display: block;
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      }
+    </style>
+    <script src="js/swirl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../../assets/js/socialite.js"></script>
+  </head>
+
+  <body onload="init()">
+    <div> <h1 class="awesomePossum">Click around ...</h1> </div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=116626224027";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="clear">
+
+      <div class="socialite">
+
+        <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Grow trees in a canvas" data-via="hammadk" data-count="horizontal" data-url="http://hammad.ca/experiments/canvasRecursion/clickanywhere" rel="nofollow" target="_blank">Share on Twitter</a>
+
+        <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http://hammad.ca/experiments/canvasRecursion/clickanywhere" rel="nofollow" target="_blank" data-size="medium" data-url="http://hammad.ca/experiments/canvasRecursion/clickanywhere">Share on Google+</a>
+
+        <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=http://hammad.ca/experiments/canvasRecursion/clickanywhere&amp;t=Grow trees in a canvas" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+  </body>
+  <script>$(Socialite.load);</script>
+</html>
