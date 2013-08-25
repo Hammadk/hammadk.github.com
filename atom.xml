@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2013-08-25T10:00:44-04:00</updated>
+ <updated>2013-08-25T10:15:01-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -82,7 +82,7 @@
    <link href="http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll"/>
    <updated>2012-09-02T00:00:00-04:00</updated>
    <id>http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll</id>
-   <content type="html">&lt;p&gt;This weekend I moved this website from &lt;a href='http://wordpress.com'&gt;WordPress&lt;/a&gt; to &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a ruby static-site generator which processes your text files and generates HTML files.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I moved this website from &lt;a href='http://wordpress.com'&gt;WordPress&lt;/a&gt; to &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a Ruby static-site generator which processes your text files and generates HTML files.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;Since all the files that it generates are just static HTML files, I don&amp;#8217;t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
 
@@ -129,7 +129,7 @@ git push #That's it!
    <link href="http://hammad.ca/projects/2011/12/27/cobra"/>
    <updated>2011-12-27T00:00:00-05:00</updated>
    <id>http://hammad.ca/projects/2011/12/27/cobra</id>
-   <content type="html">&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector&lt;/p&gt;
+   <content type="html">&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;&lt;img alt='Flexible screen image' src='/assets/images/cobra_300x459.jpg' /&gt;&lt;/p&gt;
 

@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2013-08-25T10:00:44-04:00</lastBuildDate>
-        <pubDate>2013-08-25T10:00:44-04:00</pubDate>
+        <lastBuildDate>2013-08-25T10:15:01-04:00</lastBuildDate>
+        <pubDate>2013-08-25T10:15:01-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -77,7 +77,7 @@
 
         <item>
                 <title>Wordpress to Jekyll</title>
-                <description>&lt;p&gt;This weekend I moved this website from &lt;a href='http://wordpress.com'&gt;WordPress&lt;/a&gt; to &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a ruby static-site generator which processes your text files and generates HTML files.&lt;/p&gt;
+                <description>&lt;p&gt;I moved this website from &lt;a href='http://wordpress.com'&gt;WordPress&lt;/a&gt; to &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a Ruby static-site generator which processes your text files and generates HTML files.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;Since all the files that it generates are just static HTML files, I don&amp;#8217;t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
 
@@ -124,7 +124,7 @@ git push #That's it!
 
         <item>
                 <title>Cobra : A flexible gaming interface</title>
-                <description>&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector&lt;/p&gt;
+                <description>&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector.&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;&lt;img alt='Flexible screen image' src='/assets/images/cobra_300x459.jpg' /&gt;&lt;/p&gt;
 
