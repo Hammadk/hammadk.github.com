@@ -21,6 +21,7 @@
     <!-- styles -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
     <!-- Update these with your own images
@@ -129,32 +130,35 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="content post-content">
 
-        <p>I moved this website from <a href='http://wordpress.com'>WordPress</a> to <a href='http://jekyllrb.com/'>Jekyll</a>. Jekyll is a Ruby static-site generator which processes your text files and generates HTML files.</p>
+        
+<p>Last weekend, I moved this website from <a href="http://wordpress.com">WordPress</a> to <a href="http://jekyllrb.com/">Jekyll</a>. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.</p>
 <!--more-->
-<p>Since all the files that it generates are just static HTML files, I don&#8217;t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.</p>
+<p>Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.</p>
 
-<p><img alt='Wordpress vs Jekyll' src='/assets/images/wordpressvsjekyll.jpg' /></p>
+<p><img src="/assets/images/wordpressvsjekyll.jpg" alt="Wordpress vs Jekyll" /></p>
 
-<blockquote><small>Theatrical Poster from the Library of Congress, Image Library</small></blockquote>
+<blockquote>
+<p><small>Theatrical Poster from the Library of Congress, Image Library</small></p>
+</blockquote>
 
-<p>Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can&#8217;t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator which Jekyll is based on.</p>
+<p>Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.</p>
 
-<h2 id='setup'>Setup</h2>
+<h2 id="setup">Setup</h2>
 
-<p>One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files <em>anywhere</em> I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers &#8211; this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.</p>
+<p>One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files <em>anywhere</em> I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers – this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.</p>
 
-<h2 id='deploying'>Deploying</h2>
+<h2 id="deploying">Deploying</h2>
 
-<p>Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to git remote server.</p>
-<pre class='prettyprint'>
-#Edit the files and have Jekyll update the deployment folder
+<p>Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'>#Edit the files and have Jekyll update the deployment folder</span>
 jekyll build
-cd _site
+<span class='nb'>cd </span>_site
 git add .
 git commit
-git push #That's it!
-</pre>
-<p>While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.</p>
+git push <span class='c'>#That&#39;s it!</span>
+</code></pre></div>
+<p>While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
+
 
         <div class="post-info">
           
