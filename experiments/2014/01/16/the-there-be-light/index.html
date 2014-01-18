@@ -5,7 +5,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>Wordpress to Jekyll | Hammad.ca </title>
+    <title>Let there be Flashlight, an Android app | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -122,7 +122,7 @@
           
 
 <div class="page-header">
-  <h1>Wordpress to Jekyll </h1>
+  <h1>Let there be Flashlight, an Android app </h1>
 </div>
 
 <div class="row post-full page-content">
@@ -131,33 +131,19 @@
       <div class="content post-content">
 
         
-<p>Last weekend, I moved this website from <a href="http://wordpress.com">WordPress</a> to <a href="http://jekyllrb.com/">Jekyll</a>. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.</p>
+<p>An ad-free, tablet optimized, Android flashlight app that doesn’t send your data to space.</p>
 <!--more-->
-<p>Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.</p>
+<h3 id="does_the_world_need_another_flashlight_app">Does the world need another flashlight app?</h3>
 
-<p><img src="/assets/images/wordpressvsjekyll.jpg" alt="Wordpress vs Jekyll" /></p>
+<p>Last month, I found out that one of my favorite apps was <a href="http://gizmodo.com/popular-android-flashlight-app-straight-up-lied-about-s-1477916270">selling</a> personal data to advertisers. I was fine with the on-screen ads, but this made me think on an open source app.</p>
 
-<blockquote>
-<p><small>Theatrical Poster from the Library of Congress, Image Library</small></p>
-</blockquote>
+<p>The idea was simple: make a flash light light app that does one thing really well, be a flashlight. That’s it! No Ads. No bells and whistles. Since this app is so simple, it is fairly easy to optimize for tablets as well. So here is what I have so far:</p>
 
-<p>Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.</p>
+<p><img src="/assets/images/app_screen_on.png" alt="Let there be flash light" /></p>
 
-<h2 id="setup">Setup</h2>
+<p>It only requires two permissions: <em>Camera</em> – which is needed for the camera LED, and <em>Vibrate</em> – which is used for haptic feedback. The two things that are left to add are: a subtle button press effect, and a SOS feature where the LED pulses.</p>
 
-<p>One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files <em>anywhere</em> I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers – this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.</p>
-
-<h2 id="deploying">Deploying</h2>
-
-<p>Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.</p>
-<div class='highlight'><pre><code class='bash'><span class='c'>#Edit the files and have Jekyll update the deployment folder</span>
-jekyll build
-<span class='nb'>cd </span>_site
-git add .
-git commit
-git push <span class='c'>#That&#39;s it!</span>
-</code></pre></div>
-<p>While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
+<p>If you are interested in the app, you can check out the Github repository on <a href="https://github.com/Hammadk/Let-there-be-flashlight-Android-app">Github</a>. It should be up on Google Play soon :)</p>
 
 
         <div class="post-info">
@@ -169,6 +155,8 @@ git push <span class='c'>#That&#39;s it!</span>
 
   
     
+    	<a href="/tags.html#Android-ref"><li class="label label-info">Android <span>(1)</span></li></a>
+    
     	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(3)</span></li></a>
     
   
@@ -178,17 +166,15 @@ git push <span class='c'>#That&#39;s it!</span>
           
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 02 September 2012</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 16 January 2014</span>
             </div>
           </p>
 
           <ul class="pager">
             
-            <li class="previous"><a href="/projects/2011/12/28/sosmos" title="Sosmos: An RSS feed aggregator"><span class="glyphicon glyphicon-arrow-left"></span> Previous : Sosmos: An RSS feed aggregator</a></li>
+            <li class="previous"><a href="/experiments/2013/08/25/mongodb-vs-sql" title="MongoDB vs PostgreSQL for Ruby on Rails"><span class="glyphicon glyphicon-arrow-left"></span> Previous : MongoDB vs PostgreSQL for Ruby on Rails</a></li>
             
             <!-- <li><a href="/archive.html">Archive</a></li> -->
-            
-            <li class="next"><a href="/blog/2012/09/06/we_live_in_public" title="We live in public">Next: We live in public <span class="glyphicon glyphicon-arrow-right"></span></a></li>
             
           </ul>
         </div>
@@ -210,10 +196,10 @@ git push <span class='c'>#That&#39;s it!</span>
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Wordpress to Jekyll" data-via="hammadk" data-count="horizontal" data-url="/blog/2012/09/02/Wordpress-to-Jekyll" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Let there be Flashlight, an Android app" data-via="hammadk" data-count="horizontal" data-url="/experiments/2014/01/16/the-there-be-light" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Wordpress to Jekyll" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Let there be Flashlight, an Android app" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->

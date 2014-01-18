@@ -5,10 +5,32 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2013-11-14T14:05:03-05:00</lastBuildDate>
-        <pubDate>2013-11-14T14:05:03-05:00</pubDate>
+        <lastBuildDate>2014-01-18T16:53:12-05:00</lastBuildDate>
+        <pubDate>2014-01-18T16:53:12-05:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Let there be Flashlight, an Android app</title>
+                <description>
+&lt;p&gt;An ad-free, tablet optimized, Android flashlight app that doesn’t send your data to space.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h3 id=&quot;does_the_world_need_another_flashlight_app&quot;&gt;Does the world need another flashlight app?&lt;/h3&gt;
+
+&lt;p&gt;Last month, I found out that one of my favorite apps was &lt;a href=&quot;http://gizmodo.com/popular-android-flashlight-app-straight-up-lied-about-s-1477916270&quot;&gt;selling&lt;/a&gt; personal data to advertisers. I was fine with the on-screen ads, but this made me think on an open source app.&lt;/p&gt;
+
+&lt;p&gt;The idea was simple: make a flash light light app that does one thing really well, be a flashlight. That’s it! No Ads. No bells and whistles. Since this app is so simple, it is fairly easy to optimize for tablets as well. So here is what I have so far:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/app_screen_on.png&quot; alt=&quot;Let there be flash light&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It only requires two permissions: &lt;em&gt;Camera&lt;/em&gt; – which is needed for the camera LED, and &lt;em&gt;Vibrate&lt;/em&gt; – which is used for haptic feedback. The two things that are left to add are: a subtle button press effect, and a SOS feature where the LED pulses.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in the app, you can check out the Github repository on &lt;a href=&quot;https://github.com/Hammadk/Let-there-be-flashlight-Android-app&quot;&gt;Github&lt;/a&gt;. It should be up on Google Play soon :)&lt;/p&gt;
+</description>
+                <link>http://hammad.ca/experiments/2014/01/16/the-there-be-light</link>
+                <guid>http://hammad.ca/experiments/2014/01/16/the-there-be-light</guid>
+                <pubDate>2014-01-16T00:00:00-05:00</pubDate>
+        </item>
 
         <item>
                 <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
