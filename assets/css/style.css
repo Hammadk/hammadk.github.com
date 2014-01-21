@@ -524,5 +524,13 @@ footer ul li { display: inline-block; padding: 0px 10px;}
         display: none;
     }
 
+    /* TODO: fix this hack for moving the thumbnails to the left in smaller screen */
+    .col-md-12{
+      padding-left: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
 
 }
