@@ -5,7 +5,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>MongoDB vs PostgreSQL for Ruby on Rails | Hammad.ca </title>
+    <title>LookRook: Find the best stylists in your hometown | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -122,7 +122,7 @@
           
 
 <div class="page-header">
-  <h1>MongoDB vs PostgreSQL for Ruby on Rails </h1>
+  <h1>LookRook: Find the best stylists in your hometown </h1>
 </div>
 
 <div class="row post-full page-content">
@@ -131,80 +131,32 @@
       <div class="content post-content">
 
         
-<p>I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.</p>
+<p>LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.</p>
 <!--more-->
-<p>I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on <a href="http://www.michaelhartl.com/">Michael Hartl’s</a> Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to <a href="https://www.heroku.com/">Heroku</a>. Here is what I learned:</p>
+<p>This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.</p>
 
-<h3 id="tldr">TLDR</h3>
+<p>For example, If someone wants to get a new <em>layered</em> haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.</p>
 
-<ul>
-<li>If you want to avoid hiccups with third party tools (i.e., gems), pick PostgreSQL</li>
+<p>This is currently work in progress, but below is a little teaser:</p>
 
-<li>If you want to avoid hiccups deploying to most cloud providers, pick PostgreSQL</li>
-
-<li>If you have experience with deploying and developing with NoSQL, stick with MongoDB.</li>
-
-<li>If you need to store files or assets in the database, pick MongoDB.</li>
-
-<li>If you don’t like migrating your database after every change in your schema, pick MongoDB.</li>
-</ul>
-
-<p><img src="/assets/images/mongodbvspostgresql_large_image.png" alt="MongoDB VS PostgerSQL" /></p>
-
-<h3 id="structuring_data">Structuring Data</h3>
-
-<p>This app, like Twitter, allows users to follow the recent tweets of other users by following them. In an SQL environment the optimal method of creating this using a relationship table which create a new entry every time a user follows another. If the user stops following the other, the entry from the relationship table is destroyed. The final implementation requires using the Join command on the User table with the relationships table.</p>
-
-<p>One the other hand MongoDB implementation of this is relationship is much simpler. MongoDB allows developers to store un-structured data. This comparison is similar to that of a statically typed language and a dynamically typed language. The user doesn’t have to worry about specifying every little detail, and this allows for clean and precise code.</p>
-
-<p>In the MongoDB version of twitter, we store the ‘follow’ and ‘following’ relationships in the User’s table itself. Since MongoDB can natively understand arrays, we just store the ID of the follower, or the followed user, in the array. To avoid the performance penalty MongoDB even allows us to index the values within the array, so that they can be efficiently queried.</p>
-
-<p>Something else that I really like about MongoDB was that In typical SQL Rails app, whenever a developer updates the schema of the application, he has to run a migrate task to add or remove the changed columns. The use of MongoDB doesn’t require this so the developer doesn’t have to bring their development process to a complete stop.</p>
-
-<h3 id="deployment_to_heroku">Deployment to Heroku</h3>
-
-<p>Unfortunately for MongoDB, most cloud providers only provide SQL database alternatives by default – including Heroku and Amazon Elastic Beanstalk. Deploying the PostgreSQL was fairly straight forward – just a simple <em>git push</em>. Deploying the MongoDB alternative of the twitter clone was much tougher. For almost every platform numerous workarounds were required to get this app working. It seems like while NoSQL alternatives are available for developers, it’s almost always treated with a lower priority.</p>
-
-<p>Overall, while the MongoDB alternative of the app was better for modeling data, it required additional effort and code for deployment and additional features. Cloud providers tend to give preferences to users developing with traditional database and provide additional tools. At this point, Ruby on Rails framework itself has much more gems available for SQL databases than NoSQL databases.</p>
-
-<p>If you are interested in the MongoDB version of the app, you can check out that Github repository on <a href="https://github.com/Hammadk/RubyonRails-mongodb-twitter-clone">Github</a></p>
+<p><img src="/assets/images/lookrook.png" alt="LED" /></p>
 
 
         <div class="post-info">
           
-          <span class="glyphicon glyphicon-tags"></span>   Tags:
-          
-          
-
-
-  
-    
-    	<a href="/tags.html#SQL-ref"><li class="label label-info">SQL <span>(1)</span></li></a>
-    
-    	<a href="/tags.html#Ruby On Rails-ref"><li class="label label-info">Ruby On Rails <span>(1)</span></li></a>
-    
-    	<a href="/tags.html#MongoDB-ref"><li class="label label-info">MongoDB <span>(1)</span></li></a>
-    
-    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(3)</span></li></a>
-    
-  
-
-
-
-          
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 25 August 2013</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 10 October 2013</span>
             </div>
           </p>
 
           <ul class="pager">
             
-            <li class="previous"><a href="/blog/2012/09/06/we_live_in_public" title="We live in public"><span class="glyphicon glyphicon-arrow-left"></span> Previous : We live in public</a></li>
+            <li class="previous"><a href="/experiments/2013/08/25/mongodb-vs-sql" title="MongoDB vs PostgreSQL for Ruby on Rails"><span class="glyphicon glyphicon-arrow-left"></span> Previous : MongoDB vs PostgreSQL for Ruby on Rails</a></li>
             
             <!-- <li><a href="/archive.html">Archive</a></li> -->
             
-            <li class="next"><a href="/projects/2013/10/10/lookrook" title="LookRook: Find the best stylists in your hometown">Next: LookRook: Find the best stylists in your hometown <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+            <li class="next"><a href="/experiments/2014/01/16/the-there-be-light" title="Let there be Flashlight, an Android app">Next: Let there be Flashlight, an Android app <span class="glyphicon glyphicon-arrow-right"></span></a></li>
             
           </ul>
         </div>
@@ -226,10 +178,10 @@
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="MongoDB vs PostgreSQL for Ruby on Rails" data-via="hammadk" data-count="horizontal" data-url="/experiments/2013/08/25/mongodb-vs-sql" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="LookRook: Find the best stylists in your hometown" data-via="hammadk" data-count="horizontal" data-url="/projects/2013/10/10/lookrook" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=MongoDB vs PostgreSQL for Ruby on Rails" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=LookRook: Find the best stylists in your hometown" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->

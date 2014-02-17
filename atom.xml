@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2014-01-20T21:16:14-05:00</updated>
+ <updated>2014-02-17T04:52:08-05:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -31,6 +31,24 @@
 &lt;p&gt;It only requires two permissions: &lt;em&gt;Camera&lt;/em&gt; – which is needed for the camera LED, and &lt;em&gt;Vibrate&lt;/em&gt; – which is used for haptic feedback. The two things that are left to add are: a subtle button press effect, and a SOS feature where the LED pulses.&lt;/p&gt;
 
 &lt;p&gt;If you are interested in the app, you can check out the Github repository on &lt;a href=&quot;https://github.com/Hammadk/Let-there-be-flashlight-Android-app&quot;&gt;Github&lt;/a&gt;. It should be up on Google Play soon :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>LookRook: Find the best stylists in your hometown</title>
+   <link href="http://hammad.ca/projects/2013/10/10/lookrook"/>
+   <updated>2013-10-10T00:00:00-04:00</updated>
+   <id>http://hammad.ca/projects/2013/10/10/lookrook</id>
+   <content type="html">
+&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
+
+&lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
+
+&lt;p&gt;This is currently work in progress, but below is a little teaser:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lookrook.png&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  

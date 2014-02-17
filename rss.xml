@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2014-01-20T21:16:14-05:00</lastBuildDate>
-        <pubDate>2014-01-20T21:16:14-05:00</pubDate>
+        <lastBuildDate>2014-02-17T04:52:08-05:00</lastBuildDate>
+        <pubDate>2014-02-17T04:52:08-05:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -30,6 +30,24 @@
                 <link>http://hammad.ca/experiments/2014/01/16/the-there-be-light</link>
                 <guid>http://hammad.ca/experiments/2014/01/16/the-there-be-light</guid>
                 <pubDate>2014-01-16T00:00:00-05:00</pubDate>
+        </item>
+
+        <item>
+                <title>LookRook: Find the best stylists in your hometown</title>
+                <description>
+&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
+
+&lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
+
+&lt;p&gt;This is currently work in progress, but below is a little teaser:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/lookrook.png&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>http://hammad.ca/projects/2013/10/10/lookrook</link>
+                <guid>http://hammad.ca/projects/2013/10/10/lookrook</guid>
+                <pubDate>2013-10-10T00:00:00-04:00</pubDate>
         </item>
 
         <item>
