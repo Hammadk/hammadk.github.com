@@ -9,8 +9,8 @@ http://hammad.ca/rss.xml
 http://hammad.ca/sitemap.txt
 http://hammad.ca/tags.html
 
+http://hammad.ca/projects/2014/02/01/lookrook
 http://hammad.ca/experiments/2014/01/16/the-there-be-light
-http://hammad.ca/projects/2013/10/10/lookrook
 http://hammad.ca/experiments/2013/08/25/mongodb-vs-sql
 http://hammad.ca/blog/2012/09/06/we_live_in_public
 http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll
