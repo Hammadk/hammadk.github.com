@@ -50,6 +50,11 @@ body {
     max-width: 100%;
 }
 
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* Typograph */
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,10 +153,6 @@ a:hover {
     text-decoration: none;
 }
 
-.page-content {
-    clear: both;
-}
-
 time.label {
     float: right;
     clear: both;
@@ -173,14 +174,14 @@ time.label {
     clear: none;
 }
 
-.page-content iframe {
+.content iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin: 15px;
 }
 
-.page-content img, .page-content video {
+.content img, .content video {
     display: block;
     width: auto;
     margin-left: auto;
@@ -194,9 +195,11 @@ time.label {
     margin-left: 25px;
 }
 
+/* Styles for specific posts */
+
 .post-content {
     background: white;
-    padding: 2em 40px 1em 40px;
+    padding: 40px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #c5c5c5;
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
@@ -205,7 +208,14 @@ time.label {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+
 }
+
+.post-content > ul {
+  padding-left: 40px;
+}
+
+/* Styles for specific posts */
 
 .post-info {
     padding-top: 15px;
@@ -350,7 +360,6 @@ ul.intervals li.last {
 
 /* Page header tweaks */
 .page-header {
-    padding: 0px 20px 10px;
     margin: 0 0 20px 0;
     border-bottom: none;
 }
@@ -460,7 +469,7 @@ img.software-logo {
 .software-excerpt {
     height: auto;
     min-height: 260px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     max-width: 500px;
     min-width: 200px;
 }
@@ -494,6 +503,7 @@ img.software-logo {
   border-top: 1px solid #007ac2;
   position: relative;
   clear:both;
+  margin-top: 25px;
 }
 
 footer ul { list-style: none; text-align: center; padding: 0; }
@@ -501,36 +511,56 @@ footer ul li { display: inline-block; padding: 0px 10px;}
 
 /* Commenting stuff */
 #disqus_thread{
-    margin: 20px 0;
-    clear: both;
+  margin: 20px 0;
+  clear: both;
 }
 
 /* For smaller screens*/
 @media (max-width: 979px){
 
-    ul.events {
-        margin-top: -200px;
-    }
+  ul.events {
+    margin-top: -200px;
+  }
 
-    .bs-sidebar {
-        position: relative;
-    }
+  .bs-sidebar {
+    position: relative;
+  }
 
+  .software-excerpt {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
 }
 
 @media (max-width: 767px) {
 
-    #timeline-wrap {
-        display: none;
-    }
+  #timeline-wrap {
+    display: none;
+  }
 
-    /* TODO: fix this hack for moving the thumbnails to the left in smaller screen */
-    .col-md-12{
-      padding-left: 0;
-    }
+  /* TODO: fix this hack for moving the thumbnails to the left in smaller screen */
+  .col-md-12{
+    padding-left: 0;
+  }
 
-    h1 {
-      font-size: 2.5em;
-    }
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    box-shadow: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .software-excerpt {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
 
 }
