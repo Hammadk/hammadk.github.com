@@ -5,13 +5,13 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2014-02-22T21:33:29-05:00</lastBuildDate>
-        <pubDate>2014-02-22T21:33:29-05:00</pubDate>
+        <lastBuildDate>2014-03-04T22:44:02-05:00</lastBuildDate>
+        <pubDate>2014-03-04T22:44:02-05:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>LookRook: Find the best stylists in your hometown</title>
+                <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
                 <description>
 &lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
 &lt;!--more--&gt;

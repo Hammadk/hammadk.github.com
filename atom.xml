@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2014-02-22T21:33:29-05:00</updated>
+ <updated>2014-03-04T22:44:02-05:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>LookRook: Find the best stylists in your hometown</title>
+   <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
    <link href="http://hammad.ca/projects/2014/02/01/lookrook"/>
    <updated>2014-02-01T00:00:00-05:00</updated>
    <id>http://hammad.ca/projects/2014/02/01/lookrook</id>
