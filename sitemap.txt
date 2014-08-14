@@ -1,10 +1,10 @@
 
 http://hammad.ca/404.html
 http://hammad.ca/atom.xml
-http://hammad.ca/blog/index.html
 http://hammad.ca/experiments/index.html
-http://hammad.ca/index.html
+http://hammad.ca/blog/index.html
 http://hammad.ca/projects/index.html
+http://hammad.ca/index.html
 http://hammad.ca/rss.xml
 http://hammad.ca/sitemap.txt
 http://hammad.ca/tags.html

@@ -5,21 +5,22 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2014-03-19T18:17:48-04:00</lastBuildDate>
-        <pubDate>2014-03-19T18:17:48-04:00</pubDate>
+        <lastBuildDate>2014-08-14T19:58:32-04:00</lastBuildDate>
+        <pubDate>2014-08-14T19:58:32-04:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
-                <description>
-&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
+                <description>&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown. &lt;/p&gt;
+
 &lt;!--more--&gt;
-&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
+
+&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists. &lt;/p&gt;
 
 &lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
 
-&lt;p&gt;This is currently work in progress, but below is a little teaser:&lt;/p&gt;
+&lt;p&gt;This is currently work in progress, but below is a little teaser: &lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/lookrook.png&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
 </description>
@@ -30,20 +31,21 @@
 
         <item>
                 <title>Let there be Flashlight, an Android app</title>
-                <description>
-&lt;p&gt;An ad-free, tablet optimized, Android flashlight app that doesn’t send your data to space.&lt;/p&gt;
+                <description>&lt;p&gt;An ad-free, tablet optimized, Android flashlight app that doesn’t send your data to space.&lt;/p&gt;
+
 &lt;!--more--&gt;
-&lt;h3 id=&quot;does_the_world_need_another_flashlight_app&quot;&gt;Does the world need another flashlight app?&lt;/h3&gt;
 
-&lt;p&gt;Last month, I found out that one of my favorite apps was &lt;a href=&quot;http://gizmodo.com/popular-android-flashlight-app-straight-up-lied-about-s-1477916270&quot;&gt;selling&lt;/a&gt; personal data to advertisers. I was fine with the on-screen ads, but this made me think on an open source app.&lt;/p&gt;
+&lt;h3 id=&quot;does-the-world-need-another-flashlight-app&quot;&gt;Does the world need another flashlight app?&lt;/h3&gt;
 
-&lt;p&gt;The idea was simple: make a flash light light app that does one thing really well, be a flashlight. That’s it! No Ads. No bells and whistles. Since this app is so simple, it is fairly easy to optimize for tablets as well. So here is what I have so far:&lt;/p&gt;
+&lt;p&gt;Last month, I found out that one of my favorite apps was &lt;a href=&quot;http://gizmodo.com/popular-android-flashlight-app-straight-up-lied-about-s-1477916270&quot;&gt;selling&lt;/a&gt; personal data to advertisers. I was fine with the on-screen ads, but this made me think on an open source app. &lt;/p&gt;
+
+&lt;p&gt;The idea was simple: make a flash light light app that does one thing really well, be a flashlight. That’s it! No Ads. No bells and whistles. Since this app is so simple, it is fairly easy to optimize for tablets as well. So here is what I have so far: &lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/app_screen_on.png&quot; alt=&quot;Let there be flash light&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It only requires two permissions: &lt;em&gt;Camera&lt;/em&gt; – which is needed for the camera LED, and &lt;em&gt;Vibrate&lt;/em&gt; – which is used for haptic feedback. The two things that are left to add are: a subtle button press effect, and a SOS feature where the LED pulses.&lt;/p&gt;
+&lt;p&gt;It only requires two permissions: &lt;em&gt;Camera&lt;/em&gt; – which is needed for the camera LED, and &lt;em&gt;Vibrate&lt;/em&gt; – which is used for haptic feedback. The two things that are left to add are: a subtle button press effect, and a SOS feature where the LED pulses. &lt;/p&gt;
 
-&lt;p&gt;If you are interested in the app, you can check out the Github repository on &lt;a href=&quot;https://github.com/Hammadk/Let-there-be-flashlight-Android-app&quot;&gt;Github&lt;/a&gt;. It should be up on Google Play soon :)&lt;/p&gt;
+&lt;p&gt;If you are interested in the app, you can check out the Github repository on &lt;a href=&quot;https://github.com/Hammadk/Let-there-be-flashlight-Android-app&quot;&gt;Github&lt;/a&gt;. It should be up on Google Play soon :)   &lt;/p&gt;
 </description>
                 <link>http://hammad.ca/experiments/2014/01/16/the-there-be-light</link>
                 <guid>http://hammad.ca/experiments/2014/01/16/the-there-be-light</guid>
@@ -52,29 +54,25 @@
 
         <item>
                 <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
-                <description>
-&lt;p&gt;I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.&lt;/p&gt;
+                <description>&lt;p&gt;I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on &lt;a href=&quot;http://www.michaelhartl.com/&quot;&gt;Michael Hartl’s&lt;/a&gt; Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;. Here is what I learned:&lt;/p&gt;
 
 &lt;h3 id=&quot;tldr&quot;&gt;TLDR&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;If you want to avoid hiccups with third party tools (i.e., gems), pick PostgreSQL&lt;/li&gt;
-
-&lt;li&gt;If you want to avoid hiccups deploying to most cloud providers, pick PostgreSQL&lt;/li&gt;
-
-&lt;li&gt;If you have experience with deploying and developing with NoSQL, stick with MongoDB.&lt;/li&gt;
-
-&lt;li&gt;If you need to store files or assets in the database, pick MongoDB.&lt;/li&gt;
-
-&lt;li&gt;If you don’t like migrating your database after every change in your schema, pick MongoDB.&lt;/li&gt;
+  &lt;li&gt;If you want to avoid hiccups with third party tools (i.e., gems), pick PostgreSQL&lt;/li&gt;
+  &lt;li&gt;If you want to avoid hiccups deploying to most cloud providers, pick PostgreSQL&lt;/li&gt;
+  &lt;li&gt;If you have experience with deploying and developing with NoSQL, stick with MongoDB.&lt;/li&gt;
+  &lt;li&gt;If you need to store files or assets in the database, pick MongoDB.&lt;/li&gt;
+  &lt;li&gt;If you don’t like migrating your database after every change in your schema, pick MongoDB.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/mongodbvspostgresql_large_image.png&quot; alt=&quot;MongoDB VS PostgerSQL&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;structuring_data&quot;&gt;Structuring Data&lt;/h3&gt;
-
+&lt;h3 id=&quot;structuring-data&quot;&gt;Structuring Data&lt;/h3&gt;
 &lt;p&gt;This app, like Twitter, allows users to follow the recent tweets of other users by following them. In an SQL environment the optimal method of creating this using a relationship table which create a new entry every time a user follows another. If the user stops following the other, the entry from the relationship table is destroyed. The final implementation requires using the Join command on the User table with the relationships table.&lt;/p&gt;
 
 &lt;p&gt;One the other hand MongoDB implementation of this is relationship is much simpler. MongoDB allows developers to store un-structured data. This comparison is similar to that of a statically typed language and a dynamically typed language. The user doesn’t have to worry about specifying every little detail, and this allows for clean and precise code.&lt;/p&gt;
@@ -83,8 +81,7 @@
 
 &lt;p&gt;Something else that I really like about MongoDB was that In typical SQL Rails app, whenever a developer updates the schema of the application, he has to run a migrate task to add or remove the changed columns. The use of MongoDB doesn’t require this so the developer doesn’t have to bring their development process to a complete stop.&lt;/p&gt;
 
-&lt;h3 id=&quot;deployment_to_heroku&quot;&gt;Deployment to Heroku&lt;/h3&gt;
-
+&lt;h3 id=&quot;deployment-to-heroku&quot;&gt;Deployment to Heroku&lt;/h3&gt;
 &lt;p&gt;Unfortunately for MongoDB, most cloud providers only provide SQL database alternatives by default – including Heroku and Amazon Elastic Beanstalk. Deploying the PostgreSQL was fairly straight forward – just a simple &lt;em&gt;git push&lt;/em&gt;. Deploying the MongoDB alternative of the twitter clone was much tougher. For almost every platform numerous workarounds were required to get this app working. It seems like while NoSQL alternatives are available for developers, it’s almost always treated with a lower priority.&lt;/p&gt;
 
 &lt;p&gt;Overall, while the MongoDB alternative of the app was better for modeling data, it required additional effort and code for deployment and additional features. Cloud providers tend to give preferences to users developing with traditional database and provide additional tools. At this point, Ruby on Rails framework itself has much more gems available for SQL databases than NoSQL databases.&lt;/p&gt;
@@ -99,18 +96,22 @@
         <item>
                 <title>We live in public</title>
                 <description>
-&lt;p&gt;In December of 1999, &lt;a href=&quot;http://en.wikipedia.org/wiki/Josh_Harris_(internet&quot;&gt;Josh Harris&lt;/a&gt; carried out an elaborate social experiment which required 100 people to live in a human terrarium under New York city while cameras watched their every move.&lt;/p&gt;
+&lt;p&gt;In December of 1999, &lt;a href=&quot;http://en.wikipedia.org/wiki/Josh_Harris&quot;&gt;Josh Harris&lt;/a&gt; carried out an elaborate social experiment which required 100 people to live in a human terrarium under New York city while cameras watched their every move.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;This experiment envisioned a world without privacy and controls because of advances in technology – and It didn’t take long before everything fell apart. The NYPD, who were worried that this was a millennial cult, forced this experiment to shut down. I think that like many other bizarre ideas during the dot-com bubble, these concerns about privacy were a few years ahead of their time.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/we_live_in_public.jpg&quot; alt=&quot;We live in public&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Fast-forward 10 years, &lt;a href=&quot;http://www.youtube.com/watch?v=_XSTwfdFwIY&quot;&gt;‘We Live in Public’&lt;/a&gt;, a documentary about this social experiment won the Grand Jury Prize award at the Sundance film festival; this shows how privacy is becoming more important, as people have less of it. I am fascinated by how society will adopt as our lives become transparent. I wonder how people will react. Will it be as bad as the reactions from this documentary? Personally, I am becoming more used to it.&lt;/p&gt;
+&lt;p&gt;Fast-forward 10 years, &lt;a href=&quot;http://www.youtube.com/watch?v=_XSTwfdFwIY&quot;&gt;‘We Live in Public’&lt;/a&gt;, a documentary about this social experiment won the Grand Jury Prize award at the Sundance film festival; this shows how privacy is becoming more important, as people have less of it. I am fascinated by how society will adopt as our lives become transparent. I wonder how people will react. Will it be as bad as the reactions from this documentary? Personally, I am becoming more used to it. &lt;/p&gt;
 
-&lt;p&gt;Lately I have become indifferent to knowing that companies collect my information. Well, I obviously care for my privacy but I almost find it comforting to know that it’s really a script or some algorithm that’s examining my information (to show me some ads), instead of a person. But hey, my opinion of technology is way more optimistic than most people. I guess only time will tell. New technologies like augmented reality products will really change the way people interact with everyone else, and I think that eventually people will get used to it and move on.&lt;/p&gt;
+&lt;p&gt;Lately I have become indifferent to knowing that companies collect my information. Well, I obviously care for my privacy but I almost find it comforting to know that it’s really a script or some algorithm that’s examining my information (to show me some ads), instead of a person. But hey, my opinion of technology is way more optimistic than most people. I guess only time will tell. New technologies like augmented reality products will really change the way people interact with everyone else, and I think that eventually people will get used to it and move on.  &lt;/p&gt;
 
 &lt;p&gt;If you are up for watching a creepily awesome video about augmented reality, you will loooove this:&lt;/p&gt;
-&lt;iframe frameborder=&#39;0&#39; height=&#39;360&#39; src=&#39;//www.youtube.com/embed/lK_cdkpazjI&#39; width=&#39;640&#39;&gt; &lt;/iframe&gt;</description>
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/lK_cdkpazjI&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+</description>
                 <link>http://hammad.ca/blog/2012/09/06/we_live_in_public</link>
                 <guid>http://hammad.ca/blog/2012/09/06/we_live_in_public</guid>
                 <pubDate>2012-09-06T00:00:00-04:00</pubDate>
@@ -120,31 +121,34 @@
                 <title>Wordpress to Jekyll</title>
                 <description>
 &lt;p&gt;Last weekend, I moved this website from &lt;a href=&quot;http://wordpress.com&quot;&gt;WordPress&lt;/a&gt; to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wordpressvsjekyll.jpg&quot; alt=&quot;Wordpress vs Jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;small&gt;Theatrical Poster from the Library of Congress, Image Library&lt;/small&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;small&gt;Theatrical Poster from the Library of Congress, Image Library&lt;/small&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Anyone who has used WordPress, or any other CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.&lt;/p&gt;
+&lt;p&gt;Anyone who has used WordPress, or any other  CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.&lt;/p&gt;
 
 &lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
 
-&lt;p&gt;One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files &lt;em&gt;anywhere&lt;/em&gt; I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers – this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.&lt;/p&gt;
+&lt;p&gt;One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files &lt;em&gt;anywhere&lt;/em&gt; I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers –  this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.&lt;/p&gt;
 
 &lt;h2 id=&quot;deploying&quot;&gt;Deploying&lt;/h2&gt;
 
 &lt;p&gt;Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;#Edit the files and have Jekyll update the deployment folder&lt;/span&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#Edit the files and have Jekyll update the deployment folder&lt;/span&gt;
 jekyll build
-&lt;span class=&#39;nb&#39;&gt;cd &lt;/span&gt;_site
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_site
 git add .
 git commit
-git push &lt;span class=&#39;c&#39;&gt;#That&amp;#39;s it!&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+git push &lt;span class=&quot;c&quot;&gt;#That&amp;#39;s it!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 </description>
                 <link>http://hammad.ca/blog/2012/09/02/Wordpress-to-Jekyll</link>
@@ -154,14 +158,15 @@ git push &lt;span class=&#39;c&#39;&gt;#That&amp;#39;s it!&lt;/span&gt;
 
         <item>
                 <title>Sosmos: An RSS feed aggregator</title>
-                <description>
-&lt;p&gt;In 2009 I developed Sosmos, a web app that pulled content from different websites via RSS feeds and organized the results in different categories.&lt;/p&gt;
+                <description>&lt;p&gt;In 2009 I developed Sosmos, a web app that pulled content from different websites via RSS feeds and organized the results in different categories.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;I meant for this to be a personal home page but planned on later expanding it to allow others to pick their own RSS feeds. In mid 2010 I had a few thousand regular users but eventually there was a sharp decline because of better web apps like Netvibes.com and Google Reader.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/sosmos_bg.jpg&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Sosmos.com, in web terms, has since been sunset. If you are interested in a great app that lets you pull content from different websites I recommend &lt;a href=&#39;http://www.netvibes.com/en&#39; target=&#39;_blank&#39; title=&#39;NetVibes&#39;&gt;Netvibes&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Sosmos.com, in web terms, has since been sunset. If you are interested in a great app that lets you pull content from different websites I recommend &lt;a title=&quot;NetVibes&quot; href=&quot;http://www.netvibes.com/en&quot; target=&quot;_blank&quot;&gt;Netvibes&lt;/a&gt;!&lt;/p&gt;
 </description>
                 <link>http://hammad.ca/projects/2011/12/28/sosmos</link>
                 <guid>http://hammad.ca/projects/2011/12/28/sosmos</guid>
@@ -170,17 +175,20 @@ git push &lt;span class=&#39;c&#39;&gt;#That&amp;#39;s it!&lt;/span&gt;
 
         <item>
                 <title>Cobra : A flexible gaming interface</title>
-                <description>
-&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector.&lt;/p&gt;
+                <description>&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/cobra_300x459.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This was a super exciting project and I got to work with &lt;a href=&quot;http://toastygames.com/parallax/&quot;&gt;Zi Ye&lt;/a&gt; on different iterations of it — imagine my excitement when &lt;a href=&quot;http://news.cnet.com/8301-17938_105-20003598-1.html&quot;&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href=&quot;/media/pdf/cobra.pdf&quot;&gt;here&lt;/a&gt;, or on ACM &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=1754154&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was a super exciting project and I got to work with &lt;a href=&quot;http://toastygames.com/parallax/&quot;&gt;Zi Ye&lt;/a&gt; on different iterations of it —  imagine my excitement when &lt;a href=&quot;http://news.cnet.com/8301-17938_105-20003598-1.html&quot;&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href=&quot;/media/pdf/cobra.pdf&quot;&gt;here&lt;/a&gt;, or on ACM &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=1754154&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Abstract from the paper:&lt;/p&gt;
+
 &lt;blockquote&gt;
 We discuss Cobra, a handheld peripheral for computer games that applies flexible display design principles to provide a highly intuitive, mobile gaming experience. Cobra is a flexible cardboard interface that uses bends as input to the gaming device. Images are provided through projection with a shoulder-mounted pico projector. In this paper, we will present our prototype, the motives behind it, and its immediate applications.
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+</description>
                 <link>http://hammad.ca/projects/2011/12/27/cobra</link>
                 <guid>http://hammad.ca/projects/2011/12/27/cobra</guid>
                 <pubDate>2011-12-27T00:00:00-05:00</pubDate>
@@ -188,9 +196,10 @@ We discuss Cobra, a handheld peripheral for computer games that applies flexible
 
         <item>
                 <title>CEEC: Environmental conference</title>
-                <description>
-&lt;p&gt;CEEC is organized by a group that brings different perspectives together to discuss solutions to the current environmental crisis.&lt;/p&gt;
+                <description>&lt;p&gt;CEEC is organized by a group that brings different perspectives together to discuss solutions to the current environmental crisis.&lt;/p&gt;
+
 &lt;!--more--&gt;
+
 &lt;p&gt;I was a member of the group that organized CEEC in 2010 and I developed their web presence for this that year. CEEC 2010 was an amazing opportunity to meet entrepreneurs in the energy field an I think it may have been responsible for my save-the-world-esque ambitions.&lt;/p&gt;
 
 &lt;p&gt;I setup an app that accepted payments from Paypal for online registration and created a website that I had been obsessing over for a while.&lt;/p&gt;
