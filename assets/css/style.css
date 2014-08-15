@@ -15,6 +15,8 @@ body {
   font-style: normal;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
 body {
     font-size: 15px;
     font-family: 'open_sansregular', "Helvetica", "Arial", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
@@ -317,7 +319,7 @@ ul.events li {
     border: 1px solid #ddd;
     color: #333;
     margin-bottom: 6px;
-    padding: 3px 0;
+    padding: 5px;
     position: relative;
     text-align: center;
 }
@@ -518,6 +520,10 @@ footer ul li { display: inline-block; padding: 0px 10px;}
 /* For smaller screens*/
 @media (max-width: 979px){
 
+  #timeline-wrap {
+    display: none;
+  }
+
   ul.events {
     margin-top: -200px;
   }
@@ -534,9 +540,6 @@ footer ul li { display: inline-block; padding: 0px 10px;}
 
 @media (max-width: 767px) {
 
-  #timeline-wrap {
-    display: none;
-  }
 
   /* TODO: fix this hack for moving the thumbnails to the left in smaller screen */
   .col-md-12{
