@@ -1,6 +1,5 @@
 /* Blue used: 007ac2 */
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -58,11 +57,10 @@ ul {
 /* Typograph */
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', serif;
     font-weight: normal;
     line-height: 1.55em;
     color: #777;
-    font-family: 'Cinzel', sans-serif;
-    letter-spacing: -1px;
 }
 
 h1 {
@@ -70,7 +68,6 @@ h1 {
     text-align: center;
     font-size: 3.5em;
     margin-top: 35px;
-    font-weight: 500;
 }
 h1:first-letter { font-size: 1.5em; }
 
@@ -374,6 +371,8 @@ ul.intervals li.last {
 }
 
 .navbar {
+    font-family: 'Lato', 'open_sansregular', "Helvetica", "Arial", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+    font-size: 15px;
     min-height: 45px;
     padding-left: 20px;
     padding-right: 20px;
@@ -393,10 +392,6 @@ ul.intervals li.last {
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     margin-bottom: 0px;
-}
-
-.navbar {
-    font-size: 15px;
 }
 
 .navbar .navbar-brand {
