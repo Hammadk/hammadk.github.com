@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2015-02-23T11:48:29-05:00</updated>
+ <updated>2015-03-08T18:50:31-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -33,9 +33,9 @@
  
  <entry>
    <title>Let there be Flashlight, an Android app</title>
-   <link href="http://hammad.ca/experiments/2014/01/16/the-there-be-light"/>
+   <link href="http://hammad.ca/projects/2014/01/16/the-there-be-light"/>
    <updated>2014-01-16T00:00:00-05:00</updated>
-   <id>http://hammad.ca/experiments/2014/01/16/the-there-be-light</id>
+   <id>http://hammad.ca/projects/2014/01/16/the-there-be-light</id>
    <content type="html">&lt;p&gt;An ad-free, tablet optimized, Android flashlight app that doesn’t send your data to space.&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -56,9 +56,9 @@
  
  <entry>
    <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
-   <link href="http://hammad.ca/experiments/2013/08/25/mongodb-vs-sql"/>
+   <link href="http://hammad.ca/blog/2013/08/25/mongodb-vs-sql"/>
    <updated>2013-08-25T00:00:00-04:00</updated>
-   <id>http://hammad.ca/experiments/2013/08/25/mongodb-vs-sql</id>
+   <id>http://hammad.ca/blog/2013/08/25/mongodb-vs-sql</id>
    <content type="html">&lt;p&gt;I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.&lt;/p&gt;
 
 &lt;!--more--&gt;
