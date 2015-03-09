@@ -5,22 +5,49 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2015-03-08T19:17:13-04:00</lastBuildDate>
-        <pubDate>2015-03-08T19:17:13-04:00</pubDate>
+        <lastBuildDate>2015-03-08T22:21:53-04:00</lastBuildDate>
+        <pubDate>2015-03-08T22:21:53-04:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
-                <description>&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown. &lt;/p&gt;
+                <title>Confirm before pushing to Git master branch</title>
+                <description>
+&lt;p&gt;If you are worried about unintentionally pushing to a master branch in &lt;code&gt;Git&lt;/code&gt; you
+can get a confirmation warning using a &lt;code&gt;pre-push&lt;/code&gt; hook.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists. &lt;/p&gt;
+&lt;p&gt;I have heard horror stories about developers accidentally force pushing to the
+master branch of their project. This can be very difficult to revert, but
+luckily is can be avoided using a Git pre-push hook.&lt;/p&gt;
+
+&lt;p&gt;A pre-push hook is just a script that lives in the &lt;code&gt;.git/hooks/*&lt;/code&gt; directory.
+It is run every time you push to your Git repository. I have edited the script
+to prompt you for a confirmation before you push to the master branch. &lt;code&gt;Are you sure you want to push to &quot;master&quot; ? (y/n):&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Something to keep in mind is that you have to make the script executable so: &lt;code&gt;chmod +x .git/hooks/pre-hook&lt;/code&gt;. To try this out
+switch the master branch, and after confirming that you haven’t
+made any changes, try &lt;code&gt;git push&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-code&quot;&gt;The code:&lt;/h3&gt;
+&lt;script src=&quot;https://gist.github.com/0a196dd1ac5ad971df1a.js&quot;&gt; &lt;/script&gt;
+
+</description>
+                <link>http://hammad.ca/blog/2015/03/08/confirm-before-pushing-to-master-branch</link>
+                <guid>http://hammad.ca/blog/2015/03/08/confirm-before-pushing-to-master-branch</guid>
+                <pubDate>2015-03-08T00:00:00-05:00</pubDate>
+        </item>
+
+        <item>
+                <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
+                <description>&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
 
 &lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
-
-&lt;p&gt;This is currently work in progress, but below is a little teaser: &lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/lookrook.png&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
 </description>
@@ -91,30 +118,6 @@
                 <link>http://hammad.ca/blog/2013/08/25/mongodb-vs-sql</link>
                 <guid>http://hammad.ca/blog/2013/08/25/mongodb-vs-sql</guid>
                 <pubDate>2013-08-25T00:00:00-04:00</pubDate>
-        </item>
-
-        <item>
-                <title>We live in public</title>
-                <description>
-&lt;p&gt;In December of 1999, &lt;a href=&quot;http://en.wikipedia.org/wiki/Josh_Harris&quot;&gt;Josh Harris&lt;/a&gt; carried out an elaborate social experiment which required 100 people to live in a human terrarium under New York city while cameras watched their every move.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;This experiment envisioned a world without privacy and controls because of advances in technology – and It didn’t take long before everything fell apart. The NYPD, who were worried that this was a millennial cult, forced this experiment to shut down. I think that like many other bizarre ideas during the dot-com bubble, these concerns about privacy were a few years ahead of their time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/we_live_in_public.jpg&quot; alt=&quot;We live in public&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Fast-forward 10 years, &lt;a href=&quot;http://www.youtube.com/watch?v=_XSTwfdFwIY&quot;&gt;‘We Live in Public’&lt;/a&gt;, a documentary about this social experiment won the Grand Jury Prize award at the Sundance film festival; this shows how privacy is becoming more important, as people have less of it. I am fascinated by how society will adopt as our lives become transparent. I wonder how people will react. Will it be as bad as the reactions from this documentary? Personally, I am becoming more used to it. &lt;/p&gt;
-
-&lt;p&gt;Lately I have become indifferent to knowing that companies collect my information. Well, I obviously care for my privacy but I almost find it comforting to know that it’s really a script or some algorithm that’s examining my information (to show me some ads), instead of a person. But hey, my opinion of technology is way more optimistic than most people. I guess only time will tell. New technologies like augmented reality products will really change the way people interact with everyone else, and I think that eventually people will get used to it and move on.  &lt;/p&gt;
-
-&lt;p&gt;If you are up for watching a creepily awesome video about augmented reality, you will loooove this:&lt;/p&gt;
-
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/lK_cdkpazjI&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
-</description>
-                <link>http://hammad.ca/blog/2012/09/06/we_live_in_public</link>
-                <guid>http://hammad.ca/blog/2012/09/06/we_live_in_public</guid>
-                <pubDate>2012-09-06T00:00:00-04:00</pubDate>
         </item>
 
         <item>

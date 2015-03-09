@@ -6,7 +6,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>We live in public | Hammad.ca </title>
+    <title>Confirm before pushing to Git master branch | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -117,7 +117,7 @@
 
 
 <div class="page-header">
-  <h1>We live in public </h1>
+  <h2>Confirm before pushing to Git master branch </h2>
 </div>
 
 <div class="row post-full page-content">
@@ -126,21 +126,26 @@
       <div class="content post-content">
 
         
-<p>In December of 1999, <a href="http://en.wikipedia.org/wiki/Josh_Harris">Josh Harris</a> carried out an elaborate social experiment which required 100 people to live in a human terrarium under New York city while cameras watched their every move.</p>
+<p>If you are worried about unintentionally pushing to a master branch in <code>Git</code> you
+can get a confirmation warning using a <code>pre-push</code> hook.</p>
 
 <!--more-->
 
-<p>This experiment envisioned a world without privacy and controls because of advances in technology – and It didn’t take long before everything fell apart. The NYPD, who were worried that this was a millennial cult, forced this experiment to shut down. I think that like many other bizarre ideas during the dot-com bubble, these concerns about privacy were a few years ahead of their time.</p>
+<p>I have heard horror stories about developers accidentally force pushing to the
+master branch of their project. This can be very difficult to revert, but
+luckily is can be avoided using a Git pre-push hook.</p>
 
-<p><img src="/assets/images/we_live_in_public.jpg" alt="We live in public" /></p>
+<p>A pre-push hook is just a script that lives in the <code>.git/hooks/*</code> directory.
+It is run every time you push to your Git repository. I have edited the script
+to prompt you for a confirmation before you push to the master branch. <code>Are you sure you want to push to "master" ? (y/n):</code></p>
 
-<p>Fast-forward 10 years, <a href="http://www.youtube.com/watch?v=_XSTwfdFwIY">‘We Live in Public’</a>, a documentary about this social experiment won the Grand Jury Prize award at the Sundance film festival; this shows how privacy is becoming more important, as people have less of it. I am fascinated by how society will adopt as our lives become transparent. I wonder how people will react. Will it be as bad as the reactions from this documentary? Personally, I am becoming more used to it. </p>
+<p>Something to keep in mind is that you have to make the script executable so: <code>chmod +x .git/hooks/pre-hook</code>. To try this out
+switch the master branch, and after confirming that you haven’t
+made any changes, try <code>git push</code>.</p>
 
-<p>Lately I have become indifferent to knowing that companies collect my information. Well, I obviously care for my privacy but I almost find it comforting to know that it’s really a script or some algorithm that’s examining my information (to show me some ads), instead of a person. But hey, my opinion of technology is way more optimistic than most people. I guess only time will tell. New technologies like augmented reality products will really change the way people interact with everyone else, and I think that eventually people will get used to it and move on.  </p>
+<h3 id="the-code">The code:</h3>
+<script src="https://gist.github.com/0a196dd1ac5ad971df1a.js"> </script>
 
-<p>If you are up for watching a creepily awesome video about augmented reality, you will loooove this:</p>
-
-<iframe width="640" height="360" src="//www.youtube.com/embed/lK_cdkpazjI" frameborder="0"> </iframe>
 
 
         <div class="post-info">
@@ -152,9 +157,7 @@
 
   
     
-    	<a href="/tags.html#privacy-ref"><li class="label label-info">privacy <span>(1)</span></li></a>
-    
-    	<a href="/tags.html#ethics-ref"><li class="label label-info">ethics <span>(1)</span></li></a>
+    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(4)</span></li></a>
     
   
 
@@ -163,17 +166,15 @@
           
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 06 September 2012</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 08 March 2015</span>
             </div>
           </p>
 
           <ul class="pager">
             
-            <li class="previous"><a href="/blog/2012/09/02/Wordpress-to-Jekyll" title="Wordpress to Jekyll"><span class="glyphicon glyphicon-arrow-left"></span> Previous : Wordpress to Jekyll</a></li>
+            <li class="previous"><a href="/projects/2014/02/01/lookrook" title="LookRook: A Rails app for finding the best stylists in your hometown"><span class="glyphicon glyphicon-arrow-left"></span> Previous : LookRook: A Rails app for finding the best stylists in your hometown</a></li>
             
             <!-- <li><a href="/archive.html">Archive</a></li> -->
-            
-            <li class="next"><a href="/blog/2013/08/25/mongodb-vs-sql" title="MongoDB vs PostgreSQL for Ruby on Rails">Next: MongoDB vs PostgreSQL for Ruby on Rails <span class="glyphicon glyphicon-arrow-right"></span></a></li>
             
           </ul>
         </div>
@@ -195,10 +196,10 @@
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="We live in public" data-via="hammadk" data-count="horizontal" data-url="/blog/2012/09/06/we_live_in_public" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Confirm before pushing to Git master branch" data-via="hammadk" data-count="horizontal" data-url="/blog/2015/03/08/confirm-before-pushing-to-master-branch" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=We live in public" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Confirm before pushing to Git master branch" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->
