@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2015-03-14T14:55:30-04:00</lastBuildDate>
-        <pubDate>2015-03-14T14:55:30-04:00</pubDate>
+        <lastBuildDate>2015-03-14T15:51:43-04:00</lastBuildDate>
+        <pubDate>2015-03-14T15:51:43-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -17,6 +17,8 @@
 can get a confirmation warning using a &lt;code&gt;pre-push&lt;/code&gt; hook.&lt;/p&gt;
 
 &lt;!--more--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/git-push-force.jpg&quot; alt=&quot;git push force&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have heard horror stories about developers accidentally force pushing to the
 master branch of their project. This can be very difficult to revert, but
