@@ -6,7 +6,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>Sosmos: An RSS feed aggregator | Hammad.ca </title>
+    <title>Confirm before pushing to Git master branch | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -73,20 +73,20 @@
     
       
       	
-      	<li><a href="/blog/index.html"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
       	
       
     
   
     
       
+      	
+      	<li><a href="/blog/"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	
+      
     
   
     
-      
-      	
-      	<li><a href="/projects/index.html"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
-      	
       
     
   
@@ -117,7 +117,7 @@
 
 
 <div class="page-header">
-  <h2>Sosmos: An RSS feed aggregator </h2>
+  <h2>Confirm before pushing to Git master branch </h2>
 </div>
 
 <div class="row post-full page-content">
@@ -125,34 +125,72 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="content post-content">
 
-        <p>In 2009 I developed Sosmos, a web app that pulled content from different websites via RSS feeds and organized the results in different categories.</p>
+        
+<p>If you are worried about unintentionally pushing to a master branch in <code class="highlighter-rouge">Git</code> you
+can get a confirmation warning using a <code class="highlighter-rouge">pre-push</code> hook.</p>
 
 <!--more-->
 
-<p>I meant for this to be a personal home page but planned on later expanding it to allow others to pick their own RSS feeds. In mid 2010 I had a few thousand regular users but eventually there was a sharp decline because of better web apps like Netvibes.com and Google Reader.</p>
+<p><img src="/assets/images/git-push-force.jpg" alt="git push force" /></p>
 
-<p><img src="/assets/images/sosmos_bg.jpg" alt="LED" /></p>
+<p>I have heard horror stories about developers accidentally force pushing to the
+master branch of their project. This can be very difficult to revert, but
+luckily this can be avoided using a Git pre-push hook.</p>
 
-<p>Sosmos.com, in web terms, has since been sunset. If you are interested in a great app that lets you pull content from different websites I recommend <a title="NetVibes" href="http://www.netvibes.com/en" target="_blank">Netvibes</a>!</p>
+<p>A pre-push hook is just a script that lives in the <code class="highlighter-rouge">.git/hooks/*</code> directory.
+It is run every time you push to your Git repository. I have edited the script
+to prompt you for a confirmation before you push to the master branch. <code class="highlighter-rouge">Are you sure you want to push to "master" ? (y/n):</code></p>
+
+<p>Something to keep in mind is that you have to make the script executable so: <code class="highlighter-rouge">chmod +x .git/hooks/pre-hook</code>. To try this out
+switch the master branch, and after confirming that you haven’t
+made any changes, try <code class="highlighter-rouge">git push</code>.</p>
+
+<h3 id="the-code">The code:</h3>
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/0a196dd1ac5ad971df1a.js"> </script>
+
 
 
         <div class="post-info">
           
+          <span class="glyphicon glyphicon-tags"></span>   Tags:
+          
+          
+
+
+  
+    
+    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(3)</span></li></a>
+    
+  
+
+
+
+          
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 28 December 2011</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 08 March 2015</span>
             </div>
           </p>
 
-          <ul class="pager">
-            
-            <li class="previous"><a href="/projects/2011/12/27/cobra" title="Cobra : A flexible gaming interface"><span class="glyphicon glyphicon-arrow-left"></span> Previous : Cobra : A flexible gaming interface</a></li>
-            
-            <!-- <li><a href="/archive.html">Archive</a></li> -->
-            
-            <li class="next"><a href="/blog/2012/09/02/Wordpress-to-Jekyll" title="Wordpress to Jekyll">Next: Wordpress to Jekyll <span class="glyphicon glyphicon-arrow-right"></span></a></li>
-            
-          </ul>
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-left"></span> Previous:
+            <a href="/projects/2014/02/01/lookrook" title="LookRook: A Rails app for finding the best stylists in your hometown">
+              LookRook: A Rails app for finding the best stylists in your hometown
+            </a>
+          </p>
+          
+
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-right"></span> Next:
+            <a href="/projects/2016/02/15/trends-watch" title="Trends Watch">
+              Trends Watch
+            </a>
+          </p>
+          
         </div>
       </div>
     </div> <!-- Main content -->
@@ -172,10 +210,10 @@
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Sosmos: An RSS feed aggregator" data-via="hammadk" data-count="horizontal" data-url="/projects/2011/12/28/sosmos" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Confirm before pushing to Git master branch" data-via="hammadk" data-count="horizontal" data-url="/blog/2015/03/08/confirm-before-pushing-to-master-branch" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Sosmos: An RSS feed aggregator" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Confirm before pushing to Git master branch" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->

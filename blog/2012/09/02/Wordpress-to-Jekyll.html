@@ -6,7 +6,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>Confirm before pushing to Git master branch | Hammad.ca </title>
+    <title>Wordpress to Jekyll | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -73,20 +73,20 @@
     
       
       	
-      	<li><a href="/blog/index.html"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
       	
       
     
   
     
       
+      	
+      	<li><a href="/blog/"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	
+      
     
   
     
-      
-      	
-      	<li><a href="/projects/index.html"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
-      	
       
     
   
@@ -117,7 +117,7 @@
 
 
 <div class="page-header">
-  <h2>Confirm before pushing to Git master branch </h2>
+  <h2>Wordpress to Jekyll </h2>
 </div>
 
 <div class="row post-full page-content">
@@ -126,28 +126,37 @@
       <div class="content post-content">
 
         
-<p>If you are worried about unintentionally pushing to a master branch in <code>Git</code> you
-can get a confirmation warning using a <code>pre-push</code> hook.</p>
+<p>Last weekend, I moved this website from <a href="http://wordpress.com">WordPress</a> to <a href="http://jekyllrb.com/">Jekyll</a>. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.</p>
 
 <!--more-->
 
-<p><img src="/assets/images/git-push-force.jpg" alt="git push force" /></p>
+<p>Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.</p>
 
-<p>I have heard horror stories about developers accidentally force pushing to the
-master branch of their project. This can be very difficult to revert, but
-luckily this can be avoided using a Git pre-push hook.</p>
+<p><img src="/assets/images/wordpressvsjekyll.jpg" alt="Wordpress vs Jekyll" /></p>
 
-<p>A pre-push hook is just a script that lives in the <code>.git/hooks/*</code> directory.
-It is run every time you push to your Git repository. I have edited the script
-to prompt you for a confirmation before you push to the master branch. <code>Are you sure you want to push to "master" ? (y/n):</code></p>
+<blockquote>
+  <p><small>Theatrical Poster from the Library of Congress, Image Library</small></p>
+</blockquote>
 
-<p>Something to keep in mind is that you have to make the script executable so: <code>chmod +x .git/hooks/pre-hook</code>. To try this out
-switch the master branch, and after confirming that you haven’t
-made any changes, try <code>git push</code>.</p>
+<p>Anyone who has used WordPress, or any other  CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.</p>
 
-<h3 id="the-code">The code:</h3>
-<script src="https://gist.github.com/0a196dd1ac5ad971df1a.js"> </script>
+<h3 id="setup">Setup</h3>
 
+<p>One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files <em>anywhere</em> I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers –  this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.</p>
+
+<h3 id="deploying">Deploying</h3>
+
+<p>Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#Edit the files and have Jekyll update the deployment folder
+</span>
+jekyll build
+<span class="nb">cd </span>_site
+git add .
+git commit
+git push <span class="c">#That's it!</span></code></pre></figure>
+
+<p>While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
 
 
         <div class="post-info">
@@ -159,7 +168,7 @@ made any changes, try <code>git push</code>.</p>
 
   
     
-    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(4)</span></li></a>
+    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(3)</span></li></a>
     
   
 
@@ -168,17 +177,27 @@ made any changes, try <code>git push</code>.</p>
           
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 08 March 2015</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 02 September 2012</span>
             </div>
           </p>
 
-          <ul class="pager">
-            
-            <li class="previous"><a href="/projects/2014/02/01/lookrook" title="LookRook: A Rails app for finding the best stylists in your hometown"><span class="glyphicon glyphicon-arrow-left"></span> Previous : LookRook: A Rails app for finding the best stylists in your hometown</a></li>
-            
-            <!-- <li><a href="/archive.html">Archive</a></li> -->
-            
-          </ul>
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-left"></span> Previous:
+            <a href="/projects/2011/12/28/sosmos" title="Sosmos: An RSS feed aggregator">
+              Sosmos: An RSS feed aggregator
+            </a>
+          </p>
+          
+
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-right"></span> Next:
+            <a href="/blog/2013/08/25/mongodb-vs-sql" title="MongoDB vs PostgreSQL for Ruby on Rails">
+              MongoDB vs PostgreSQL for Ruby on Rails
+            </a>
+          </p>
+          
         </div>
       </div>
     </div> <!-- Main content -->
@@ -198,10 +217,10 @@ made any changes, try <code>git push</code>.</p>
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Confirm before pushing to Git master branch" data-via="hammadk" data-count="horizontal" data-url="/blog/2015/03/08/confirm-before-pushing-to-master-branch" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Wordpress to Jekyll" data-via="hammadk" data-count="horizontal" data-url="/blog/2012/09/02/Wordpress-to-Jekyll" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Confirm before pushing to Git master branch" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Wordpress to Jekyll" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->

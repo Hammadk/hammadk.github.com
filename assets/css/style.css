@@ -54,6 +54,10 @@ ul {
   margin: 0px;
 }
 
+.indented {
+    padding-left: 30px;
+}
+
 /* Typograph */
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,6 +136,10 @@ ul.thumbnails li{
 .pager a:hover, .pager a:focus  {
     background: none;
     border: none;
+}
+
+.pager li {
+  float: left;
 }
 
 /* Social buttons  */

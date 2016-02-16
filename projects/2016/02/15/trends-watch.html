@@ -6,7 +6,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>CEEC: Environmental conference | Hammad.ca </title>
+    <title>Trends Watch | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -73,20 +73,20 @@
     
       
       	
-      	<li><a href="/blog/index.html"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
       	
       
     
   
     
       
+      	
+      	<li><a href="/blog/"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	
+      
     
   
     
-      
-      	
-      	<li><a href="/projects/index.html"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
-      	
       
     
   
@@ -117,7 +117,7 @@
 
 
 <div class="page-header">
-  <h2>CEEC: Environmental conference </h2>
+  <h2>Trends Watch </h2>
 </div>
 
 <div class="row post-full page-content">
@@ -125,32 +125,53 @@
     <div class="col-md-8 col-md-offset-2">
       <div class="content post-content">
 
-        <p>CEEC is organized by a group that brings different perspectives together to discuss solutions to the current environmental crisis.</p>
+        <p>TrendsWatch is a snapshot of internet trends in the last 5 minutes. And yes,
+I use the same CSS for most of my projects :)</p>
 
 <!--more-->
 
-<p>I was a member of the group that organized CEEC in 2010 and I developed their web presence for this that year. CEEC 2010 was an amazing opportunity to meet entrepreneurs in the energy field an I think it may have been responsible for my save-the-world-esque ambitions.</p>
+<p>This app collects trending Google searches, tweets, movies,
+Reddit and Instragram posts. I use this to keep track of current trends. You can try it our here:
+<a href="http://trendswatch.herokuapp.com" target="_blank">trendswatch.herokuapp.com</a></p>
 
-<p>I setup an app that accepted payments from Paypal for online registration and created a website that I had been obsessing over for a while.</p>
+<p><img src="/assets/images/trends-watch-content.png" alt="Let there be flash light" /></p>
 
-<p><img src="/assets/images/ceecSnapshot.jpg" alt="LED" /></p>
+<p>This is a Rails app but there is a ton of fun stuff happening in the background. Every 5 minutes, a background jobs collects the latest trends from all across the web. After this, I generate a static page with this trends data on it. This static page is then uploaded to S3. Trends watch itself, just renders that S3 static page.</p>
+
 
 
         <div class="post-info">
           
+          <span class="glyphicon glyphicon-tags"></span>   Tags:
+          
+          
+
+
+  
+    
+    	<a href="/tags.html#Ruby on Rails-ref"><li class="label label-info">Ruby on Rails <span>(2)</span></li></a>
+    
+  
+
+
+
+          
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 26 December 2011</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 15 February 2016</span>
             </div>
           </p>
 
-          <ul class="pager">
-            
-            <!-- <li><a href="/archive.html">Archive</a></li> -->
-            
-            <li class="next"><a href="/projects/2011/12/27/cobra" title="Cobra : A flexible gaming interface">Next: Cobra : A flexible gaming interface <span class="glyphicon glyphicon-arrow-right"></span></a></li>
-            
-          </ul>
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-left"></span> Previous:
+            <a href="/blog/2015/03/08/confirm-before-pushing-to-master-branch" title="Confirm before pushing to Git master branch">
+              Confirm before pushing to Git master branch
+            </a>
+          </p>
+          
+
+          
         </div>
       </div>
     </div> <!-- Main content -->
@@ -170,10 +191,10 @@
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="CEEC: Environmental conference" data-via="hammadk" data-count="horizontal" data-url="/projects/2011/12/26/ceec" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Trends Watch" data-via="hammadk" data-count="horizontal" data-url="/projects/2016/02/15/trends-watch" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=CEEC: Environmental conference" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Trends Watch" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->
