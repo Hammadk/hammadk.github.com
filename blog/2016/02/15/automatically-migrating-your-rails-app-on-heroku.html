@@ -6,7 +6,7 @@
   <head>
     <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
     <meta charset="utf-8">
-    <title>Wordpress to Jekyll | Hammad.ca </title>
+    <title>Automatically run Rails database migration after deploying to Heroku | Hammad.ca </title>
     
     <meta name="author" content="Hammad Khalid">
 
@@ -117,7 +117,7 @@
 
 
 <div class="page-header">
-  <h2>Wordpress to Jekyll </h2>
+  <h2>Automatically run Rails database migration after deploying to Heroku </h2>
 </div>
 
 <div class="row post-full page-content">
@@ -125,38 +125,38 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="content post-content">
 
-        
-<p>Last weekend, I moved this website from <a href="http://wordpress.com">WordPress</a> to <a href="http://jekyllrb.com/">Jekyll</a>. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.</p>
+        <p>Did you ever forget to run <code class="highlighter-rouge">db:migrate</code> after deploying your app to
+Heroku? Try out Heroku buildpacks.</p>
 
 <!--more-->
 
-<p>Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.</p>
+<h3 id="buildwhats">Buildwhats?</h3>
 
-<p><img src="/assets/images/wordpressvsjekyll.jpg" alt="Wordpress vs Jekyll" /></p>
+<p>Buildpacks are those magical scripts that run after your app is deployed to Heroku. Heroku is
+smart enough to figure out what buildpacks to use depending on your app. For
+example, assets are automatically prepared when you deploy your Rails app.</p>
 
-<blockquote>
-  <p><small>Theatrical Poster from the Library of Congress, Image Library</small></p>
-</blockquote>
+<p><img src="/assets/images/buildpacks-per-platform.png" alt="Heroku Buildpacks" /></p>
 
-<p>Anyone who has used WordPress, or any other  CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.</p>
+<p>For added functionality, Heroku lets you add additional buildpacks.
+So, to automatically run any pending database migration after your Rails app
+deploys:</p>
 
-<h3 id="setup">Setup</h3>
+<ol>
+  <li>Go to your app’s directory and run <code class="highlighter-rouge">heroku buildpacks</code> to see the list of
+current buildpacks.</li>
+  <li>Add a rake tasks buildpack with: <code class="highlighter-rouge">heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks</code></li>
+  <li>Configure this buildpack: <code class="highlighter-rouge">heroku config:set DEPLOY_TASKS='db:migrate cache:clear'</code></li>
+  <li>You are all done! Any pending migrations will automatically run the next
+time you deploy to Heroku.</li>
+</ol>
 
-<p>One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files <em>anywhere</em> I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers –  this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.</p>
+<p>More resources:</p>
 
-<h3 id="deploying">Deploying</h3>
-
-<p>Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.</p>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#Edit the files and have Jekyll update the deployment folder
-</span>
-jekyll build
-<span class="nb">cd </span>_site
-git add .
-git commit
-git push <span class="c">#That's it!</span></code></pre></figure>
-
-<p>While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out <a href="https://github.com/mojombo/jekyll">Jekyll</a>.</p>
+<ul>
+  <li><a href="https://devcenter.heroku.com/articles/buildpacks" target="_blank">Heroku Buildpacks</a></li>
+  <li><a href="https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks" target="_blank">Ruby rake buildpack</a></li>
+</ul>
 
 
         <div class="post-info">
@@ -168,7 +168,7 @@ git push <span class="c">#That's it!</span></code></pre></figure>
 
   
     
-    	<a href="/tags.html#git-ref"><li class="label label-info">git <span>(3)</span></li></a>
+    	<a href="/tags.html#Ruby on Rails-ref"><li class="label label-info">Ruby on Rails <span>(3)</span></li></a>
     
   
 
@@ -177,15 +177,15 @@ git push <span class="c">#That's it!</span></code></pre></figure>
           
           <p>
             <div class="date">
-              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 02 September 2012</span>
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 15 February 2016</span>
             </div>
           </p>
 
           
           <p>
             <span class="glyphicon glyphicon-arrow-left"></span> Previous:
-            <a href="/projects/2011/12/28/sosmos" title="Sosmos: An RSS feed aggregator">
-              Sosmos: An RSS feed aggregator
+            <a href="/blog/2015/03/08/confirm-before-pushing-to-master-branch" title="Confirm before pushing to Git master branch">
+              Confirm before pushing to Git master branch
             </a>
           </p>
           
@@ -193,8 +193,8 @@ git push <span class="c">#That's it!</span></code></pre></figure>
           
           <p>
             <span class="glyphicon glyphicon-arrow-right"></span> Next:
-            <a href="/blog/2013/08/25/mongodb-vs-sql" title="MongoDB vs PostgreSQL for Ruby on Rails">
-              MongoDB vs PostgreSQL for Ruby on Rails
+            <a href="/projects/2016/02/15/trends-watch" title="Trends Watch">
+              Trends Watch
             </a>
           </p>
           
@@ -217,10 +217,10 @@ git push <span class="c">#That's it!</span></code></pre></figure>
 <div class="socialite">
   <ul class="social-buttons">
     <li>
-      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Wordpress to Jekyll" data-via="hammadk" data-count="horizontal" data-url="/blog/2012/09/02/Wordpress-to-Jekyll" rel="nofollow" target="_blank">Share on Twitter</a>
+      <a class="socialite twitter-share" href="http://twitter.com/share" data-text="Automatically run Rails database migration after deploying to Heroku" data-via="hammadk" data-count="horizontal" data-url="/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku" rel="nofollow" target="_blank">Share on Twitter</a>
     </li>
     <li>
-      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Wordpress to Jekyll" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
+      <a class="socialite facebook-like" href="http://www.facebook.com/sharer.php?u=&amp;t=Automatically run Rails database migration after deploying to Heroku" data-action="like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" rel="nofollow" target="_blank">Share on Facebook</a>
     </li>
     <!-- <li> -->
     <!--   <a class="socialite googleplus-one" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=" rel="nofollow" target="_blank" data-size="medium" data-url="">Share on Google+</a> -->

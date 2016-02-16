@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2016-02-15T19:21:26-05:00</updated>
+ <updated>2016-02-15T20:53:45-05:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -34,6 +34,46 @@ Reddit and Instragram posts. I use this to keep track of current trends. You can
  </entry>
  
  <entry>
+   <title>Automatically run Rails database migration after deploying to Heroku</title>
+   <link href="http://hammad.ca/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku"/>
+   <updated>2016-02-15T00:00:00-05:00</updated>
+   <id>http://hammad.ca/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku</id>
+   <content type="html">&lt;p&gt;Did you ever forget to run &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; after deploying your app to
+Heroku? Try out Heroku buildpacks.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;buildwhats&quot;&gt;Buildwhats?&lt;/h3&gt;
+
+&lt;p&gt;Buildpacks are those magical scripts that run after your app is deployed to Heroku. Heroku is
+smart enough to figure out what buildpacks to use depending on your app. For
+example, assets are automatically prepared when you deploy your Rails app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/buildpacks-per-platform.png&quot; alt=&quot;Heroku Buildpacks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For added functionality, Heroku lets you add additional buildpacks.
+So, to automatically run any pending database migration after your Rails app
+deploys:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go to your app’s directory and run &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku buildpacks&lt;/code&gt; to see the list of
+current buildpacks.&lt;/li&gt;
+  &lt;li&gt;Add a rake tasks buildpack with: &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Configure this buildpack: &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku config:set DEPLOY_TASKS=&#39;db:migrate cache:clear&#39;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You are all done! Any pending migrations will automatically run the next
+time you deploy to Heroku.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;More resources:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/buildpacks&quot; target=&quot;_blank&quot;&gt;Heroku Buildpacks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks&quot; target=&quot;_blank&quot;&gt;Ruby rake buildpack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Confirm before pushing to Git master branch</title>
    <link href="http://hammad.ca/blog/2015/03/08/confirm-before-pushing-to-master-branch"/>
    <updated>2015-03-08T00:00:00-05:00</updated>
@@ -54,9 +94,15 @@ luckily this can be avoided using a Git pre-push hook.&lt;/p&gt;
 It is run every time you push to your Git repository. I have edited the script
 to prompt you for a confirmation before you push to the master branch. &lt;code class=&quot;highlighter-rouge&quot;&gt;Are you sure you want to push to &quot;master&quot; ? (y/n):&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Something to keep in mind is that you have to make the script executable so: &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod +x .git/hooks/pre-hook&lt;/code&gt;. To try this out
-switch the master branch, and after confirming that you haven’t
-made any changes, try &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To get this to work:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add the code below to you project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/hooks/pre-hook&lt;/code&gt; file&lt;/li&gt;
+  &lt;li&gt;Make the script executable with &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod +x .git/hooks/pre-hook&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Try this out my making a &lt;em&gt;minor&lt;/em&gt; change in one of the directories above and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;(Optional) If you want this hook in all git projects by default, try out &lt;a href=&quot;http://stackoverflow.com/a/8842663&quot; target=&quot;_blank&quot;&gt;git templating.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h3 id=&quot;the-code&quot;&gt;The code:&lt;/h3&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request

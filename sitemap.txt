@@ -9,6 +9,7 @@ http://hammad.ca/sitemap.txt
 http://hammad.ca/tags
 
 http://hammad.ca/projects/2016/02/15/trends-watch
+http://hammad.ca/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku
 http://hammad.ca/blog/2015/03/08/confirm-before-pushing-to-master-branch
 http://hammad.ca/projects/2014/02/01/lookrook
 http://hammad.ca/blog/2013/08/25/mongodb-vs-sql

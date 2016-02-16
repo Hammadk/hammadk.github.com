@@ -122,7 +122,7 @@
 
 <div class="row post-full page-content">
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-10 col-md-offset-1">
       <div class="content post-content">
 
         
@@ -141,9 +141,15 @@ luckily this can be avoided using a Git pre-push hook.</p>
 It is run every time you push to your Git repository. I have edited the script
 to prompt you for a confirmation before you push to the master branch. <code class="highlighter-rouge">Are you sure you want to push to "master" ? (y/n):</code></p>
 
-<p>Something to keep in mind is that you have to make the script executable so: <code class="highlighter-rouge">chmod +x .git/hooks/pre-hook</code>. To try this out
-switch the master branch, and after confirming that you haven’t
-made any changes, try <code class="highlighter-rouge">git push</code>.</p>
+<p>To get this to work:</p>
+
+<ol>
+  <li>Add the code below to you project’s <code class="highlighter-rouge">.git/hooks/pre-hook</code> file</li>
+  <li>Make the script executable with <code class="highlighter-rouge">chmod +x .git/hooks/pre-hook</code></li>
+  <li>Try this out my making a <em>minor</em> change in one of the directories above and
+<code class="highlighter-rouge">git push</code></li>
+  <li>(Optional) If you want this hook in all git projects by default, try out <a href="http://stackoverflow.com/a/8842663" target="_blank">git templating.</a></li>
+</ol>
 
 <h3 id="the-code">The code:</h3>
 <noscript><pre>400: Invalid request
@@ -186,8 +192,8 @@ made any changes, try <code class="highlighter-rouge">git push</code>.</p>
           
           <p>
             <span class="glyphicon glyphicon-arrow-right"></span> Next:
-            <a href="/projects/2016/02/15/trends-watch" title="Trends Watch">
-              Trends Watch
+            <a href="/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku" title="Automatically run Rails database migration after deploying to Heroku">
+              Automatically run Rails database migration after deploying to Heroku
             </a>
           </p>
           
