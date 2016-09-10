@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2016-02-15T20:53:45-05:00</lastBuildDate>
-        <pubDate>2016-02-15T20:53:45-05:00</pubDate>
+        <lastBuildDate>2016-09-10T18:12:53-04:00</lastBuildDate>
+        <pubDate>2016-09-10T18:12:53-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -54,7 +54,7 @@ deploys:&lt;/p&gt;
   &lt;li&gt;Go to your app’s directory and run &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku buildpacks&lt;/code&gt; to see the list of
 current buildpacks.&lt;/li&gt;
   &lt;li&gt;Add a rake tasks buildpack with: &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku buildpacks:add https://github.com/gunpowderlabs/buildpack-ruby-rake-deploy-tasks&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Configure this buildpack: &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku config:set DEPLOY_TASKS=&#39;db:migrate cache:clear&#39;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Configure this buildpack: &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku config:set DEPLOY_TASKS='db:migrate cache:clear'&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;You are all done! Any pending migrations will automatically run the next
 time you deploy to Heroku.&lt;/li&gt;
 &lt;/ol&gt;
@@ -185,11 +185,11 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
 &lt;p&gt;Anyone who has used WordPress, or any other  CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.&lt;/p&gt;
 
-&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+&lt;p&gt;###Setup&lt;/p&gt;
 
 &lt;p&gt;One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files &lt;em&gt;anywhere&lt;/em&gt; I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers –  this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.&lt;/p&gt;
 
-&lt;h3 id=&quot;deploying&quot;&gt;Deploying&lt;/h3&gt;
+&lt;p&gt;###Deploying&lt;/p&gt;
 
 &lt;p&gt;Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.&lt;/p&gt;
 
@@ -199,7 +199,7 @@ jekyll build
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;_site
 git add .
 git commit
-git push &lt;span class=&quot;c&quot;&gt;#That&#39;s it!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+git push &lt;span class=&quot;c&quot;&gt;#That's it!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;While WordPress and similar platforms are great for most users, those that prefer the peace of mind of working with simple text files should check out &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 </description>

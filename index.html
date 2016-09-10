@@ -72,10 +72,6 @@
   
     
       
-      	
-      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
-      	
-      
     
   
     
@@ -87,6 +83,10 @@
     
   
     
+      
+      	
+      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
+      	
       
     
   
@@ -122,28 +122,43 @@
   I am a Software Developer in Toronto. I love building things, programming, design and science. This is where I share my <a href="http://hammad.ca/blog">thoughts</a> and <a href="http://hammad.ca/projects">projects</a>.
 </h3>
 
-<div id="timeline-wrap">
-  <div class="timeline">
-    <ul class="events">
-      <li style="width: 15%; left: 77%; top: 420px;">Shopify: Software Developer<em>(2014 - Present)</em></li>
-      <li style="width: 21%; left: 56%; top: 356px;">Queens: MSc Computer Science <em>(2013 - 2014)</em></li>
-      <li style="width: 14%; left: 42%; top: 267px;">Queens University: Computer Science <em>(2011 - 2012)</em></li>
-      <li style="width: 14%; left: 28%; top: 155px;">IBM: Web Applications Developer <em>(2010 - 2011)</em></li>
-      <li style="width: 14%; left: 0%;">Ongwanada: Software Developer <em>(2008 - 2009)</em></li>
-      <li style="width: 28%; left: 0%;">Queens University: Computer Science <em>(2007 - 2010)</em></li>
-    </ul>
+<div id="timeline" class="timeline"></div>
 
-    <ul class="intervals">
-      <li class="first">... 2009</li>
-      <li>2010</li>
-      <li>2011</li>
-      <li>2012</li>
-      <li>2013</li>
-      <li>2014</li>
-      <li class="last">2015</li>
-    </ul>
-  </div>
-</div>
+<script src="/assets/js/google_charts.js"></script>
+<script>
+  google.charts.load("current", {packages:["timeline"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var container = document.getElementById('timeline');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = new google.visualization.DataTable();
+
+    dataTable.addColumn({ type: 'string', id: 'Type' });
+    dataTable.addColumn({ type: 'string', id: 'Name' });
+    dataTable.addColumn({ type: 'date', id: 'Start' });
+    dataTable.addColumn({ type: 'date', id: 'End' });
+
+    dataTable.addRows([
+      [ 'School', 'Masters of Computer Science', new Date(2013, 0, 0), new Date(2014, 08, 0)],
+      [ 'School', 'Bachelor of Computer Science ', new Date(2007, 07, 0), new Date(2010, 05, 0)],
+      [ 'School', 'Bachelor of Computer Science ', new Date(2011, 07, 0), new Date(2012, 11, 0)],
+      [ 'Work', 'IBM: Software Developer Intern', new Date(2010, 05, 0), new Date(2011, 07, 0) ],
+      [ 'Work', 'Shopify: Software Developer Intern', new Date(2014, 06, 2), new
+      Date(2014, 9, 29) ],
+      [ 'Work', 'Software Developer', new Date(2014, 10, 0), new Date(2016, 04, 0) ],
+      [ 'Work', 'Senior Software Developer', new Date(2016, 04, 1), new Date() ],
+    ]);
+
+    var options = {
+      timeline: {
+        showRowLabels: false,
+        singleColor: '#007ac2',
+      }
+    };
+
+    chart.draw(dataTable, options);
+  }
+</script>
 
         </div>
       </div>

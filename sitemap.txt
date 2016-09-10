@@ -1,9 +1,9 @@
 
 http://hammad.ca/404
 http://hammad.ca/atom.xml
-http://hammad.ca/projects/
-http://hammad.ca/blog/
 http://hammad.ca/
+http://hammad.ca/blog/
+http://hammad.ca/projects/
 http://hammad.ca/rss.xml
 http://hammad.ca/sitemap.txt
 http://hammad.ca/tags
