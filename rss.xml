@@ -5,19 +5,14 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2016-09-11T14:13:08-04:00</lastBuildDate>
-        <pubDate>2016-09-11T14:13:08-04:00</pubDate>
+        <lastBuildDate>2016-09-11T14:36:55-04:00</lastBuildDate>
+        <pubDate>2016-09-11T14:36:55-04:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Trends Watch</title>
-                <description>&lt;p&gt;TrendsWatch is a snapshot of internet trends in the last 5 minutes. And yes,
-I use the same CSS for most of my projects :)&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;This app collects trending Google searches, tweets, movies,
+                <description>&lt;p&gt;This app collects trending Google searches, tweets, movies,
 Reddit and Instragram posts. I use this to keep track of current trends. You can try it our here:
 &lt;a href=&quot;http://trendswatch.herokuapp.com&quot; target=&quot;_blank&quot;&gt;trendswatch.herokuapp.com&lt;/a&gt;&lt;/p&gt;
 
@@ -99,11 +94,7 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
         <item>
                 <title>LookRook: A Rails app for finding the best stylists in your hometown</title>
-                <description>&lt;p&gt;LookRook is a Ruby on Rails app, that lets people find the best stylist in their hometown.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
+                <description>&lt;p&gt;This idea for this app is really simple; make it super easy for stylists to upload pictures of their work online (and establish their portfolio). On the other hand, make it really easy for users to find the best stylists in their home town, based on the photos uploaded by the stylists.&lt;/p&gt;
 
 &lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
 
@@ -196,11 +187,7 @@ git push &lt;span class=&quot;c&quot;&gt;#That's it!&lt;/span&gt;&lt;/code&gt;&l
 
         <item>
                 <title>Sosmos: An RSS feed aggregator</title>
-                <description>&lt;p&gt;In 2009 I developed Sosmos, a web app that pulled content from different websites via RSS feeds and organized the results in different categories.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;I meant for this to be a personal home page but planned on later expanding it to allow others to pick their own RSS feeds. In mid 2010 I had a few thousand regular users but eventually there was a sharp decline because of better web apps like Netvibes.com and Google Reader.&lt;/p&gt;
+                <description>&lt;p&gt;I meant for this to be a personal home page but planned on later expanding it to allow others to pick their own RSS feeds. In mid 2010 I had a few thousand regular users but eventually there was a sharp decline because of better web apps like Netvibes.com and Google Reader.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/sosmos_bg.jpg&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
 
@@ -213,11 +200,7 @@ git push &lt;span class=&quot;c&quot;&gt;#That's it!&lt;/span&gt;&lt;/code&gt;&l
 
         <item>
                 <title>Cobra : A flexible gaming interface</title>
-                <description>&lt;p&gt;Cobra is a flexible interface which uses flex sensors attached to the back of a plastic surface as input, and outputs media on the same surface using a pico projector.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/cobra_300x459.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img src=&quot;/assets/images/cobra_300x459.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This was a super exciting project and I got to work with &lt;a href=&quot;http://toastygames.com/parallax/&quot;&gt;Zi Ye&lt;/a&gt; on different iterations of it —  imagine my excitement when &lt;a href=&quot;http://news.cnet.com/8301-17938_105-20003598-1.html&quot;&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href=&quot;/media/pdf/cobra.pdf&quot;&gt;here&lt;/a&gt;, or on ACM &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=1754154&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -234,11 +217,7 @@ We discuss Cobra, a handheld peripheral for computer games that applies flexible
 
         <item>
                 <title>CEEC: Environmental conference</title>
-                <description>&lt;p&gt;CEEC is organized by a group that brings different perspectives together to discuss solutions to the current environmental crisis.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;I was a member of the group that organized CEEC in 2010 and I developed their web presence for this that year. CEEC 2010 was an amazing opportunity to meet entrepreneurs in the energy field an I think it may have been responsible for my save-the-world-esque ambitions.&lt;/p&gt;
+                <description>&lt;p&gt;I was a member of the group that organized CEEC in 2010 and I developed their web presence for this that year. CEEC 2010 was an amazing opportunity to meet entrepreneurs in the energy field an I think it may have been responsible for my save-the-world-esque ambitions.&lt;/p&gt;
 
 &lt;p&gt;I setup an app that accepted payments from Paypal for online registration and created a website that I had been obsessing over for a while.&lt;/p&gt;
 
