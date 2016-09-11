@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2016-09-11T11:26:43-04:00</lastBuildDate>
-        <pubDate>2016-09-11T11:26:43-04:00</pubDate>
+        <lastBuildDate>2016-09-11T14:13:08-04:00</lastBuildDate>
+        <pubDate>2016-09-11T14:13:08-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -33,14 +33,7 @@ Reddit and Instragram posts. I use this to keep track of current trends. You can
 
         <item>
                 <title>Automatically run Rails database migration after deploying to Heroku</title>
-                <description>&lt;p&gt;Did you ever forget to run &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; after deploying your app to
-Heroku? Try out Heroku buildpacks.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;buildwhats&quot;&gt;Buildwhats?&lt;/h3&gt;
-
-&lt;p&gt;Buildpacks are those magical scripts that run after your app is deployed to Heroku. Heroku is
+                <description>&lt;p&gt;Buildpacks are scripts that run after your app is deployed to Heroku. Heroku is
 smart enough to figure out what buildpacks to use depending on your app. For
 example, assets are automatically prepared when you deploy your Rails app.&lt;/p&gt;
 
@@ -73,13 +66,7 @@ time you deploy to Heroku.&lt;/li&gt;
 
         <item>
                 <title>Confirm before pushing to Git master branch</title>
-                <description>
-&lt;p&gt;If you are worried about unintentionally pushing to a master branch in &lt;code class=&quot;highlighter-rouge&quot;&gt;Git&lt;/code&gt; you
-can get a confirmation warning using a &lt;code class=&quot;highlighter-rouge&quot;&gt;pre-push&lt;/code&gt; hook.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/git-push-force.jpg&quot; alt=&quot;git push force&quot; /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img src=&quot;/assets/images/git-push-force.jpg&quot; alt=&quot;git push force&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have heard horror stories about developers accidentally force pushing to the
 master branch of their project. This can be very difficult to revert, but
@@ -129,34 +116,38 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
         <item>
                 <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
-                <description>&lt;p&gt;I compared MongoDB(NoSQL) and PostgreSQL(SQL) databases for developing a Ruby on Rails app.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on &lt;a href=&quot;http://www.michaelhartl.com/&quot;&gt;Michael Hartl’s&lt;/a&gt; Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;. Here is what I learned:&lt;/p&gt;
+                <description>&lt;p&gt;I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on &lt;a href=&quot;http://www.michaelhartl.com/&quot;&gt;Michael Hartl’s&lt;/a&gt; Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;. Here is what I learned:&lt;/p&gt;
 
 &lt;h3 id=&quot;tldr&quot;&gt;TLDR&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;If you want to avoid hiccups with third party tools (i.e., gems), pick PostgreSQL&lt;/li&gt;
-  &lt;li&gt;If you want to avoid hiccups deploying to most cloud providers, pick PostgreSQL&lt;/li&gt;
-  &lt;li&gt;If you have experience with deploying and developing with NoSQL, stick with MongoDB.&lt;/li&gt;
-  &lt;li&gt;If you need to store files or assets in the database, pick MongoDB.&lt;/li&gt;
-  &lt;li&gt;If you don’t like migrating your database after every change in your schema, pick MongoDB.&lt;/li&gt;
+  &lt;li&gt;Pick PostgreSQL if you want to avoid hiccups with gems&lt;/li&gt;
+  &lt;li&gt;Pick PostgreSQL if you want to avoid hiccups deploying to most cloud providers&lt;/li&gt;
+  &lt;li&gt;Pick MongoDB if you have experience with deploying and developing with NoSQL&lt;/li&gt;
+  &lt;li&gt;Pick MongoDB if you don’t like migrating your database after every change in your schema&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/mongodbvspostgresql_large_image.png&quot; alt=&quot;MongoDB VS PostgerSQL&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;structuring-data&quot;&gt;Structuring Data&lt;/h3&gt;
-&lt;p&gt;This app, like Twitter, allows users to follow the recent tweets of other users by following them. In an SQL environment the optimal method of creating this using a relationship table which create a new entry every time a user follows another. If the user stops following the other, the entry from the relationship table is destroyed. The final implementation requires using the Join command on the User table with the relationships table.&lt;/p&gt;
 
-&lt;p&gt;One the other hand MongoDB implementation of this is relationship is much simpler. MongoDB allows developers to store un-structured data. This comparison is similar to that of a statically typed language and a dynamically typed language. The user doesn’t have to worry about specifying every little detail, and this allows for clean and precise code.&lt;/p&gt;
+&lt;p&gt;This app allows users to follow others and view their recent tweets. In SQL, you
+would typically use a JOIN table to create a relationship between two users. For
+each user, we would store their tweets in a tweet table. The down side of this
+approach is that joins between multiple tables are really expensive and slow.
+For read heavy apps like Twitter, this problem is exacerbated.&lt;/p&gt;
 
-&lt;p&gt;In the MongoDB version of twitter, we store the ‘follow’ and ‘following’ relationships in the User’s table itself. Since MongoDB can natively understand arrays, we just store the ID of the follower, or the followed user, in the array. To avoid the performance penalty MongoDB even allows us to index the values within the array, so that they can be efficiently queried.&lt;/p&gt;
+&lt;p&gt;This is where NoSQL solutions are really useful. NoSQL databases like MongoDB
+allow developers to store unstructured data. This means that for each user, we
+can have a background job fetch relevent tweets and store this denormalized data
+directly in the user’s table. This means really efficient reads.&lt;/p&gt;
+
+&lt;p&gt;In the MongoDB version of twitter, we can store the ‘follow’ and ‘following’ relationships in the User’s table itself. Since MongoDB can natively understand arrays, we just store the ID of the follower, or the followed user, in the array. To avoid the performance penalty MongoDB even allows us to index the values within the array, so that they can be efficiently queried.&lt;/p&gt;
 
 &lt;p&gt;Something else that I really like about MongoDB was that In typical SQL Rails app, whenever a developer updates the schema of the application, he has to run a migrate task to add or remove the changed columns. The use of MongoDB doesn’t require this so the developer doesn’t have to bring their development process to a complete stop.&lt;/p&gt;
 
 &lt;h3 id=&quot;deployment-to-heroku&quot;&gt;Deployment to Heroku&lt;/h3&gt;
+
 &lt;p&gt;Unfortunately for MongoDB, most cloud providers only provide SQL database alternatives by default – including Heroku and Amazon Elastic Beanstalk. Deploying the PostgreSQL was fairly straight forward – just a simple &lt;em&gt;git push&lt;/em&gt;. Deploying the MongoDB alternative of the twitter clone was much tougher. For almost every platform numerous workarounds were required to get this app working. It seems like while NoSQL alternatives are available for developers, it’s almost always treated with a lower priority.&lt;/p&gt;
 
 &lt;p&gt;Overall, while the MongoDB alternative of the app was better for modeling data, it required additional effort and code for deployment and additional features. Cloud providers tend to give preferences to users developing with traditional database and provide additional tools. At this point, Ruby on Rails framework itself has much more gems available for SQL databases than NoSQL databases.&lt;/p&gt;
@@ -170,12 +161,7 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
         <item>
                 <title>Wordpress to Jekyll</title>
-                <description>
-&lt;p&gt;Last weekend, I moved this website from &lt;a href=&quot;http://wordpress.com&quot;&gt;WordPress&lt;/a&gt; to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
+                <description>&lt;p&gt;I movedthis website from WordPress to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Jekyll is a Ruby static-site generator which turns your text files into related HTML files. So far, I love it. Since all the files that Jekyll generates are just HTML files, I don’t have to worry about a database or any sort of maintenance issues. Even better, I can now host this blog on Github, or Amazon S3, for free.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/wordpressvsjekyll.jpg&quot; alt=&quot;Wordpress vs Jekyll&quot; /&gt;&lt;/p&gt;
 
@@ -185,11 +171,11 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
 &lt;p&gt;Anyone who has used WordPress, or any other  CMS platform, for a personal site for a while understands that it requires frequent maintenance. While WordPress is great at many tasks, the frequent updates and security issues get annoying after a while. On top of that, you can’t simply edit files in your text editor. Recently I stumbled into Jekyll which is the Ruby static site generator.&lt;/p&gt;
 
-&lt;p&gt;###Setup&lt;/p&gt;
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
 
 &lt;p&gt;One of my main concerns while using WordPress was backing up data. Since Jekyll simply works with text files, this means that I can now keep these files &lt;em&gt;anywhere&lt;/em&gt; I like. So I keep all the files for this website in a Dropbox folder so that all changes automagically get synced across different computers –  this is awesome! When working with Jekyll you create and edit simple text files and, based on your templates, Jekyll processes them and turns them into interconnected html files. All of the generated files are kept in a folder which can be deployed onto Github or your own private server.&lt;/p&gt;
 
-&lt;p&gt;###Deploying&lt;/p&gt;
+&lt;h3 id=&quot;deploying&quot;&gt;Deploying&lt;/h3&gt;
 
 &lt;p&gt;Editing and deploying the changes to this blog are probably my favorite reasons for switching to Jekyll. Once I have edited the text files that I need, I add these changes to git and push to the git remote server.&lt;/p&gt;
 
