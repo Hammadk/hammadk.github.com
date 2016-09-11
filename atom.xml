@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2016-09-11T14:36:55-04:00</updated>
+ <updated>2016-09-11T14:45:59-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -207,7 +207,7 @@ git push &lt;span class=&quot;c&quot;&gt;#That's it!&lt;/span&gt;&lt;/code&gt;&l
    <id>http://hammad.ca/projects/2011/12/27/cobra</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/images/cobra_300x459.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This was a super exciting project and I got to work with &lt;a href=&quot;http://toastygames.com/parallax/&quot;&gt;Zi Ye&lt;/a&gt; on different iterations of it —  imagine my excitement when &lt;a href=&quot;http://news.cnet.com/8301-17938_105-20003598-1.html&quot;&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href=&quot;/media/pdf/cobra.pdf&quot;&gt;here&lt;/a&gt;, or on ACM &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=1754154&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This was a super exciting project and I got to work with &lt;a href=&quot;http://toastygames.com/parallax/&quot;&gt;Zi Ye&lt;/a&gt; on different iterations of it —  imagine my excitement when &lt;a href=&quot;http://news.cnet.com/8301-17938_105-20003598-1.html&quot;&gt;CNET&lt;/a&gt; published an article about our project. You can read the full paper &lt;a href=&quot;/assets/pdf/cobra.pdf&quot;&gt;here&lt;/a&gt;, or on ACM &lt;a href=&quot;http://dl.acm.org/citation.cfm?id=1754154&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Abstract from the paper:&lt;/p&gt;
 
