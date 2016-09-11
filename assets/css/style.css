@@ -25,6 +25,10 @@ body {
   padding-top: 30px;
 }
 
+.timeline text {
+  font-weight: normal !important;
+}
+
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -444,8 +448,6 @@ img.software-logo {
   height: 60px;
   padding: 10px;
   text-align: center;
-  /* background: #eee; */
-  border-top: 1px solid #007ac2;
   position: relative;
   clear:both;
   margin-top: 25px;
