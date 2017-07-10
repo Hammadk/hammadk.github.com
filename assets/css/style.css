@@ -148,6 +148,16 @@ ul.thumbnails li{
     list-style: none;
 }
 
+.twitter-share {
+  margin-bottom: -10px;
+  margin-left: -15px;
+}
+
+.facebook-like {
+  margin-bottom: -10px;
+  margin-left: -15px;
+}
+
 blockquote {
     font-style: italic;
     border-left: 5px solid #DDD;
