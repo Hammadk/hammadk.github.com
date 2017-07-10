@@ -4,10 +4,10 @@ html, body {
 }
 
 body {
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Lato', "Helvetica", "Arial", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
+    color: rgba(0,0,0,.8);
     line-height: 1.55em;
-
     padding-top: 60px;
     background: #feffff; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -58,10 +58,10 @@ ul {
 /* Typograph */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', serif;
+    font-family: 'Lato', "Helvetica", "Arial", "Lucida Grande", "Verdana", "Gill Sans", sans-serif;
     font-weight: normal;
     line-height: 1.55em;
-    color: #777;
+    color: rgba(0,0,0,.8);
 }
 
 h1 {
@@ -95,7 +95,6 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
 .thumbnail {
     color: #333;
     float: left;
-    font-size: 16px;
     line-height: 1.55em;
     display: block;
     padding: 5px 10px 5px 10px;

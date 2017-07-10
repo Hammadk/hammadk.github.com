@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2016-09-11T14:45:59-04:00</updated>
+ <updated>2017-07-09T21:51:04-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -104,51 +104,6 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 &lt;p&gt;For example, If someone wants to get a new &lt;em&gt;layered&lt;/em&gt; haircut, they’d look for images in the layered category and find images from different stylists. They are also able to sort these images based on their popularity, and the location of the stylist.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/lookrook.png&quot; alt=&quot;LED&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>MongoDB vs PostgreSQL for Ruby on Rails</title>
-   <link href="http://hammad.ca/blog/2013/08/25/mongodb-vs-sql"/>
-   <updated>2013-08-25T00:00:00-04:00</updated>
-   <id>http://hammad.ca/blog/2013/08/25/mongodb-vs-sql</id>
-   <content type="html">&lt;p&gt;I wanted to better understand the process of developing and deploying a MongoDB Rails app. So I built two twitter clones based on &lt;a href=&quot;http://www.michaelhartl.com/&quot;&gt;Michael Hartl’s&lt;/a&gt; Ruby on Rails book. The first clone used the PostgreSQL database. The second clone used the popular NoSQL database, MongoDB. I then deployed these two apps on to &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;. Here is what I learned:&lt;/p&gt;
-
-&lt;h3 id=&quot;tldr&quot;&gt;TLDR&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pick PostgreSQL if you want to avoid hiccups with gems&lt;/li&gt;
-  &lt;li&gt;Pick PostgreSQL if you want to avoid hiccups deploying to most cloud providers&lt;/li&gt;
-  &lt;li&gt;Pick MongoDB if you have experience with deploying and developing with NoSQL&lt;/li&gt;
-  &lt;li&gt;Pick MongoDB if you don’t like migrating your database after every change in your schema&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/mongodbvspostgresql_large_image.png&quot; alt=&quot;MongoDB VS PostgerSQL&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;structuring-data&quot;&gt;Structuring Data&lt;/h3&gt;
-
-&lt;p&gt;This app allows users to follow others and view their recent tweets. In SQL, you
-would typically use a JOIN table to create a relationship between two users. For
-each user, we would store their tweets in a tweet table. The down side of this
-approach is that joins between multiple tables are really expensive and slow.
-For read heavy apps like Twitter, this problem is exacerbated.&lt;/p&gt;
-
-&lt;p&gt;This is where NoSQL solutions are really useful. NoSQL databases like MongoDB
-allow developers to store unstructured data. This means that for each user, we
-can have a background job fetch relevent tweets and store this denormalized data
-directly in the user’s table. This means really efficient reads.&lt;/p&gt;
-
-&lt;p&gt;In the MongoDB version of twitter, we can store the ‘follow’ and ‘following’ relationships in the User’s table itself. Since MongoDB can natively understand arrays, we just store the ID of the follower, or the followed user, in the array. To avoid the performance penalty MongoDB even allows us to index the values within the array, so that they can be efficiently queried.&lt;/p&gt;
-
-&lt;p&gt;Something else that I really like about MongoDB was that In typical SQL Rails app, whenever a developer updates the schema of the application, he has to run a migrate task to add or remove the changed columns. The use of MongoDB doesn’t require this so the developer doesn’t have to bring their development process to a complete stop.&lt;/p&gt;
-
-&lt;h3 id=&quot;deployment-to-heroku&quot;&gt;Deployment to Heroku&lt;/h3&gt;
-
-&lt;p&gt;Unfortunately for MongoDB, most cloud providers only provide SQL database alternatives by default – including Heroku and Amazon Elastic Beanstalk. Deploying the PostgreSQL was fairly straight forward – just a simple &lt;em&gt;git push&lt;/em&gt;. Deploying the MongoDB alternative of the twitter clone was much tougher. For almost every platform numerous workarounds were required to get this app working. It seems like while NoSQL alternatives are available for developers, it’s almost always treated with a lower priority.&lt;/p&gt;
-
-&lt;p&gt;Overall, while the MongoDB alternative of the app was better for modeling data, it required additional effort and code for deployment and additional features. Cloud providers tend to give preferences to users developing with traditional database and provide additional tools. At this point, Ruby on Rails framework itself has much more gems available for SQL databases than NoSQL databases.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in the MongoDB version of the app, you can check out that Github repository on &lt;a href=&quot;https://github.com/Hammadk/RubyonRails-mongodb-twitter-clone&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
