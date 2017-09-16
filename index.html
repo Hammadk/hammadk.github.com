@@ -17,7 +17,7 @@
     <![endif]-->
 
     <!-- styles -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/syntax.css" rel="stylesheet">
@@ -120,41 +120,61 @@
   I am a Software Developer in Toronto. I love building things, programming, design and science. This is where I share my <a href="http://hammad.ca/blog">thoughts</a> and <a href="http://hammad.ca/projects">projects</a>.
 </h3>
 
-<div id="timeline" class="timeline"></div>
+<section class="timeline-section">
+  <div class="l-contained">
 
-<script src="/assets/js/google_charts.js"></script>
-<script>
-  google.charts.load("current", {packages:["timeline"]});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var container = document.getElementById('timeline');
-    var chart = new google.visualization.Timeline(container);
-    var dataTable = new google.visualization.DataTable();
+    <ul class="timeline-list">
+      <li>
+        <div class="content">
+          <h3>Lead Software Developer: Shopify</h3>
+          <p> June 2017 - present </p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Senior Software Developer: Shopify</h3>
+          <p> April 2016 - May 2017 </p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Software Developer: Shopify</h3>
+          <p> October 2014 - April 2016 </p>
+        </div>
+      </li>
 
-    dataTable.addColumn({ type: 'string', id: 'Type' });
-    dataTable.addColumn({ type: 'string', id: 'Name' });
-    dataTable.addColumn({ type: 'date', id: 'Start' });
-    dataTable.addColumn({ type: 'date', id: 'End' });
+      <li>
+        <div class="content">
+          <h3>Intern Developer: Shopify</h3>
+          <p> June 2014 - October 2014</p>
+        </div>
+      </li>
 
-    dataTable.addRows([
-      [ "Queen's University", 'Masters of Computer Science', new Date(2013, 0, 0), new Date(2014, 08, 0)],
-      [ "Queen's University", 'Bachelor of Computer Science ', new Date(2007, 07, 0), new Date(2011, 06, 0)],
-      [ 'IBM', 'Intern Developer', new Date(2011, 06, 0), new Date(2012, 12, 0) ],
-      [ 'Shopify', 'Intern Developer', new Date(2014, 06, 1), new Date(2014, 10, 0) ],
-      [ 'Shopify', 'Software Developer', new Date(2014, 10, 1), new Date(2016, 04, 0) ],
-      [ 'Shopify', 'Senior Software Developer', new Date(2016, 04, 1), new Date(2017, 05, 30) ],
-      [ 'Shopify', 'Lead Software Developer', new Date(2017, 06, 01), new Date() ],
-    ]);
+      <li>
+        <div class="content">
+          <h3>Masters of Computer Science: Queen's University</h3>
+          <p> January 2013 - August 2014</p>
+        </div>
+      </li>
 
-    var options = {
-      timeline: {
-        singleColor: '#348dbf',
-      }
-    };
+      <li>
+        <div class="content">
+          <h3>Intern Developer: IBM</h3>
+          <p> June 2011 - December 2012 </p>
+        </div>
+      </li>
 
-    chart.draw(dataTable, options);
-  }
-</script>
+      <li>
+        <div class="content">
+          <h3>Bachelor of Computer Science: Queen's University</h3>
+          <p> July 2007 - June 2011</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</section>
 
         </div>
       </div>
