@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2017-09-27T15:34:30-04:00</updated>
+ <updated>2017-09-27T15:54:51-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -97,7 +97,7 @@
 
 &lt;p&gt;Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.&lt;/p&gt;
 
-&lt;h4 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-in-future-posts-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. In future posts, I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;.&lt;/h4&gt;
+&lt;h4 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;.&lt;/h4&gt;
 </content>
  </entry>
  
