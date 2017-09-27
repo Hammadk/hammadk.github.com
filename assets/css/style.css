@@ -96,7 +96,6 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
     padding: 5px 10px 5px 10px;
     background-color: white;
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #c5c5c5;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
     border-radius: 3px;
 }
@@ -208,13 +207,7 @@ time.label {
 /* Styles for specific posts */
 
 .post-content {
-    background: white;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #c5c5c5;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
-    border-radius: 3px;
-
+  padding: 40px;
 }
 
 .post-content > ul {
@@ -785,3 +778,6 @@ timeline-section p {
   }
 }
 
+.row {
+  list-style: none;
+}
