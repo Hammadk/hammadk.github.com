@@ -549,6 +549,7 @@ timeline-section p {
   position: relative;
   max-width: 700px;
   margin: 0 auto;
+  list-style: none;
 }
 
 .timeline-list li {
