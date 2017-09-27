@@ -272,7 +272,7 @@ pre {
 
 .bs-sidebar {
   position: fixed;
-  padding-top: 30%;
+  bottom: 195px;
 }
 
 /* Reference */
