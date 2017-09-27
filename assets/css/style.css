@@ -273,6 +273,7 @@ pre {
 .bs-sidebar {
   position: fixed;
   bottom: 195px;
+  display: none;
 }
 
 /* Reference */
