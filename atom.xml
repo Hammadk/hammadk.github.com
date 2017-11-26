@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2017-09-27T16:42:40-04:00</updated>
+ <updated>2017-11-26T17:52:16-05:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -98,6 +98,16 @@
 &lt;p&gt;Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.&lt;/p&gt;
 
 &lt;h4 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;.&lt;/h4&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I made a
+list of engineering mental models that I have learned over the past 3 years &lt;a href=&quot;https://twitter.com/Shopify?ref_src=twsrc%5Etfw&quot;&gt;@Shopify&lt;/a&gt;. Did I miss
+any?&lt;a href=&quot;https://t.co/Gi93J98neT&quot;&gt;https://t.co/Gi93J98neT&lt;/a&gt;&lt;/p&gt;&amp;mdash;
+Hammad Khalid (@Hammadk) &lt;a href=&quot;https://twitter.com/Hammadk/status/913116997826818048?ref_src=twsrc%5Etfw&quot;&gt;September
+27, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
 </content>
  </entry>
  
