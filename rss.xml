@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2017-11-26T17:52:16-05:00</lastBuildDate>
-        <pubDate>2017-11-26T17:52:16-05:00</pubDate>
+        <lastBuildDate>2017-11-26T21:15:54-05:00</lastBuildDate>
+        <pubDate>2017-11-26T21:15:54-05:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,79 +20,94 @@
 
 &lt;p&gt;I learned about this approach by studying how bright people think. You might have heard about Richard Feynman describe the handful of algorithms that he applies to everything. You might have also seen Elon Musk refer to this as thinking by fundamental principles. Charlie Munger also credits most of his financial success to mental models. All of these people are amazing and you won’t get to their level with mental models, but mental models will give you a nudge in the right direction. Below are the engineering mental models that I have learned after working at &lt;a href=&quot;https://www.shopify.com/&quot;&gt;Shopify&lt;/a&gt; as an engineer.&lt;/p&gt;
 
-&lt;h3 id=&quot;avoid-silent-failures&quot;&gt;Avoid silent failures:&lt;/h3&gt;
+&lt;h2 id=&quot;avoid-silent-failures&quot;&gt;Avoid silent failures:&lt;/h2&gt;
 
 &lt;p&gt;When something breaks you should hear about it. This is important because small issues can help you find larger structural issues. Silent failures typically happen when exceptions are silenced — this may be in a networking library, or the code that handles exceptions. One of my slack bots stopped posting recently and it was because the API credentials were revoked. The networking library I used swallowed the exception so I didn’t hear about this for a while. To fix this, i started checking the status of each network request and made sure that future failures raised an exception. Failures can also be silent when one of your servers is down. You can prevent this by using a third party system that pings each of the critical components. As your project gets more mature, setup a dashboard to track key metrics and create an alert for anomalies.&lt;/p&gt;
 
-&lt;h3 id=&quot;scaling-reads-with-caching--denormalizing&quot;&gt;Scaling reads with caching &amp;amp; denormalizing:&lt;/h3&gt;
+&lt;h2 id=&quot;scaling-reads-with-caching--denormalizing&quot;&gt;Scaling reads with caching &amp;amp; denormalizing:&lt;/h2&gt;
 
 &lt;p&gt;Read-heavy systems mean that some data is being read multiple times. This can be problematic because your database might not have enough capacity to deal with all of that work. The general approach of solving this is by pre-computing this data and storing it somewhere fast. Denormalizing is the process of pre-computing data. In practice this means that instead of letting each request hit multiple tables in a database, you pre-compute the expected response and store it in a single place. Ideally, you should store this information that is really fast to read from (think RAM). In practice this means storing data in data stores like Memcached.&lt;/p&gt;
 
-&lt;h3 id=&quot;scaling-writes-with-sharding-nosql-datastore-or-design-choices&quot;&gt;Scaling writes with sharding, NoSQL datastore or design choices:&lt;/h3&gt;
+&lt;h2 id=&quot;scaling-writes-with-sharding-nosql-datastore-or-design-choices&quot;&gt;Scaling writes with sharding, NoSQL datastore or design choices:&lt;/h2&gt;
 
 &lt;p&gt;Write-heavy systems tend to be very difficult to deal with. Traditional relational databases can handle reads pretty well, but have trouble with writes. They take more time processing writes because relational databases spend more effort on things like data consistency. This can be very problematic because your database can lock up and give you a lot of timeouts. Consider the scenario where a traditional database can handle 10 writes per second (and you can’t scale up anymore). One method of dealing with this is by writing data to multiple databases. Sharding is the process where you split your database into multiple parts (known as shards). This process allows you to group related data into one database. Another method of dealing with a write heavy system is by writing to Non-relational (NoSQL) databases. These databases are optimized to handle writes, but there is a tradeoff. Depending on the type of NoSQL database, it gives up atomic transactions (they don’t wait for other transactions to finish), consistency across multiple clusters (they don’t wait for other clusters to have the same data), or it’s less durable (they don’t spend time writing to disk). This may seem like you are giving up a lot, but you can mitigate some of these losses with design choices. Design choices can also help you cover some of the weaknesses of SQL databases. For example, consider that updating rows is much more expensive than creating new rows. Design your system so that you are storing new data by inserting new rows, and not by updating existing ones. With all of that said, I recommend that you start out with a SQL database, and evolve your setup depending on your needs.&lt;/p&gt;
 
-&lt;h3 id=&quot;do-minimal-up-front-work-and-queue-the-rest&quot;&gt;Do minimal up front work and queue the rest:&lt;/h3&gt;
+&lt;h2 id=&quot;do-minimal-up-front-work-and-queue-the-rest&quot;&gt;Do minimal up front work and queue the rest:&lt;/h2&gt;
 
-&lt;p&gt;A system is scalable when it can handle unexpectedly large bursts of incoming requests. The faster your system handles a request, the faster it can get to the next one. Turns out, that in most cases, you don’t have to give a response to the request right away — just a response indicating that you have started working on the task. In practice, this means queueing a background job after you have received a request. Once your job is in a queue, you have the added benefit of making your system fault tolerant since failed jobs can be tried again. An alternative to queues is setting up a publish-subscribe system. The benefit of this approach is that you can send one request to different type of systems:  one system immediately processes the request, while the second system runs a long term data analysis job.&lt;/p&gt;
+&lt;p&gt;A system is scalable when it can handle unexpectedly large bursts of incoming requests. The faster your system handles a request, the faster it can get to the next one. Turns out, that in most cases, you don’t have to give a response to the request right away — just a response indicating that you have started working on the task. In practice, this means queueing a background job after you have received a request. Once your job is in a queue, you have the added benefit of making your system fault tolerant since failed jobs can be tried again. An alternative to queues is setting up a publish-subscribe system like Kafka. The benefit of this approach is that you can send one request to different type of systems: one system immediately processes the request, while the second system runs a long term data analysis job.&lt;/p&gt;
 
-&lt;h3 id=&quot;horizontal-scaling&quot;&gt;Horizontal scaling:&lt;/h3&gt;
+&lt;h2 id=&quot;horizontal-scaling&quot;&gt;Horizontal scaling:&lt;/h2&gt;
 
 &lt;p&gt;Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, you’ll find that the cheapest machines are usually shared and not dedicated. Don’t get the cheapest machines. Dedicated servers have more consistent performance and less random spikes in usage.&lt;/p&gt;
 
-&lt;h3 id=&quot;things-that-are-harder-to-test-are-more-likely-to-break&quot;&gt;Things that are harder to test are more likely to break:&lt;/h3&gt;
+&lt;h2 id=&quot;things-that-are-harder-to-test-are-more-likely-to-break&quot;&gt;Things that are harder to test are more likely to break:&lt;/h2&gt;
 
 &lt;p&gt;Among competing approaches to a problem, you should pick the most testable solution (this is my variant of &lt;a href=&quot;https://en.wikipedia.org/wiki/Occam%27s_razor&quot;&gt;Occam’s Razor&lt;/a&gt;). If something is difficult to test, people tend to avoid testing it. This means that future programmers (or you) will be less likely to fully test this system, and each change will make the system more brittle. This model is important to remember when you first tackle a problem because good testability needs to be baked into the architecture. You’ll know when something is hard to test because your intuition will tell you.&lt;/p&gt;
 
-&lt;h3 id=&quot;anti-fragility-and-root-cause-analysis&quot;&gt;Anti-fragility and root cause analysis:&lt;/h3&gt;
+&lt;h2 id=&quot;anti-fragility-and-root-cause-analysis&quot;&gt;Anti-fragility and root cause analysis:&lt;/h2&gt;
 
 &lt;p&gt;Nassim Nicholas Taleb’s uses the analogy of a Hydra in &lt;a href=&quot;https://www.amazon.ca/dp/B0083DJWGO&quot;&gt;Anti-Fragile&lt;/a&gt;; hydras grow a back a stronger head every time they are struck. The software industry has championed this idea too. Instead of treating failures as shameful incidents that should be avoided at all costs, they are now treated as opportunities to improve the system. Netflix’s engineering team is known for Chaos Monkey, a resiliency system that turns off random components. Once you anticipate random events, you can build a more resilient system. When failures do happen they are treated as an opportunity to learn. Root cause analysis is a process where the people involved in the failure try to extract the root cause of the failure in a blameless way — starting of by what went right, and then diving into the failure without blaming anyone.&lt;/p&gt;
 
-&lt;h3 id=&quot;big-o-and-exponential-growth&quot;&gt;Big-O and Exponential growth:&lt;/h3&gt;
+&lt;h2 id=&quot;big-o-and-exponential-growth&quot;&gt;Big-O and exponential growth:&lt;/h2&gt;
 
 &lt;p&gt;The Big-O notation describes the growth in complexity of an algorithm. There is a lot to this, but you’ll get very far if you just understand the difference between constant, linear and exponential growth. In layman’s terms, algorithms that perform one task are better than algorithms that perform many tasks; and the later algorithm is better than algorithms where the number of tasks are ever increasing with each iteration. In practice you’ll almost never see a block of code with multiple nested for-loops — which is typically what one thinks of when they think Big-O. Instead, I have found this issue is typically visible at an architectural level with nested callbacks or background jobs. Watch out for those.&lt;/p&gt;
 
-&lt;h3 id=&quot;margin-of-safety&quot;&gt;Margin of Safety:&lt;/h3&gt;
+&lt;h2 id=&quot;margin-of-safety&quot;&gt;Margin of safety:&lt;/h2&gt;
 
 &lt;p&gt;Accounting for a margin of safety means that you need to leave some room for errors or exceptional events. For example, you might be tempted to run each server at 90% of its capacity. While this saves money, it can leave your server vulnerable to spikes in traffic. You might have more confidence in your setup if you have auto-scaling setup; there is a problem with this too. Your overworked server might cause cascading failures in the whole system. By the time auto-scaling kicks in, the new server may have disk, connection pool or an assortment of other random fun issues. Expect the unexpected and give yourself some room to breathe. Margin of safety also applies to planning releases of new software. You should add a buffer of time because unexpected things will come up.&lt;/p&gt;
 
-&lt;h3 id=&quot;protect-the-public-api&quot;&gt;Protect the public API:&lt;/h3&gt;
+&lt;h2 id=&quot;protect-the-public-api&quot;&gt;Protect the public API:&lt;/h2&gt;
 
 &lt;p&gt;You should be very careful when making changes to the public API. Once something is in the public API, it is very difficult to change or remove. In practice this means having a very good reason for your changes, and being very careful with anything that effects external developers; mistakes in this type of work effect numerous people and are very difficult to revert.&lt;/p&gt;
 
-&lt;h3 id=&quot;redundancy&quot;&gt;Redundancy:&lt;/h3&gt;
+&lt;h2 id=&quot;redundancy&quot;&gt;Redundancy:&lt;/h2&gt;
 
 &lt;p&gt;Any system with many moving parts should be built to expect failures of individual parts. In practice this means having backup providers for systems like Memcached or Redis. For permanent data-stores like SQL, fail-overs and backups are critical. Keep in mind that you should not consider something a backup unless you do regular drills to make sure that you can actually recover that data.&lt;/p&gt;
 
-&lt;h3 id=&quot;loose-coupling--services&quot;&gt;Loose coupling &amp;amp; Services:&lt;/h3&gt;
+&lt;h2 id=&quot;loose-coupling--services&quot;&gt;Loose coupling &amp;amp; services:&lt;/h2&gt;
 
 &lt;p&gt;Tight coupling means that different components of a system are closely interconnected. This has two major drawbacks. The first drawback is that these tightly coupled systems are more complex. Complex systems, in turn, are more difficult to maintain and more error prone. The second major draw back of these systems is that failure in one component propagates faster. When systems are loosely coupled, this means that failures can be self contained and can be replaced by potential backups (see Redundancy). At a code level, reducing tight coupling means following the single responsibility principles which states that every class should have a single responsibility and should communicate with other classes with a minimal public API. At an architecture level, you can improve tightly coupled systems by following the Service oriented architecture. This architecture system suggests dividing components by their business services and only allowing communication between these services with a strict API.&lt;/p&gt;
 
-&lt;h3 id=&quot;be-serious-about-configuration&quot;&gt;Be serious about configuration:&lt;/h3&gt;
+&lt;h2 id=&quot;be-serious-about-configuration&quot;&gt;Be serious about configuration:&lt;/h2&gt;
 
 &lt;p&gt;Most failures in well-tested systems occur due to bad configuration; this can be changes like environmental variables updates or DNS settings. Configuration changes are particularly error prone because of the lack of tests, and the difference between the development and production environment. In practice, this means adding tests to cover different configuration, and making the dev and prod environment as similar as possible. If something works in development, but not production, spend sometime thinking about why that’s the case.&lt;/p&gt;
 
-&lt;h3 id=&quot;explicit-is-better-than-implicit&quot;&gt;Explicit is better than implicit:&lt;/h3&gt;
+&lt;h2 id=&quot;explicit-is-better-than-implicit&quot;&gt;Explicit is better than implicit:&lt;/h2&gt;
 
 &lt;p&gt;This model is one of the core tenants from the &lt;a href=&quot;https://www.python.org/dev/peps/pep-0020/#id3&quot;&gt;Zen of Python&lt;/a&gt; and it’s critical to improving code readability. It is really difficult to understand code that expects the reader to have all of the context of the original author. An engineer should be able to look at class and understand where all of the different components come from. I have found that simply having everything in one place is better than convoluted design patterns. Write code for people, not computers.&lt;/p&gt;
 
-&lt;h3 id=&quot;code-review&quot;&gt;Code Review:&lt;/h3&gt;
+&lt;h2 id=&quot;code-review&quot;&gt;Code review:&lt;/h2&gt;
 
 &lt;p&gt;Code review is an amazing practice because it maintains code quality and transfers knowledge from senior developers. Have at-least two other developers review your code before shipping it. You’ll find that your code review quality will slip depending on your energy level. Here is an approach to getting some consistency in reviews: 1) Why is this change being made? 2) How can this approach or code be wrong?  3) Do the tests cover this or do I need to run it locally?&lt;/p&gt;
 
-&lt;h3 id=&quot;oneway-hash-functions&quot;&gt;Oneway hash functions:&lt;/h3&gt;
+&lt;h2 id=&quot;oneway-hash-functions&quot;&gt;Oneway hash functions:&lt;/h2&gt;
 
 &lt;p&gt;These functions are the foundation of cryptography, but also have many other uses. For any input string, for example “Hammad”, you return another string “AAAAA”, so it has the following qualities: 1) “Hammad” will always be transformed to the same output string, 2) If you are given the output string “AAAAA”, it is impossible to guess that this was generated by the “Hammad” string. On a previous project, we had to compare two large objects with numerous fields and we didn’t want to store these large objects in the database. To get around that, we stored the small hashed strings of these objects instead. A ton of interesting technologies like private/public key crypto, and even blockchain networks are based on hash functions.&lt;/p&gt;
 
-&lt;h3 id=&quot;perceived-performance&quot;&gt;Perceived Performance:&lt;/h3&gt;
+&lt;h2 id=&quot;perceived-performance&quot;&gt;Perceived Performance:&lt;/h2&gt;
 
 &lt;p&gt;Based on UX research, 0.1 second (100ms) is the gold standard of loading time. Slower applications risk losing the user’s attention. Accomplishing this load time for non-trivial apps is actually pretty difficult. This is where you can take advantage of perceived performance. Perceived performance refers to how your fast your product feels. The idea is that you show users placeholder content at load time, and then add the actual content on the screen once it finishes loading. This is kinda related to the Do minimal up front work and queue the rest model.&lt;/p&gt;
 
-&lt;h3 id=&quot;safety-valves&quot;&gt;Safety valves:&lt;/h3&gt;
+&lt;h2 id=&quot;safety-valves&quot;&gt;Safety valves:&lt;/h2&gt;
 
 &lt;p&gt;Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.&lt;/p&gt;
 
-&lt;h4 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;.&lt;/h4&gt;
+&lt;h2 id=&quot;introducing-new-tech-should-make-an-impossible-task-possible-or-something-10x-easier&quot;&gt;Introducing new tech should make an impossible task possible, or something 10x easier:&lt;/h2&gt;
+
+&lt;p&gt;Most companies eventually have to evaluate new technologies. In the
+tech industry, you have to do this to stay relevant. However, introducing a new
+technology has two negative consequences. First, it becomes more
+difficult for developers to move across teams. This is a problem because it
+creates knowledge silos within the company, and slows down career growth.
+The second consequence is that fewer libraries or learnings can be
+shared across the company because of the tech fragmentation.
+Moving over to a new tech might come up because of people’s tendency to want to start over and write things from scratch. Doing this is almost always a &lt;a href=&quot;https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/&quot;&gt;bad idea&lt;/a&gt;. On the other hand, there are a few cases where introducing a new technology makes sense. It makes sense when it enables your company to take on previously impossible tasks. It makes sense when the technical limitation of your current stack is preventing you from reaching your product goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;automatic-cache-expiration&quot;&gt;Automatic cache expiration:&lt;/h2&gt;
+
+&lt;p&gt;Your caching setup can be greatly simplified with automatic cache expiration. To illustrate why, consider the example where the server is rendering a product on a page. You would want to expire the cache whenever this product changes. The manual method of doing this is by calling the cache expiration code after the product is changed. This requires two seperate steps, 1) Changing the product, and then 2) Expiring the cache. If you build your system with &lt;code class=&quot;highlighter-rouge&quot;&gt;key-based&lt;/code&gt; caching, you can avoid the second step all together. This is typically done by using a combination of the product’s ID and it’s ‘last_updated_at_timestamp’ as the key for the product’s cache. This means that when a product changes it’ll have a different ‘last_updated_at_timestamp’ field. Since you’ll have a different key, you won’t find anything in the cache matching that key and fetch the product in it’s newest state. The downside of this approach is that your cache datastore (e.g., Memcached or Redis) will fill up with old caches. This can be mitigated by adding an expiry time to all caches so old caches automatically disappear. You can also configure Memcached so it evicts the oldest caches to make room for new ones.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;.&lt;/h3&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
