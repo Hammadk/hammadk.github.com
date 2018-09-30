@@ -5,10 +5,6 @@
 <lastmod>2017-08-26T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>/projects/2016/02/15/trends-watch</loc>
-<lastmod>2016-02-15T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku</loc>
 <lastmod>2016-02-15T00:00:00-05:00</lastmod>
 </url>
@@ -47,10 +43,10 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/blog/</loc>
+<loc>/projects/</loc>
 </url>
 <url>
-<loc>/projects/</loc>
+<loc>/blog/</loc>
 </url>
 <url>
 <loc>/tags</loc>

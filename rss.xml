@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2017-11-26T22:22:50-05:00</lastBuildDate>
-        <pubDate>2017-11-26T22:22:50-05:00</pubDate>
+        <lastBuildDate>2018-09-30T18:23:10-04:00</lastBuildDate>
+        <pubDate>2018-09-30T18:23:10-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -125,22 +125,6 @@ Hammad Khalid (@Hammadk) &lt;a href=&quot;https://twitter.com/Hammadk/status/913
         </item>
 
         <item>
-                <title>Trends Watch</title>
-                <description>&lt;p&gt;This app collects trending Google searches, tweets, movies,
-Reddit and Instragram posts. I use this to keep track of current trends. You can try it our here:
-&lt;a href=&quot;http://trendswatch.herokuapp.com&quot; target=&quot;_blank&quot;&gt;trendswatch.herokuapp.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/trends-watch-content.png&quot; alt=&quot;Let there be flash light&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a Rails app but there is a ton of fun stuff happening in the background. Every 5 minutes, a background jobs collects the latest trends from all across the web. After this, I generate a static page with this trends data on it. This static page is then uploaded to S3. Trends watch itself, just renders that S3 static page.&lt;/p&gt;
-
-</description>
-                <link>http://hammad.ca/projects/2016/02/15/trends-watch</link>
-                <guid>http://hammad.ca/projects/2016/02/15/trends-watch</guid>
-                <pubDate>2016-02-15T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
                 <title>Automatically run Rails database migration after deploying to Heroku</title>
                 <description>&lt;p&gt;Buildpacks are scripts that run after your app is deployed to Heroku. Heroku is
 smart enough to figure out what buildpacks to use depending on your app. For
@@ -208,12 +192,12 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 
         <item>
                 <title>Master's Thesis: On The Link Between Mobile App Quality And User Reviews</title>
-                <description>&lt;p&gt;&lt;img src=&quot;/assets/images/twas_cold_in_kingston.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I examinded the link between software quality and user reviews during my
+                <description>&lt;p&gt;I examinded the link between software quality and user reviews during my
 master’s. This was really interesting because it involved doing static analysis on code
 which is very objective and comparing that with user feedback which is really subjective.
-Overall, I have published over 9 papers and have received over &lt;a href=&quot;https://scholar.google.com/citations?user=ojCX70YAAAAJ&amp;amp;hl=en&amp;amp;authuser=1&quot;&gt;285 citations for my work&lt;/a&gt;.&lt;/p&gt;
+Overall, I have published over 9 papers and have received over &lt;a href=&quot;https://scholar.google.com/citations?user=ojCX70YAAAAJ&amp;amp;hl=en&amp;amp;authuser=1&quot;&gt;400 citations for my work&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/books.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I focused on the following set of problems for the actual thesis:&lt;/p&gt;
 
