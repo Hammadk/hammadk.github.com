@@ -4,6 +4,7 @@ gem 'jekyll'
 gem 'jekyll-gist'
 
 group :jekyll_plugins do
-  gem 'octopress-debugger'
   gem 'jekyll-sitemap'
+  gem 'jekyll-toc'
+  gem 'octopress-debugger'
 end

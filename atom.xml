@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2020-07-11T15:15:15-04:00</updated>
+ <updated>2020-07-11T15:58:47-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -97,6 +97,10 @@
 
 &lt;p&gt;Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.&lt;/p&gt;
 
+&lt;h2 id=&quot;automatic-cache-expiration&quot;&gt;Automatic cache expiration&lt;/h2&gt;
+
+&lt;p&gt;Your caching setup can be greatly simplified with automatic cache expiration. To illustrate why, consider the example where the server is rendering a product on a page. You would want to expire the cache whenever this product changes. The manual method of doing this is by calling the cache expiration code after the product is changed. This requires two seperate steps, 1) Changing the product, and then 2) Expiring the cache. If you build your system with &lt;code class=&quot;highlighter-rouge&quot;&gt;key-based&lt;/code&gt; caching, you can avoid the second step all together. This is typically done by using a combination of the product’s ID and it’s ‘last_updated_at_timestamp’ as the key for the product’s cache. This means that when a product changes it’ll have a different ‘last_updated_at_timestamp’ field. Since you’ll have a different key, you won’t find anything in the cache matching that key and fetch the product in it’s newest state. The downside of this approach is that your cache datastore (e.g., Memcached or Redis) will fill up with old caches. This can be mitigated by adding an expiry time to all caches so old caches automatically disappear. You can also configure Memcached so it evicts the oldest caches to make room for new ones.&lt;/p&gt;
+
 &lt;h2 id=&quot;introducing-new-tech-should-make-an-impossible-task-possible-or-something-10x-easier&quot;&gt;Introducing new tech should make an impossible task possible, or something 10x easier&lt;/h2&gt;
 
 &lt;p&gt;Most companies eventually have to evaluate new technologies. In the
@@ -107,10 +111,6 @@ creates knowledge silos within the company, and slows down career growth.
 The second consequence is that fewer libraries or learnings can be
 shared across the company because of the tech fragmentation.
 Moving over to a new tech might come up because of people’s tendency to want to start over and write things from scratch. Doing this is almost always a &lt;a href=&quot;https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/&quot;&gt;bad idea&lt;/a&gt;. On the other hand, there are a few cases where introducing a new technology makes sense. It makes sense when it enables your company to take on previously impossible tasks. It makes sense when the technical limitation of your current stack is preventing you from reaching your product goals.&lt;/p&gt;
-
-&lt;h2 id=&quot;automatic-cache-expiration&quot;&gt;Automatic cache expiration&lt;/h2&gt;
-
-&lt;p&gt;Your caching setup can be greatly simplified with automatic cache expiration. To illustrate why, consider the example where the server is rendering a product on a page. You would want to expire the cache whenever this product changes. The manual method of doing this is by calling the cache expiration code after the product is changed. This requires two seperate steps, 1) Changing the product, and then 2) Expiring the cache. If you build your system with &lt;code class=&quot;highlighter-rouge&quot;&gt;key-based&lt;/code&gt; caching, you can avoid the second step all together. This is typically done by using a combination of the product’s ID and it’s ‘last_updated_at_timestamp’ as the key for the product’s cache. This means that when a product changes it’ll have a different ‘last_updated_at_timestamp’ field. Since you’ll have a different key, you won’t find anything in the cache matching that key and fetch the product in it’s newest state. The downside of this approach is that your cache datastore (e.g., Memcached or Redis) will fill up with old caches. This can be mitigated by adding an expiry time to all caches so old caches automatically disappear. You can also configure Memcached so it evicts the oldest caches to make room for new ones.&lt;/p&gt;
 
 &lt;h3 id=&quot;i-hope-these-mental-models-will-be-as-valuable-for-you-as-they-are-for-me-i-intend-for-this-to-be-a-living-document-and-ill-update-it-as-i-learn-more-stuff-ill-cover-productivity-working-with-people-product-and-growth-in-future-posts-if-you-found-this-useful-you-can-stay-updated-by-following-me-on-twitter-herehttpstwittercomhammadk&quot;&gt;I hope these mental models will be as valuable for you, as they are for me. I intend for this to be a living document and i’ll update it as I learn more stuff. I’ll cover productivity, working with people, product and growth in future posts. If you found this useful, you can stay updated by following me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;&lt;/h3&gt;
 
@@ -199,23 +199,17 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
    <content type="html">&lt;p&gt;I examinded the link between software quality and user reviews during my
 master’s. This was really interesting because it involved doing static analysis on code
 which is very objective and comparing that with user feedback which is really subjective.
-Overall, I have published over 9 papers and have received over &lt;a href=&quot;https://scholar.google.com/citations?user=ojCX70YAAAAJ&amp;amp;hl=en&amp;amp;authuser=1&quot;&gt;400 citations for my work&lt;/a&gt;.&lt;/p&gt;
+Overall, I have published over 9 papers and have received over &lt;a href=&quot;https://scholar.google.com/citations?user=ojCX70YAAAAJ&quot;&gt;677 citations for my work&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/books.jpg&quot; alt=&quot;Flexible screen image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I focused on the following set of problems for the actual thesis:&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;What Do Mobile App Users Complain About?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Prioritizing The Devices To Test Your App On: A Case Study Of Android Game Apps&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Examining the Relationship between FindBugs Warnings and End User Ratings: A Case Study On 10,000 Android Apps&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;ol&gt;
+  &lt;li&gt;What Do Mobile App Users Complain About?&lt;/li&gt;
+  &lt;li&gt;Prioritizing The Devices To Test Your App On: A Case Study Of Android Game Apps&lt;/li&gt;
+  &lt;li&gt;Examining the Relationship between FindBugs Warnings and End User Ratings: A Case Study On 10,000 Android Apps&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;You can read the &lt;a href=&quot;/assets/pdf/hammad_khalid_thesis_2014.pdf&quot;&gt;full thesis here&lt;/a&gt;.&lt;/p&gt;
 </content>

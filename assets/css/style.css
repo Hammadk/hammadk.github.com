@@ -493,6 +493,11 @@ footer ul li { display: inline-block; padding: 0px 10px;}
 
 }
 
+/* Table of contents */
+.table-of-contents {
+  padding-bottom: 2em;
+}
+
 /* Time line */
 
 .timeline-section {
