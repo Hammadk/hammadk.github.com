@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2018-09-30T18:23:10-04:00</updated>
+ <updated>2020-07-11T15:02:12-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -185,8 +185,7 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;the-code&quot;&gt;The code:&lt;/h3&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/0a196dd1ac5ad971df1a.js&quot;&gt; &lt;/script&gt;
 
 </content>

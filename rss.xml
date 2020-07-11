@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2018-09-30T18:23:10-04:00</lastBuildDate>
-        <pubDate>2018-09-30T18:23:10-04:00</pubDate>
+        <lastBuildDate>2020-07-11T15:02:12-04:00</lastBuildDate>
+        <pubDate>2020-07-11T15:02:12-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -180,8 +180,7 @@ to prompt you for a confirmation before you push to the master branch. &lt;code 
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;the-code&quot;&gt;The code:&lt;/h3&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/0a196dd1ac5ad971df1a.js&quot;&gt; &lt;/script&gt;
 
 </description>
