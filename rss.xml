@@ -5,8 +5,8 @@
         <description>Hammad Khalid - Hammad Khalid</description>
         <link>http://hammad.ca</link>
         <link>http://hammad.ca</link>
-        <lastBuildDate>2020-07-11T15:58:47-04:00</lastBuildDate>
-        <pubDate>2020-07-11T15:58:47-04:00</pubDate>
+        <lastBuildDate>2020-07-11T16:26:07-04:00</lastBuildDate>
+        <pubDate>2020-07-11T16:26:07-04:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -38,7 +38,7 @@
 
 &lt;h2 id=&quot;horizontal-scaling&quot;&gt;Horizontal scaling&lt;/h2&gt;
 
-&lt;p&gt;Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, you’ll find that the cheapest machines are usually shared and not dedicated. Don’t get the cheapest machines. Dedicated servers have more consistent performance and less random spikes in usage.&lt;/p&gt;
+&lt;p&gt;Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all subdivided into smaller systems.&lt;/p&gt;
 
 &lt;h2 id=&quot;things-that-are-harder-to-test-are-more-likely-to-break&quot;&gt;Things that are harder to test are more likely to break&lt;/h2&gt;
 

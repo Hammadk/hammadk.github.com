@@ -196,7 +196,7 @@
 <h2 id="horizontal-scaling">
 <a class="anchor" href="#horizontal-scaling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontal scaling</h2>
 
-<p>Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, you’ll find that the cheapest machines are usually shared and not dedicated. Don’t get the cheapest machines. Dedicated servers have more consistent performance and less random spikes in usage.</p>
+<p>Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all subdivided into smaller systems.</p>
 
 <h2 id="things-that-are-harder-to-test-are-more-likely-to-break">
 <a class="anchor" href="#things-that-are-harder-to-test-are-more-likely-to-break" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things that are harder to test are more likely to break</h2>
