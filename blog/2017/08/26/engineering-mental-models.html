@@ -163,6 +163,8 @@
 <li class="toc-entry toc-h2"><a href="#oneway-hash-functions">Oneway hash functions</a></li>
 <li class="toc-entry toc-h2"><a href="#perceived-performance">Perceived Performance</a></li>
 <li class="toc-entry toc-h2"><a href="#safety-valves">Safety valves</a></li>
+<li class="toc-entry toc-h2"><a href="#failure-modes">Failure modes</a></li>
+<li class="toc-entry toc-h2"><a href="#computers-should-tell-you-when-something-is-wrong">Computers should tell you when something is wrong</a></li>
 <li class="toc-entry toc-h2"><a href="#automatic-cache-expiration">Automatic cache expiration</a></li>
 <li class="toc-entry toc-h2"><a href="#introducing-new-tech-should-make-an-impossible-task-possible-or-something-10x-easier">Introducing new tech should make an impossible task possible, or something 10x easier</a></li>
 </ul><p>There’s always new <em>stuff</em>: new frameworks, new languages, and new platforms. All of this adds up. Sometimes it feels like you are just treading water, and not actually getting better at what you do. I have tried spending more time on this stuff, but that doesn’t work — there is always more. I have found that a better approach is learning things at a deeper level, and using those lessons as a checklist. This checklist of core principles is called mental models.</p>
@@ -196,7 +198,7 @@
 <h2 id="horizontal-scaling">
 <a class="anchor" href="#horizontal-scaling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontal scaling</h2>
 
-<p>Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all subdivided into smaller systems.</p>
+<p>Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all horizontally scaled. The cost for horizontally scaling systems is application and operational complexity, but there are ways of hiding this from developers.</p>
 
 <h2 id="things-that-are-harder-to-test-are-more-likely-to-break">
 <a class="anchor" href="#things-that-are-harder-to-test-are-more-likely-to-break" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things that are harder to test are more likely to break</h2>
@@ -262,6 +264,16 @@
 <a class="anchor" href="#safety-valves" aria-hidden="true"><span class="octicon octicon-link"></span></a>Safety valves</h2>
 
 <p>Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.</p>
+
+<h2 id="failure-modes">
+<a class="anchor" href="#failure-modes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Failure modes</h2>
+
+<p>Designers and product folks focus on the expected use cases. As an engineer you also have to think about the worst case scenarios because that’s where the majority of your time will go. At scale, all bad things that can happen do happen. Asking “What could go wrong” or “How can I be wrong” really helps with this; these questions also cancel out our bias towards confirmation of our existing ideas. Think about what happens when no data, or a lot of data is flowing through the system (Think “Min-Max”). You should expect computers to ocassionally die and handle those cases gracefully, and expect network requests to be slow or stall all togther.</p>
+
+<h2 id="computers-should-tell-you-when-something-is-wrong">
+<a class="anchor" href="#computers-should-tell-you-when-something-is-wrong" aria-hidden="true"><span class="octicon octicon-link"></span></a>Computers should tell you when something is wrong</h2>
+
+<p>Systems become more difficult to monitor as they grow. What you want is to measure and log everything at the very beginning, and not wait until something goes wrong. You can encourage other developers to do this by creating services with a really simple APIs since these easy and obvious services are more likely to be used. Once you are logging everything, create automated alerts for anomolies. Post these alerts in shared communication channels, and automatically page the oncall developer for emergencies.</p>
 
 <h2 id="automatic-cache-expiration">
 <a class="anchor" href="#automatic-cache-expiration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automatic cache expiration</h2>

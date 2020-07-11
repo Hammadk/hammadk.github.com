@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2020-07-11T16:26:07-04:00</updated>
+ <updated>2020-07-11T19:36:11-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -43,7 +43,7 @@
 
 &lt;h2 id=&quot;horizontal-scaling&quot;&gt;Horizontal scaling&lt;/h2&gt;
 
-&lt;p&gt;Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all subdivided into smaller systems.&lt;/p&gt;
+&lt;p&gt;Horizontal scaling refers to running your software on multiple small machines, while vertical scaling refers to running your software on one large machine. Horizontal scaling is more fault tolerant since failure of a machine does not mean an outage; instead, the work for the failed machine is routed to the other machines. In practice, horizontally scaling a system is the only long term approach to scaling. All systems that appear ‘infinitely-scalable’ are horizontally scaled under the hood: Cloud object stores like S3 and GCS, NoSQL databases like Bigtable and Dynamo DB, and stream processing software like Kafka are all horizontally scaled. The cost for horizontally scaling systems is application and operational complexity, but there are ways of hiding this from developers.&lt;/p&gt;
 
 &lt;h2 id=&quot;things-that-are-harder-to-test-are-more-likely-to-break&quot;&gt;Things that are harder to test are more likely to break&lt;/h2&gt;
 
@@ -96,6 +96,14 @@
 &lt;h2 id=&quot;safety-valves&quot;&gt;Safety valves&lt;/h2&gt;
 
 &lt;p&gt;Building a system means accounting for all possibilities. In addition to worst case scenarios, you have to be prepared to deal with things that you cannot anticipate. The general approach for handling these scenarios is stopping the system to prevent any possible damage. In practice, this means having controls that let you reject additional requests while you diagnose a solution; one way to do this is adding an environment variable that can be toggled without deploying a new version of your code.&lt;/p&gt;
+
+&lt;h2 id=&quot;failure-modes&quot;&gt;Failure modes&lt;/h2&gt;
+
+&lt;p&gt;Designers and product folks focus on the expected use cases. As an engineer you also have to think about the worst case scenarios because that’s where the majority of your time will go. At scale, all bad things that can happen do happen. Asking “What could go wrong” or “How can I be wrong” really helps with this; these questions also cancel out our bias towards confirmation of our existing ideas. Think about what happens when no data, or a lot of data is flowing through the system (Think “Min-Max”). You should expect computers to ocassionally die and handle those cases gracefully, and expect network requests to be slow or stall all togther.&lt;/p&gt;
+
+&lt;h2 id=&quot;computers-should-tell-you-when-something-is-wrong&quot;&gt;Computers should tell you when something is wrong&lt;/h2&gt;
+
+&lt;p&gt;Systems become more difficult to monitor as they grow. What you want is to measure and log everything at the very beginning, and not wait until something goes wrong. You can encourage other developers to do this by creating services with a really simple APIs since these easy and obvious services are more likely to be used. Once you are logging everything, create automated alerts for anomolies. Post these alerts in shared communication channels, and automatically page the oncall developer for emergencies.&lt;/p&gt;
 
 &lt;h2 id=&quot;automatic-cache-expiration&quot;&gt;Automatic cache expiration&lt;/h2&gt;
 
