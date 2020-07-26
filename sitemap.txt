@@ -8,6 +8,7 @@ http://hammad.ca/rss.xml
 http://hammad.ca/sitemap.txt
 http://hammad.ca/tags
 
+http://hammad.ca/blog/2020/07/26/management-mental-models
 http://hammad.ca/blog/2017/08/26/engineering-mental-models
 http://hammad.ca/blog/2016/02/15/automatically-migrating-your-rails-app-on-heroku
 http://hammad.ca/blog/2015/03/08/confirm-before-pushing-to-master-branch

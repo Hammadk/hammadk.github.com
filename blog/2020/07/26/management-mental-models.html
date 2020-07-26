@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://plus.google.com/106605118708953549941" rel="publisher" />
+    <link rel="author" href="https://plus.google.com/106605118708953549941"/>
+    <meta charset="utf-8">
+
+    <title>Mental Models for Product Developers, Part 2: Management - Hammad Khalid</title>
+    <meta property="og:title" content="Mental Models for Product Developers, Part 2: Management">
+    <meta name="twitter:title" content="Mental Models for Product Developers, Part 2: Management">
+
+    <meta name="author" content="Hammad Khalid">
+
+    <meta property="og:url" content="http://hammad.ca/blog/2020/07/26/management-mental-models">
+
+    
+      <meta property="og:image" content="http://hammad.ca/assets/images/align_incentives.png">
+      <meta name="twitter:image" content="http://hammad.ca/assets/images/align_incentives.png">
+    
+
+    
+      <meta name="description" content="Management is really about growing people. You will rarely have to manage others if you align incentives.">
+      <meta property="og:description"  content="Management is really about growing people. You will rarely have to manage others if you align incentives.">
+      <meta name="twitter:description"  content="Management is really about growing people. You will rarely have to manage others if you align incentives.">
+    
+
+    <meta property="og:site_name" content="Hammad.ca">
+    <meta name="twitter:site" content="Hammad.ca">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/socialite.js"></script>
+
+    <!--  ouch icons -->
+    <!-- Update these with your own images
+         <link rel="shortcut icon" href="images/favicon.ico">
+         <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+         -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <!-- <span class="icon-bar"></span> -->
+              <span class="glyphicon glyphicon-list"></span>
+              Menu
+            </button>
+            <a class="navbar-brand" href="/">Hammad Khalid</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/"><span class="glyphicon glyphicon-leaf"></span> Projects</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/"><span class="glyphicon glyphicon-road"></span> Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="content">
+          <div class="page-header">
+  <h1>Mental Models for Product Developers, Part 2: Management </h1>
+</div>
+
+<div class="row post-full page-content">
+  <div class="row">
+
+    <div class="col-md-10 col-md-offset-1">
+      <div class="content post-content">
+
+        <ul class="table-of-contents">
+<li class="toc-entry toc-h2"><a href="#create-motivation-by-aligning-incentives">Create motivation by aligning incentives</a></li>
+<li class="toc-entry toc-h2"><a href="#create-clarity-by-understanding-the-why-and-having-a-vision-for-the-product">Create clarity by understanding the “why” and having a vision for the product</a></li>
+<li class="toc-entry toc-h2"><a href="#focus-on-high-leverage-activities">Focus on high leverage activities</a></li>
+<li class="toc-entry toc-h2"><a href="#do-not-try-to-be-efficient-with-relationships">Do not try to be efficient with relationships</a></li>
+<li class="toc-entry toc-h2"><a href="#hire-smart-people-who-gets-stuff-done-and-you-want-to-be-around">Hire smart people, who gets stuff done, and you want to be around</a></li>
+<li class="toc-entry toc-h2"><a href="#be-useful">Be useful</a></li>
+<li class="toc-entry toc-h2"><a href="#get-the-requirements-right-early-and-come-up-with-a-game-plan">Get the requirements right early and come up with a game-plan</a></li>
+<li class="toc-entry toc-h2"><a href="#establish-rapport-before-getting-to-work">Establish rapport before getting to work</a></li>
+<li class="toc-entry toc-h2"><a href="#there-is-no-one-size-fits-all-approach-to-people-personality-tests-are-good-defaults">There is no one-size-fits-all approach to people. Personality tests are good defaults</a></li>
+<li class="toc-entry toc-h2"><a href="#get-people-to-lead-with-their-strengths-and-address-their-growth-areas-as-a-secondary-priority">Get people to lead with their strengths, and address their growth areas as a secondary priority</a></li>
+<li class="toc-entry toc-h2"><a href="#focus-on-the-positives-and-dont-over-index-on-the-negatives">Focus on the positives, and don’t over index on the negatives</a></li>
+<li class="toc-entry toc-h2"><a href="#people-will-act-like-owners-if-you-give-them-control-and-transparency">People will act like owners if you give them control and transparency</a></li>
+<li class="toc-entry toc-h2"><a href="#have-high-standards-for-yourself-and-the-people-around-you">Have high standards for yourself and the people around you</a></li>
+<li class="toc-entry toc-h2"><a href="#hold-people-accountable">Hold people accountable</a></li>
+<li class="toc-entry toc-h2"><a href="#bring-other-people-up-with-you">Bring other people up with you</a></li>
+<li class="toc-entry toc-h2"><a href="#maintain-your-mental-health-with-mindfulness-rest-and-distance">Maintain your mental health with mindfulness, rest and distance</a></li>
+<li class="toc-entry toc-h2"><a href="#aim-to-operate-2-3-months-into-the-future">Aim to operate 2-3 months into the future</a></li>
+<li class="toc-entry toc-h2"><a href="#give-feedback-to-people-that-you-want-long-term-relationships-with">Give feedback to people that you want long term relationships with</a></li>
+</ul><p>This is the second part of the “<a href="http://hammad.ca/blog/2017/08/26/engineering-mental-models">Mental Models for Product Developers series</a>” and it took me three years to write this post. I hope you weren’t holding your breath! The key insight here is that “management” might be the wrong name for this discipline all together. What you are really doing is growing people. You will rarely have to manage others if you align your interests with the people that report to you.</p>
+
+<p>Compared to engineering, management is more fuzzy and subjective. This might be why engineers struggle with it. It’s really about calibration; you are calibrating approaches for yourself and your reports. What works for you, might not work for me because the world has different expectations from us. Likewise, just reading books on this stuff doesn’t help because advice from the book is calibrated for the author. With that said, I believe the following mental models are falsifiable. I also believe that doing the opposite of these will always be harmful. I find these particularly valuable while planning my week. Enjoy!</p>
+
+<h2 id="create-motivation-by-aligning-incentives">
+<a class="anchor" href="#create-motivation-by-aligning-incentives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create motivation by aligning incentives</h2>
+
+<p>Incentives drive our behavior above all else. Even the best organized, highest leverage, projects will run into hiccupts if the incentives are not aligned. You can solve this by working with your reports to identify the intersection of: 1) What do they want to work on?, 2) What does the product need?, and 3) What does that company need? Magic happens when these questions produce themes that overlap with each other; the person will have intrinsic motivation for tasks that build their skills, improve their product, and their company. Working on the two intersecting themes to these questions can be fruitful too. You can replace ‘product’ with ‘direct team’ if appropriate. Occasionally you’ll find someone focusing on a task that’s only being done because that’s what the person wants (neglecting the product and the company), only what the product needs (neglecting the person’s needs or the company), or only what the company wants (neglecting the person’s needs or their product). This is fine in the short term, but not a good long term strategy.</p>
+
+<p>What makes this interesting is that the answers to these questions are often at odds with each other. For example, you could have cases where the person wants to do more datastore optimizations, but the most important thing for the product is new features. Another example of this is when the company would want the person to help teach their peers, but the product would need the person to focus on existing issues. You should allow for short term exceptions, but nudge your reports towards overlapping themes.</p>
+
+<p><img src="/assets/images/align_incentives.png" alt="Align incentives"></p>
+
+<h2 id="create-clarity-by-understanding-the-why-and-having-a-vision-for-the-product">
+<a class="anchor" href="#create-clarity-by-understanding-the-why-and-having-a-vision-for-the-product" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create clarity by understanding the “why” and having a vision for the product</h2>
+
+<p>You should have a vision for where your product needs to go. Doing this ends up being super helpful when deciding between competing tactical options, and also helps clear up general confusion. You should also communicate the vision with your team.  While being a visionary isn’t included in your job description, aligning on a “why” often counteracts the negative effects of broken-telephone effect in communication and entropy in organizations.</p>
+
+<h2 id="focus-on-high-leverage-activities">
+<a class="anchor" href="#focus-on-high-leverage-activities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Focus on high leverage activities</h2>
+
+<p>This is the central idea in <a href="https://www.goodreads.com/book/show/324750.High_Output_Management">High output management</a>. The core idea is similar to the “Pareto principle” where you focus your energy on the 20% of the tasks that have 80% of the impact. If you don’t do this, your team will spend a lot of time, but not accomplish much. So, take some time to plan your approach and focus on the activities that give you the most leverage. I found <a href="http://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf">Donella Medow’s research</a> to be a super user for understanding leverage. A few examples of this include:</p>
+
+<h4 id="promote-growth-mindset-in-your-team">Promote growth mindset in your team</h4>
+
+<p>If you had to start with 0, what you’d want is the ability to acquire new skills. You want to instill a mindset of growth in yourself and the rest of the team. Create  an environment where reflection and failures are talked about. Lessons that you truly learn are the ones that you have learnt by making mistakes. Create an environment where people obsess about the craft and consider failures a learning opportunity.</p>
+
+<h4 id="align-your-team-on-the-common-vision">Align your team on the common vision</h4>
+
+<p>This is one of the most important things you could do. It’ll mean that people will go in the same general direction. More importantly, it’ll help you avoid situations where people are going in the wrong direction.</p>
+
+<h4 id="build-self-organizing-teams">Build self-organizing teams</h4>
+
+<p>Creating self-sufficient teams is the only way to scale yourself. You can enable a team to do this by promoting a sense of ownership. You can give your input without taking authority away from others, and offer suggestions without steamrolling leaders.</p>
+
+<h4 id="communication-and-structural-organization">Communication and structural organization</h4>
+
+<p>By default, most systems lean towards disorder and gradual decline. Someone has to take active steps against entropy. Focusing on communication and organization ends up being enormously useful and prevents fragmentation. Look for inefficiencies in how teams are organized, and how information flows through your organization.</p>
+
+<h4 id="architecture-right">Architecture right</h4>
+
+<p>This is where your <a href="http://hammad.ca/blog/2017/08/26/engineering-mental-models">engineering chops will come in handy</a>. From a technical perspective, getting the core pieces of the architecture right ends up being critical and defines the flow of information in the system. This applies for both front-end and back-end systems.</p>
+
+<h2 id="do-not-try-to-be-efficient-with-relationships">
+<a class="anchor" href="#do-not-try-to-be-efficient-with-relationships" aria-hidden="true"><span class="octicon octicon-link"></span></a>Do not try to be efficient with relationships</h2>
+
+<p>As an engineer your brain is optimized to seek efficiency. Efficiency is not a good approach when it comes to relationships with people; you can often have the opposite effect as what you intended. I have found that 30 minute meetings are too fast for 1-1s with your reports. What you want to do is to give some time for banter, and a free flow of information. This eases people up and you have better conversations and people often end up sharing more critical information than they otherwise would. Of course, you don’t want to spend a lot of time in meetings so I prefer to have longer infrequent meetings instead of frequent short meetings.</p>
+
+<p>This also applies to pushing for changes or influencing others in any way. This is a long game, and you should be prepared for that. Permanent positive behavioral changes take time.</p>
+
+<h2 id="hire-smart-people-who-gets-stuff-done-and-you-want-to-be-around">
+<a class="anchor" href="#hire-smart-people-who-gets-stuff-done-and-you-want-to-be-around" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hire smart people, who gets stuff done, and you want to be around</h2>
+
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">Pick business partners with high intelligence, energy, and, above all, integrity.</p>— Naval (@naval) <a href="https://twitter.com/naval/status/1002103969781448704?ref_src=twsrc%5Etfw">May 31, 2018</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Hiring, when done right, is one of the highest-leverage activities that you can work on. You are looking for three key signals when hiring: smart, gets stuff done, and good to be around. When looking for the “smart” signal, be aware of the “halo effect” and be weary of charmers. “Get stuff done” is critical because you don’t want to be around smart people who are not adding value to your company. Just like investing, your aim should be to identify people on a great trajectory. “Good to be around” is tricky because it’s filled with personal bias. A good rule is to never hire assholes. Even if they are smart and get stuff done, they will do that at the expense of others, and wreak havoc on the team’s culture. Avoid. Focus on hiring people that you would want long term relationships with.</p>
+
+<h2 id="be-useful">
+<a class="anchor" href="#be-useful" aria-hidden="true"><span class="octicon octicon-link"></span></a>Be useful</h2>
+
+<p>You could behave in a number of different ways at any given time or interaction. What you want is to be useful and add value: there is a useful way of giving feedback to someone that reports to you, there is a useful way to review code, and you can apply this to yourself and plan your day to be more useful to others. Our default instinct is to seek confirmation bias and think about how we are right. We don’t give others the same courtesy. The right approach is to reverse that default instinct: Think ‘how can I make this work’  for other people, and ‘how can this be wrong’ for your own ideas.</p>
+
+<p>Do not compete with your reports either. As a manager, this is particularly important because you want to grow your reports. Be aware of situations or cases where you might be competing, and default to being useful instead of pushing your own agenda.</p>
+
+<h2 id="get-the-requirements-right-early-and-come-up-with-a-game-plan">
+<a class="anchor" href="#get-the-requirements-right-early-and-come-up-with-a-game-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get the requirements right early and come up with a game-plan</h2>
+
+<p>Planning gets a bad rep but it ends up being critical in the long term. Doing <em>some</em> planning almost always ends up being much better than no planning at all. What you want to do is plan until you have a general direction defined, and start iterating towards that. The following questions end up being really useful:</p>
+
+<ul>
+  <li>What are the things that we would want in the near future? You want to pick the path that gives you the most options for the expected future</li>
+  <li>How could this be wrong? Counteract your confirmation bias with this question by explicitly thinking about failure modes.</li>
+  <li>Where do you not want to go? Inversion ends up being really useful. It is easier to avoid stupidity than seeking brilliance</li>
+  <li>What happens once you get there? Seek second order effects. What will one path unlock  or limit?</li>
+  <li>What other paths could you take? Has your team settled on a local maxima and not the global maxima?</li>
+</ul>
+
+<p>Once you have a decent idea of how to proceed with this, you should be responsible for communicating this plan with the rest of the team too. Not getting the requirements right early on means that your team could potentially end up going in the wrong direction which ends up being a net negative.</p>
+
+<h2 id="establish-rapport-before-getting-to-work">
+<a class="anchor" href="#establish-rapport-before-getting-to-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Establish rapport before getting to work</h2>
+
+<p>You will be much more effective at work if you connect with the other people before getting to work; this could mean banter, or just listening — there is a reason why people small-talk.  Get in the circle before attempting to change the circle. This will lead to numerous positive improvements in your workflow. Slack conversations will sound like conversations instead of arguments and you’ll assume positive intent.  You will also find that getting alignment in meetings, and nudging reports towards positive changes ends up being much more useful this way. Icebreakers in meetings and  room for silliness helps here.</p>
+
+<h2 id="there-is-no-one-size-fits-all-approach-to-people-personality-tests-are-good-defaults">
+<a class="anchor" href="#there-is-no-one-size-fits-all-approach-to-people-personality-tests-are-good-defaults" aria-hidden="true"><span class="octicon octicon-link"></span></a>There is no one-size-fits-all approach to people. Personality tests are good defaults</h2>
+
+<p>Management is about calibration. You are calibrating  your general approach to others, while calibrating a specific approach to each person. This is really important because an approach that might work for one person will not work on others. You might find that personality tests like the <a href="https://en.wikipedia.org/wiki/Enneagram_of_Personality">Enneagram</a> serve as great defaults to approaching a person. Type-5, the investigators, work best when you give them freedom and autonomy. Type-6, the loyalists, typically want frequent feedback and support. Infact, they might feel betrayed when they don’t get the support they need.</p>
+
+<h2 id="get-people-to-lead-with-their-strengths-and-address-their-growth-areas-as-a-secondary-priority">
+<a class="anchor" href="#get-people-to-lead-with-their-strengths-and-address-their-growth-areas-as-a-secondary-priority" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get people to lead with their strengths, and address their growth areas as a secondary priority</h2>
+
+<p>There are multiple ways to approach a person’s personal growth. I have found that what works best is first identifying their strengths and areas of improvements. Find people’s strengths and obsessions and point them to that. You have to get people to lead with their strengths. This ends up  being the right approach because it gives people confidence and momentum. Turns out, that this is also how they add the most value. The positive reinforcement from adding value creates a snowball effect, which gives the person more motivation and momentum.</p>
+
+<p>Once a person has momentum, they’ll be much more open to addressing any areas of improvement. You should work with your reports to come up with a game plan for this. Ideally, one should be a master at their specialty domain (e.g., backend or front-end), be great at any adjacent skills (e.g., communication, team-work, product or design), and smooth out their rough edges (e.g., improving how they handle stress, confidence or blindspots).</p>
+
+<h2 id="focus-on-the-positives-and-dont-over-index-on-the-negatives">
+<a class="anchor" href="#focus-on-the-positives-and-dont-over-index-on-the-negatives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Focus on the positives, and don’t over index on the negatives</h2>
+
+<p>For whatever reason, we tend to focus on the negatives more than we should. This might be related to “deprival super reaction syndrome” where we hate losing more than we like winning. In management, this means that we might have the proclivity to focus on what people are doing poorly instead of what they are doing well. This means that people may not feel appreciated if you only focus on the negatives. I believe this also means that we focus on improving low-performers more than amplifying high-performers. Amplifying high-performers might have an order of magnitude higher impact based on the pareto principle.</p>
+
+<h2 id="people-will-act-like-owners-if-you-give-them-control-and-transparency">
+<a class="anchor" href="#people-will-act-like-owners-if-you-give-them-control-and-transparency" aria-hidden="true"><span class="octicon octicon-link"></span></a>People will act like owners if you give them control and transparency</h2>
+
+<p>Be transparent, and don’t do everything yourself. Talk to people and make them feel included. When people feel left out of the loop, they generally grow more anxious as they feel that they are losing control. Your ideal case is that your teammates act like owners. You can do this by being transparent about how decisions are made. You also have to <em>give</em> others control and autonomy. Expect some mistakes as they calibrate their judgement and nudge in the right direction instead of steamrolling them.</p>
+
+<p>There are other times where you’ll have to act like an owner and lead by example. One hint of this case will be when you have a nagging feeling about something that you don’t want to do. Ultimately, the right thing here is to take full ownership, and not ask others to do what you wouldn’t want.</p>
+
+<h2 id="have-high-standards-for-yourself-and-the-people-around-you">
+<a class="anchor" href="#have-high-standards-for-yourself-and-the-people-around-you" aria-hidden="true"><span class="octicon octicon-link"></span></a>Have high standards for yourself and the people around you</h2>
+
+<p>Tech markets and products are generally winner-take-all. This means that second place is not a viable option; wInning, in tech, leads to disproportionately greater rewards. Aim to be the best in the world in your space and iterate towards that. There is no point in doing things in a mediocre way.  Aiming high, and having high standards is what pushes everything forward.</p>
+
+<p>To make this happen, you need to partner with people who expect more from you. You should also have high standards for your teammates. One interesting outcome of this is that you get the positive effects of the Pygmalion effect: people will rise to your positive expectations. This probably sounds corny, but I have found the Pygmalion effect to be consistently useful. Seeing people transform into their best self ends up being incredibly gratifying as a manager.</p>
+
+<h2 id="hold-people-accountable">
+<a class="anchor" href="#hold-people-accountable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hold people accountable</h2>
+
+<p>When things don’t get delivered, or when you see bad behavior, you have to have high standards and hold people accountable. If you don’t, that’s an implicit message that these bad outcomes are ok. There are many cases where not holding others accountable could have a spiraling effect.</p>
+
+<p>Your approach to this has to be calibrated for your work style and the situation. Ultimately, you should enforce all deal-breaker rules. Set clear expectations early on. When something goes wrong, work with the other person or team to understand why. Was it a technical issue, does the tooling need to be improved or was it an issue with leadership?</p>
+
+<p>Having more context on your reports work and responsibility ends up being really useful for this. I recommend skimming over their pull requests over the last quarter, looking for documents or planning artifacts that they created, and doing occasional peer-reviews.</p>
+
+<h2 id="bring-other-people-up-with-you">
+<a class="anchor" href="#bring-other-people-up-with-you" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bring other people up with you</h2>
+
+<p>We like working with great and ambitious people because they raise the bar for everyone else. We are allergic to self-obsessed people who only care about their own growth. Your job as a manager is to bring other people up. Do not take credit for work that you did not do, and give recognition to those that did the work. What’s interesting is that most people only really care about their own growth. So being the person who actually spends time thinking about the growth of others differentiates you. Oddly enough, caring about others ends up being a competitive advantage.</p>
+
+<h2 id="maintain-your-mental-health-with-mindfulness-rest-and-distance">
+<a class="anchor" href="#maintain-your-mental-health-with-mindfulness-rest-and-distance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maintain your mental health with mindfulness, rest and distance</h2>
+
+<p>A team’s culture is top down and bottom up. This means people mimic the behavior of others in the position of authority — for better or for worse. You may have noticed your reports mimic your communication nuances. Keeping this in mind, you have to be aware of your own actions. Generally, most people become less aware of their actions as fatigue builds up. Be mindful of your energy levels when entering meetings. Energy and positivity is really awesome, because it’s something that you can give to others, and it doesn’t really cost you anything.</p>
+
+<p>Dealing with stressful situations by adding more emotion generally doesn’t help. One exception to this is when you have to match the other person’s emotions before attemption to defuse situations. Get in the circle before attempting to change the circle.</p>
+
+<h2 id="aim-to-operate-2-3-months-into-the-future">
+<a class="anchor" href="#aim-to-operate-2-3-months-into-the-future" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aim to operate 2-3 months into the future</h2>
+
+<p>As an engineer you typically operate in a scope of days or weeks. As you expand your influence, you also have to start thinking in a greater time horizon. As a manager, your horizon will be longer than a typical engineer, but smaller than someone who focuses on high level strategy.</p>
+
+<p>This means that you need to project your team and reports a few months into the future, and anticipate their challenges. Ideally, you could help resolve these issues before they even happen. This exercise also helps you be more proactive instead of reacting to daily events.</p>
+
+<h2 id="give-feedback-to-people-that-you-want-long-term-relationships-with">
+<a class="anchor" href="#give-feedback-to-people-that-you-want-long-term-relationships-with" aria-hidden="true"><span class="octicon octicon-link"></span></a>Give feedback to people that you want long term relationships with</h2>
+
+<p>Would you give feedback to a random stranger doing something that’s bad for them? Probably not. Now, imagine that you knew this person. You would try to reason with this person, and hopefully nudge them in the right direction. You give feedback to people that you care about, and want a long term relationship with. I believe this is also true at work. Even if someone is not your report, it is worth sharing your feedback if you can deliver it usefully.</p>
+
+<p>Giving feedback is tricky since people often get defensive. There are different schools of thoughts on this, but I try to build a rapport with someone before giving them direct feedback. Once you can convince someone that you are on their side, people are much more receptive to it. Get in the circle. While code-review feedback is best when it’s all at once, that isn’t necessarily true for 1-1 feedback.</p>
+
+<p>Many people default to “direct-feedback” and I think that doesn’t work for people you don’t have good rapport with. Ray Dalio (an amazing investor) suggests “Radical Truth” and gives direct feedback at all times. I don’t think this works with most people. That works for him because he is in a position of authority. His investment firm, Bridgewater, also has an incredible turn-over rate and 25% of new-hires leave within 18 months. Build rapport before getting to work.</p>
+
+<h3 id="i-hope-you-found-these-useful-if-you-have-any-questions-or-thoughts-feel-free-to-reach-out-to-me-on-twitter-herehttpstwittercomhammadk-apparently-i-write-one-blog-post-every-three-years-so-see-you-in-2023">I hope you found these useful. If you have any questions or thoughts, feel free to reach out to me on Twitter <a href="https://twitter.com/hammadk">here</a>. Apparently, I write one blog post every three years, so see you in 2023!</h3>
+
+
+        <div class="post-info">
+          
+          <span class="glyphicon glyphicon-tags"></span>   Tags:
+          
+          
+
+
+  
+    
+    	<a href="/tags.html#Mental models-ref"><li class="label label-info">Mental models <span>(2)</span></li></a>
+    
+    	<a href="/tags.html#Engineering-ref"><li class="label label-info">Engineering <span>(2)</span></li></a>
+    
+    	<a href="/tags.html#Management-ref"><li class="label label-info">Management <span>(1)</span></li></a>
+    
+  
+
+
+
+          
+          <p>
+            <div class="date">
+              <span> <span class="glyphicon glyphicon-time"></span>   Last Updated: 26 July 2020</span>
+            </div>
+          </p>
+
+          
+          <p>
+            <span class="glyphicon glyphicon-arrow-left"></span> Previous:
+            <a href="/blog/2017/08/26/engineering-mental-models" title="Mental Models for Product Developers, Part 1: Engineering">
+              Mental Models for Product Developers, Part 1: Engineering
+            </a>
+          </p>
+          
+
+          
+        </div>
+      </div>
+    </div> <!-- Main content -->
+
+  </div> <!-- First Row -->
+
+</div>
+
+        </div>
+      </div>
+
+    </div><!--wrap -->
+
+    <footer id="footer">
+      <div class="container">
+        <ul>
+          <li>
+            <a class="socialite twitter-follow" href="http://twitter.com/hammadk" data-show-count="false" >
+            Follow @Hammadk </a>
+          </li>
+	        <li>
+            <a href="http://www.linkedin.com/pub/hammad-khalid/10/28b/a1">LinkedIn: <img src="/assets/images/linkedin16.png" alt="LinkedIn logo"/> </a>
+          </li>
+          <li>
+            <a href="https://github.com/Hammadk">Github: <img src="/assets/images/github-icon.jpg" alt="Github logo"/> </a>
+          </li>
+	        <li>
+            <a href="mailto:hi@hammad.ca">hi@hammad.ca <span class="glyphicon glyphicon-envelope"></span> </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>$(Socialite.load);</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9815320-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9815320-5');
+    </script>
+
+  </body>
+</html>

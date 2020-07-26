@@ -4,13 +4,157 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2020-07-13T20:03:22-04:00</updated>
+ <updated>2020-07-26T18:17:37-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
    <email>hi@hammad.ca</email>
  </author>
 
+ 
+ <entry>
+   <title>Mental Models for Product Developers, Part 2: Management</title>
+   <link href="http://hammad.ca/blog/2020/07/26/management-mental-models"/>
+   <updated>2020-07-26T00:00:00-04:00</updated>
+   <id>http://hammad.ca/blog/2020/07/26/management-mental-models</id>
+   <content type="html">&lt;p&gt;This is the second part of the “&lt;a href=&quot;http://hammad.ca/blog/2017/08/26/engineering-mental-models&quot;&gt;Mental Models for Product Developers series&lt;/a&gt;” and it took me three years to write this post. I hope you weren’t holding your breath! The key insight here is that “management” might be the wrong name for this discipline all together. What you are really doing is growing people. You will rarely have to manage others if you align your interests with the people that report to you.&lt;/p&gt;
+
+&lt;p&gt;Compared to engineering, management is more fuzzy and subjective. This might be why engineers struggle with it. It’s really about calibration; you are calibrating approaches for yourself and your reports. What works for you, might not work for me because the world has different expectations from us. Likewise, just reading books on this stuff doesn’t help because advice from the book is calibrated for the author. With that said, I believe the following mental models are falsifiable. I also believe that doing the opposite of these will always be harmful. I find these particularly valuable while planning my week. Enjoy!&lt;/p&gt;
+
+&lt;h2 id=&quot;create-motivation-by-aligning-incentives&quot;&gt;Create motivation by aligning incentives&lt;/h2&gt;
+
+&lt;p&gt;Incentives drive our behavior above all else. Even the best organized, highest leverage, projects will run into hiccupts if the incentives are not aligned. You can solve this by working with your reports to identify the intersection of: 1) What do they want to work on?, 2) What does the product need?, and 3) What does that company need? Magic happens when these questions produce themes that overlap with each other; the person will have intrinsic motivation for tasks that build their skills, improve their product, and their company. Working on the two intersecting themes to these questions can be fruitful too. You can replace ‘product’ with ‘direct team’ if appropriate. Occasionally you’ll find someone focusing on a task that’s only being done because that’s what the person wants (neglecting the product and the company), only what the product needs (neglecting the person’s needs or the company), or only what the company wants (neglecting the person’s needs or their product). This is fine in the short term, but not a good long term strategy.&lt;/p&gt;
+
+&lt;p&gt;What makes this interesting is that the answers to these questions are often at odds with each other. For example, you could have cases where the person wants to do more datastore optimizations, but the most important thing for the product is new features. Another example of this is when the company would want the person to help teach their peers, but the product would need the person to focus on existing issues. You should allow for short term exceptions, but nudge your reports towards overlapping themes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/align_incentives.png&quot; alt=&quot;Align incentives&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-clarity-by-understanding-the-why-and-having-a-vision-for-the-product&quot;&gt;Create clarity by understanding the “why” and having a vision for the product&lt;/h2&gt;
+
+&lt;p&gt;You should have a vision for where your product needs to go. Doing this ends up being super helpful when deciding between competing tactical options, and also helps clear up general confusion. You should also communicate the vision with your team.  While being a visionary isn’t included in your job description, aligning on a “why” often counteracts the negative effects of broken-telephone effect in communication and entropy in organizations.&lt;/p&gt;
+
+&lt;h2 id=&quot;focus-on-high-leverage-activities&quot;&gt;Focus on high leverage activities&lt;/h2&gt;
+
+&lt;p&gt;This is the central idea in &lt;a href=&quot;https://www.goodreads.com/book/show/324750.High_Output_Management&quot;&gt;High output management&lt;/a&gt;. The core idea is similar to the “Pareto principle” where you focus your energy on the 20% of the tasks that have 80% of the impact. If you don’t do this, your team will spend a lot of time, but not accomplish much. So, take some time to plan your approach and focus on the activities that give you the most leverage. I found &lt;a href=&quot;http://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf&quot;&gt;Donella Medow’s research&lt;/a&gt; to be a super user for understanding leverage. A few examples of this include:&lt;/p&gt;
+
+&lt;h4 id=&quot;promote-growth-mindset-in-your-team&quot;&gt;Promote growth mindset in your team&lt;/h4&gt;
+
+&lt;p&gt;If you had to start with 0, what you’d want is the ability to acquire new skills. You want to instill a mindset of growth in yourself and the rest of the team. Create  an environment where reflection and failures are talked about. Lessons that you truly learn are the ones that you have learnt by making mistakes. Create an environment where people obsess about the craft and consider failures a learning opportunity.&lt;/p&gt;
+
+&lt;h4 id=&quot;align-your-team-on-the-common-vision&quot;&gt;Align your team on the common vision&lt;/h4&gt;
+
+&lt;p&gt;This is one of the most important things you could do. It’ll mean that people will go in the same general direction. More importantly, it’ll help you avoid situations where people are going in the wrong direction.&lt;/p&gt;
+
+&lt;h4 id=&quot;build-self-organizing-teams&quot;&gt;Build self-organizing teams&lt;/h4&gt;
+
+&lt;p&gt;Creating self-sufficient teams is the only way to scale yourself. You can enable a team to do this by promoting a sense of ownership. You can give your input without taking authority away from others, and offer suggestions without steamrolling leaders.&lt;/p&gt;
+
+&lt;h4 id=&quot;communication-and-structural-organization&quot;&gt;Communication and structural organization&lt;/h4&gt;
+
+&lt;p&gt;By default, most systems lean towards disorder and gradual decline. Someone has to take active steps against entropy. Focusing on communication and organization ends up being enormously useful and prevents fragmentation. Look for inefficiencies in how teams are organized, and how information flows through your organization.&lt;/p&gt;
+
+&lt;h4 id=&quot;architecture-right&quot;&gt;Architecture right&lt;/h4&gt;
+
+&lt;p&gt;This is where your &lt;a href=&quot;http://hammad.ca/blog/2017/08/26/engineering-mental-models&quot;&gt;engineering chops will come in handy&lt;/a&gt;. From a technical perspective, getting the core pieces of the architecture right ends up being critical and defines the flow of information in the system. This applies for both front-end and back-end systems.&lt;/p&gt;
+
+&lt;h2 id=&quot;do-not-try-to-be-efficient-with-relationships&quot;&gt;Do not try to be efficient with relationships&lt;/h2&gt;
+
+&lt;p&gt;As an engineer your brain is optimized to seek efficiency. Efficiency is not a good approach when it comes to relationships with people; you can often have the opposite effect as what you intended. I have found that 30 minute meetings are too fast for 1-1s with your reports. What you want to do is to give some time for banter, and a free flow of information. This eases people up and you have better conversations and people often end up sharing more critical information than they otherwise would. Of course, you don’t want to spend a lot of time in meetings so I prefer to have longer infrequent meetings instead of frequent short meetings.&lt;/p&gt;
+
+&lt;p&gt;This also applies to pushing for changes or influencing others in any way. This is a long game, and you should be prepared for that. Permanent positive behavioral changes take time.&lt;/p&gt;
+
+&lt;h2 id=&quot;hire-smart-people-who-gets-stuff-done-and-you-want-to-be-around&quot;&gt;Hire smart people, who gets stuff done, and you want to be around&lt;/h2&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Pick business partners with high intelligence, energy, and, above all, integrity.&lt;/p&gt;&amp;mdash; Naval (@naval) &lt;a href=&quot;https://twitter.com/naval/status/1002103969781448704?ref_src=twsrc%5Etfw&quot;&gt;May 31, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Hiring, when done right, is one of the highest-leverage activities that you can work on. You are looking for three key signals when hiring: smart, gets stuff done, and good to be around. When looking for the “smart” signal, be aware of the “halo effect” and be weary of charmers. “Get stuff done” is critical because you don’t want to be around smart people who are not adding value to your company. Just like investing, your aim should be to identify people on a great trajectory. “Good to be around” is tricky because it’s filled with personal bias. A good rule is to never hire assholes. Even if they are smart and get stuff done, they will do that at the expense of others, and wreak havoc on the team’s culture. Avoid. Focus on hiring people that you would want long term relationships with.&lt;/p&gt;
+
+&lt;h2 id=&quot;be-useful&quot;&gt;Be useful&lt;/h2&gt;
+
+&lt;p&gt;You could behave in a number of different ways at any given time or interaction. What you want is to be useful and add value: there is a useful way of giving feedback to someone that reports to you, there is a useful way to review code, and you can apply this to yourself and plan your day to be more useful to others. Our default instinct is to seek confirmation bias and think about how we are right. We don’t give others the same courtesy. The right approach is to reverse that default instinct: Think ‘how can I make this work’  for other people, and ‘how can this be wrong’ for your own ideas.&lt;/p&gt;
+
+&lt;p&gt;Do not compete with your reports either. As a manager, this is particularly important because you want to grow your reports. Be aware of situations or cases where you might be competing, and default to being useful instead of pushing your own agenda.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-the-requirements-right-early-and-come-up-with-a-game-plan&quot;&gt;Get the requirements right early and come up with a game-plan&lt;/h2&gt;
+
+&lt;p&gt;Planning gets a bad rep but it ends up being critical in the long term. Doing &lt;em&gt;some&lt;/em&gt; planning almost always ends up being much better than no planning at all. What you want to do is plan until you have a general direction defined, and start iterating towards that. The following questions end up being really useful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What are the things that we would want in the near future? You want to pick the path that gives you the most options for the expected future&lt;/li&gt;
+  &lt;li&gt;How could this be wrong? Counteract your confirmation bias with this question by explicitly thinking about failure modes.&lt;/li&gt;
+  &lt;li&gt;Where do you not want to go? Inversion ends up being really useful. It is easier to avoid stupidity than seeking brilliance&lt;/li&gt;
+  &lt;li&gt;What happens once you get there? Seek second order effects. What will one path unlock  or limit?&lt;/li&gt;
+  &lt;li&gt;What other paths could you take? Has your team settled on a local maxima and not the global maxima?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you have a decent idea of how to proceed with this, you should be responsible for communicating this plan with the rest of the team too. Not getting the requirements right early on means that your team could potentially end up going in the wrong direction which ends up being a net negative.&lt;/p&gt;
+
+&lt;h2 id=&quot;establish-rapport-before-getting-to-work&quot;&gt;Establish rapport before getting to work&lt;/h2&gt;
+
+&lt;p&gt;You will be much more effective at work if you connect with the other people before getting to work; this could mean banter, or just listening — there is a reason why people small-talk.  Get in the circle before attempting to change the circle. This will lead to numerous positive improvements in your workflow. Slack conversations will sound like conversations instead of arguments and you’ll assume positive intent.  You will also find that getting alignment in meetings, and nudging reports towards positive changes ends up being much more useful this way. Icebreakers in meetings and  room for silliness helps here.&lt;/p&gt;
+
+&lt;h2 id=&quot;there-is-no-one-size-fits-all-approach-to-people-personality-tests-are-good-defaults&quot;&gt;There is no one-size-fits-all approach to people. Personality tests are good defaults&lt;/h2&gt;
+
+&lt;p&gt;Management is about calibration. You are calibrating  your general approach to others, while calibrating a specific approach to each person. This is really important because an approach that might work for one person will not work on others. You might find that personality tests like the &lt;a href=&quot;https://en.wikipedia.org/wiki/Enneagram_of_Personality&quot;&gt;Enneagram&lt;/a&gt; serve as great defaults to approaching a person. Type-5, the investigators, work best when you give them freedom and autonomy. Type-6, the loyalists, typically want frequent feedback and support. Infact, they might feel betrayed when they don’t get the support they need.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-people-to-lead-with-their-strengths-and-address-their-growth-areas-as-a-secondary-priority&quot;&gt;Get people to lead with their strengths, and address their growth areas as a secondary priority&lt;/h2&gt;
+
+&lt;p&gt;There are multiple ways to approach a person’s personal growth. I have found that what works best is first identifying their strengths and areas of improvements. Find people’s strengths and obsessions and point them to that. You have to get people to lead with their strengths. This ends up  being the right approach because it gives people confidence and momentum. Turns out, that this is also how they add the most value. The positive reinforcement from adding value creates a snowball effect, which gives the person more motivation and momentum.&lt;/p&gt;
+
+&lt;p&gt;Once a person has momentum, they’ll be much more open to addressing any areas of improvement. You should work with your reports to come up with a game plan for this. Ideally, one should be a master at their specialty domain (e.g., backend or front-end), be great at any adjacent skills (e.g., communication, team-work, product or design), and smooth out their rough edges (e.g., improving how they handle stress, confidence or blindspots).&lt;/p&gt;
+
+&lt;h2 id=&quot;focus-on-the-positives-and-dont-over-index-on-the-negatives&quot;&gt;Focus on the positives, and don’t over index on the negatives&lt;/h2&gt;
+
+&lt;p&gt;For whatever reason, we tend to focus on the negatives more than we should. This might be related to “deprival super reaction syndrome” where we hate losing more than we like winning. In management, this means that we might have the proclivity to focus on what people are doing poorly instead of what they are doing well. This means that people may not feel appreciated if you only focus on the negatives. I believe this also means that we focus on improving low-performers more than amplifying high-performers. Amplifying high-performers might have an order of magnitude higher impact based on the pareto principle.&lt;/p&gt;
+
+&lt;h2 id=&quot;people-will-act-like-owners-if-you-give-them-control-and-transparency&quot;&gt;People will act like owners if you give them control and transparency&lt;/h2&gt;
+
+&lt;p&gt;Be transparent, and don’t do everything yourself. Talk to people and make them feel included. When people feel left out of the loop, they generally grow more anxious as they feel that they are losing control. Your ideal case is that your teammates act like owners. You can do this by being transparent about how decisions are made. You also have to &lt;em&gt;give&lt;/em&gt; others control and autonomy. Expect some mistakes as they calibrate their judgement and nudge in the right direction instead of steamrolling them.&lt;/p&gt;
+
+&lt;p&gt;There are other times where you’ll have to act like an owner and lead by example. One hint of this case will be when you have a nagging feeling about something that you don’t want to do. Ultimately, the right thing here is to take full ownership, and not ask others to do what you wouldn’t want.&lt;/p&gt;
+
+&lt;h2 id=&quot;have-high-standards-for-yourself-and-the-people-around-you&quot;&gt;Have high standards for yourself and the people around you&lt;/h2&gt;
+
+&lt;p&gt;Tech markets and products are generally winner-take-all. This means that second place is not a viable option; wInning, in tech, leads to disproportionately greater rewards. Aim to be the best in the world in your space and iterate towards that. There is no point in doing things in a mediocre way.  Aiming high, and having high standards is what pushes everything forward.&lt;/p&gt;
+
+&lt;p&gt;To make this happen, you need to partner with people who expect more from you. You should also have high standards for your teammates. One interesting outcome of this is that you get the positive effects of the Pygmalion effect: people will rise to your positive expectations. This probably sounds corny, but I have found the Pygmalion effect to be consistently useful. Seeing people transform into their best self ends up being incredibly gratifying as a manager.&lt;/p&gt;
+
+&lt;h2 id=&quot;hold-people-accountable&quot;&gt;Hold people accountable&lt;/h2&gt;
+
+&lt;p&gt;When things don’t get delivered, or when you see bad behavior, you have to have high standards and hold people accountable. If you don’t, that’s an implicit message that these bad outcomes are ok. There are many cases where not holding others accountable could have a spiraling effect.&lt;/p&gt;
+
+&lt;p&gt;Your approach to this has to be calibrated for your work style and the situation. Ultimately, you should enforce all deal-breaker rules. Set clear expectations early on. When something goes wrong, work with the other person or team to understand why. Was it a technical issue, does the tooling need to be improved or was it an issue with leadership?&lt;/p&gt;
+
+&lt;p&gt;Having more context on your reports work and responsibility ends up being really useful for this. I recommend skimming over their pull requests over the last quarter, looking for documents or planning artifacts that they created, and doing occasional peer-reviews.&lt;/p&gt;
+
+&lt;h2 id=&quot;bring-other-people-up-with-you&quot;&gt;Bring other people up with you&lt;/h2&gt;
+
+&lt;p&gt;We like working with great and ambitious people because they raise the bar for everyone else. We are allergic to self-obsessed people who only care about their own growth. Your job as a manager is to bring other people up. Do not take credit for work that you did not do, and give recognition to those that did the work. What’s interesting is that most people only really care about their own growth. So being the person who actually spends time thinking about the growth of others differentiates you. Oddly enough, caring about others ends up being a competitive advantage.&lt;/p&gt;
+
+&lt;h2 id=&quot;maintain-your-mental-health-with-mindfulness-rest-and-distance&quot;&gt;Maintain your mental health with mindfulness, rest and distance&lt;/h2&gt;
+
+&lt;p&gt;A team’s culture is top down and bottom up. This means people mimic the behavior of others in the position of authority — for better or for worse. You may have noticed your reports mimic your communication nuances. Keeping this in mind, you have to be aware of your own actions. Generally, most people become less aware of their actions as fatigue builds up. Be mindful of your energy levels when entering meetings. Energy and positivity is really awesome, because it’s something that you can give to others, and it doesn’t really cost you anything.&lt;/p&gt;
+
+&lt;p&gt;Dealing with stressful situations by adding more emotion generally doesn’t help. One exception to this is when you have to match the other person’s emotions before attemption to defuse situations. Get in the circle before attempting to change the circle.&lt;/p&gt;
+
+&lt;h2 id=&quot;aim-to-operate-2-3-months-into-the-future&quot;&gt;Aim to operate 2-3 months into the future&lt;/h2&gt;
+
+&lt;p&gt;As an engineer you typically operate in a scope of days or weeks. As you expand your influence, you also have to start thinking in a greater time horizon. As a manager, your horizon will be longer than a typical engineer, but smaller than someone who focuses on high level strategy.&lt;/p&gt;
+
+&lt;p&gt;This means that you need to project your team and reports a few months into the future, and anticipate their challenges. Ideally, you could help resolve these issues before they even happen. This exercise also helps you be more proactive instead of reacting to daily events.&lt;/p&gt;
+
+&lt;h2 id=&quot;give-feedback-to-people-that-you-want-long-term-relationships-with&quot;&gt;Give feedback to people that you want long term relationships with&lt;/h2&gt;
+
+&lt;p&gt;Would you give feedback to a random stranger doing something that’s bad for them? Probably not. Now, imagine that you knew this person. You would try to reason with this person, and hopefully nudge them in the right direction. You give feedback to people that you care about, and want a long term relationship with. I believe this is also true at work. Even if someone is not your report, it is worth sharing your feedback if you can deliver it usefully.&lt;/p&gt;
+
+&lt;p&gt;Giving feedback is tricky since people often get defensive. There are different schools of thoughts on this, but I try to build a rapport with someone before giving them direct feedback. Once you can convince someone that you are on their side, people are much more receptive to it. Get in the circle. While code-review feedback is best when it’s all at once, that isn’t necessarily true for 1-1 feedback.&lt;/p&gt;
+
+&lt;p&gt;Many people default to “direct-feedback” and I think that doesn’t work for people you don’t have good rapport with. Ray Dalio (an amazing investor) suggests “Radical Truth” and gives direct feedback at all times. I don’t think this works with most people. That works for him because he is in a position of authority. His investment firm, Bridgewater, also has an incredible turn-over rate and 25% of new-hires leave within 18 months. Build rapport before getting to work.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-hope-you-found-these-useful-if-you-have-any-questions-or-thoughts-feel-free-to-reach-out-to-me-on-twitter-herehttpstwittercomhammadk-apparently-i-write-one-blog-post-every-three-years-so-see-you-in-2023&quot;&gt;I hope you found these useful. If you have any questions or thoughts, feel free to reach out to me on Twitter &lt;a href=&quot;https://twitter.com/hammadk&quot;&gt;here&lt;/a&gt;. Apparently, I write one blog post every three years, so see you in 2023!&lt;/h3&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Mental Models for Product Developers, Part 1: Engineering</title>
