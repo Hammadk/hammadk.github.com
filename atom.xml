@@ -4,7 +4,7 @@
  <title>Hammad Khalid</title>
  <link href="http://hammad.ca/" rel="self"/>
  <link href="http://hammad.ca"/>
- <updated>2020-07-26T18:17:37-04:00</updated>
+ <updated>2020-07-27T15:19:43-04:00</updated>
  <id>http://hammad.ca</id>
  <author>
    <name>Hammad Khalid</name>
@@ -23,7 +23,15 @@
 
 &lt;h2 id=&quot;create-motivation-by-aligning-incentives&quot;&gt;Create motivation by aligning incentives&lt;/h2&gt;
 
-&lt;p&gt;Incentives drive our behavior above all else. Even the best organized, highest leverage, projects will run into hiccupts if the incentives are not aligned. You can solve this by working with your reports to identify the intersection of: 1) What do they want to work on?, 2) What does the product need?, and 3) What does that company need? Magic happens when these questions produce themes that overlap with each other; the person will have intrinsic motivation for tasks that build their skills, improve their product, and their company. Working on the two intersecting themes to these questions can be fruitful too. You can replace ‘product’ with ‘direct team’ if appropriate. Occasionally you’ll find someone focusing on a task that’s only being done because that’s what the person wants (neglecting the product and the company), only what the product needs (neglecting the person’s needs or the company), or only what the company wants (neglecting the person’s needs or their product). This is fine in the short term, but not a good long term strategy.&lt;/p&gt;
+&lt;p&gt;Incentives drive our behavior above all else. Even the best organized, highest leverage projects will run into hiccupts if the incentives are not aligned. You can solve this by working with your reports to identify the intersection of:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What do they want to work on?&lt;/li&gt;
+  &lt;li&gt;What does the product / team need?&lt;/li&gt;
+  &lt;li&gt;What does that company need?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Magic happens when these questions produce themes that overlap with each other; the person will have intrinsic motivation for tasks that build their skills, improve their product, and their company. Working on the two intersecting themes to these questions can be fruitful too. Occasionally you’ll find someone focusing on a task that’s only being done because that’s what the person wants (neglecting the product and the company), only what the product needs (neglecting the person’s needs or the company), or only what the company wants (neglecting the person’s needs or their product). This is fine in the short term, but not a good long term strategy.&lt;/p&gt;
 
 &lt;p&gt;What makes this interesting is that the answers to these questions are often at odds with each other. For example, you could have cases where the person wants to do more datastore optimizations, but the most important thing for the product is new features. Another example of this is when the company would want the person to help teach their peers, but the product would need the person to focus on existing issues. You should allow for short term exceptions, but nudge your reports towards overlapping themes.&lt;/p&gt;
 
@@ -53,9 +61,9 @@
 
 &lt;p&gt;By default, most systems lean towards disorder and gradual decline. Someone has to take active steps against entropy. Focusing on communication and organization ends up being enormously useful and prevents fragmentation. Look for inefficiencies in how teams are organized, and how information flows through your organization.&lt;/p&gt;
 
-&lt;h4 id=&quot;architecture-right&quot;&gt;Architecture right&lt;/h4&gt;
+&lt;h4 id=&quot;get-the-architecture-right&quot;&gt;Get the architecture right&lt;/h4&gt;
 
-&lt;p&gt;This is where your &lt;a href=&quot;http://hammad.ca/blog/2017/08/26/engineering-mental-models&quot;&gt;engineering chops will come in handy&lt;/a&gt;. From a technical perspective, getting the core pieces of the architecture right ends up being critical and defines the flow of information in the system. This applies for both front-end and back-end systems.&lt;/p&gt;
+&lt;p&gt;This is where your &lt;a href=&quot;http://hammad.ca/blog/2017/08/26/engineering-mental-models&quot;&gt;engineering chops will come in handy&lt;/a&gt;. From a technical perspective, getting the core pieces of the architecture right ends up being critical and defines the flow of information in the system. This applies for both front-end and back-end systems. By the way, this doesn’t mean that you should only focus on high-level objectives. Someone smart once told me to “Focus on the high level picture, and the low level details. Things in the middle take care of themselves”.&lt;/p&gt;
 
 &lt;h2 id=&quot;do-not-try-to-be-efficient-with-relationships&quot;&gt;Do not try to be efficient with relationships&lt;/h2&gt;
 
